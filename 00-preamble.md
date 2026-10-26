@@ -45,11 +45,29 @@ Enforced by: DMP-007
 
 ## Who maintains it
 
-The CM coordinator owns DMP and its marks. A constellation coordinator proposes changes to its own chapter. The owner of the
-framework (the creator of CMOS, an IT-Systemadministrator and one of The Administrator) decides anything in the constitution; rule DMP-009 makes the authority grant
-tamper-evident, and every other constitution change is a pull request that only the owner can approve.
+DMP, IM, CM and Gravity are the **root repositories**. They are text and code, never an instance of CMOS, and they are never minted: they
+stay under G0 for good, with `LHC pending` in their record. In them the **owner**, the person who holds a copy of the root repositories,
+stands for both halves (G0). Every change to the constitution or to a stable section, and every grant of authority, is an act of the owner,
+and its record is the merged pull request the owner approved.
 
-Status: stable since DMP 0.1.0
+- **Grants.** The owner may grant part of this authority to other parts (an agent, a coordinator, a person) for named acts. A grant is a
+  record (Axiom 3) with a bound (T1); the owner alone may withdraw it, as a tightening (T24); it is never passed on unless it says so. Rule
+  DMP-009 refuses a change to the wording of a grant the owner did not approve.
+- **The standing grants here.** The CM coordinator keeps DMP and its marks (status, owner, enforcing rule) and merges what the owner
+  approved; a constellation coordinator proposes changes to its own chapter; a change to the constitution needs the owner's approval.
+- **Clone, press, mint.** Any organisation may copy the root repositories onto its own systems. Whoever holds that copy is its owner, with
+  the same standing as above, and nothing in the copy depends on the copy it came from. The owner presses an instance (G0, T-P), and once
+  a pressing of the same configuration has passed, the organisation mints it (C17). The minting is a trust rotation: every key rotates,
+  the owner role ends, and ultimate authority rests with the White Key holders under a majority of trust (T5). The minted instance is
+  contained on its own: trust never crosses instances, so it shares none with any other CMOS, the root repositories included; a newer
+  DMP reaches it only as information through an entry path its own two witnesses opened (T-P).
+
+Derived from: G0, T-P, Axiom 1, Axiom 3, T1, T5, T24, C17. The owner (2026-10-26): "As the root DMP/IM/CM repos, they are in a permanent
+non-minted state, so the ultimate authority goes to the owner (which is already defined and can from there be passed down/extended to
+agents/people etc.), until a minting takes place, at which point ultimate authority rests with the WKHs"; "So theoretically any company
+can git clone the repos to their own server, become the owner, then mint and have their own, fully contained, CMOS."
+
+Status: draft (proposed 2026-10-26; replaces the text stable since DMP 0.1.0)
 Owner: CM coordinator
 Enforced by: DMP-009
 
