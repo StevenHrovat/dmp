@@ -131,7 +131,7 @@ C18, C19; VERSION 0.9.7; the chapter intro and the mapping table), #16 (batch 2:
 #17 (batch 3: C6, C17, C22, C∞), #18 (batch 4: C4 with C5 merged and retired, C7, C16, C24, C25), #19 (batch 5: C9, C10). Each was checked
 with CM's `tools/dmp` (DMP-007, 009, 017, 018 and 021 pass; only the pin differs until Gravity and CM re-pin) and with `tools/scrub-scan.sh`.
 
-**Batch 0, the axioms (#20, stacked under #19).** While batch 1 was on the table the owner asked (22:56Z) "can we reduce the 4 Axioms to the
+**Batch 0, the axioms (#21, stacked under #19).** While batch 1 was on the table the owner asked (22:56Z) "can we reduce the 4 Axioms to the
 3 basic building blocks? Trust, Information and the DoT?", added (22:59Z) "No Information is ever trusted and no information, besides its
 existence, can be derived from trust", approved the three-block text (23:02Z) and added (23:03Z) "Trust is gravitational, Information is
 hierarchical". #20 carries it: Axiom 1 · The Duality (the dual gate and the direction as one, the halves typed as a trust half and an
@@ -158,7 +158,7 @@ Paste-ready prompt for the verifying session:
 
 ```
 You are verifying, not drafting, on StevenHrovat/dmp and StevenHrovat/gravity. Read dmp docs/proposals/c-constraints.md (sections 2, 3,
-6 and 8) and then 01-constitution.md as it stands on the head of pull request #20 (batch 0, the three axioms, stacked on the five batches
+6 and 8) and then 01-constitution.md as it stands on the head of pull request #21 (batch 0, the three axioms, stacked on the five batches
 #15 to #19). Start with the five claims of batch 0 listed in section 6 ("New claims for the verifying session"). Every C section
 is now a constraint with a Derived from: line (the axioms and theorems claimed to achieve it) and a Coverage: line (the Lean theorems
 claimed to reach it, or the part none reaches).
