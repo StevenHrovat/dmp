@@ -713,7 +713,7 @@ Enforced by: DMP-002
 
 ## C12 · Information is tiered
 
-CMOS holds all the information inside its Event Horizon, and every piece of it is reached through one routing: tiers, routed by the
+CMOS contains all the information inside its Event Horizon, and every piece of it is reached through one routing: tiers, routed by the
 Milky Way net (the MW net). What CMOS makes is its own; personal data it holds only on a grant (T27).
 
 - **Tier 1** is the information in the MW net itself. It is always consulted first.
@@ -730,22 +730,25 @@ of information is a new layer that declares its kind, its sub-VIBE configuration
 Lensing; no other part of CMOS changes for it. A layer may place work as well as information (a network layout, load balancing, placement
 in a cloud): it decides where, never who may.
 
-**Privacy** is a singularity of VIBE space: information there is admitted only for the class its grant names, and no routing pulls it
-out, not even the MW net, which holds no admission for it. Routing behaves exactly as if the singularity were empty, so neither an answer
-nor its absence reveals what a singularity holds; its record shows counts, never content. A part trusted for that class acts on it at
-the singularity itself, under the dual gate. **Credentials** are information like any other and route the same way; each sits in a
-singularity of its own kind, so routing reaches the point of use, never the secret.
+**Privacy** is a singularity of VIBE space: information there is admitted only for the class its grant names, and no routing pulls it out,
+not even the MW net, which holds no admission for it. Routing behaves exactly as if the singularity were empty, so neither an answer nor
+its absence reveals what a singularity holds; its record shows counts, never content. A part trusted for that class acts on it at the
+singularity itself, under the dual gate. **Credentials** are information like any other and route the same way; each sits in a singularity
+of its own kind, so routing reaches the point of use, never the secret. Each singularity is a cluster of at least three nodes.
+Singularities of different layers may be the same cluster, as long as that is valid under DMP, and every singularity obeys DMP on its own.
 
 What an agent learns that no tier held goes back into Tier 1 through the MW net's intake.
 
 Derived from: the words (admission, containment, door), Axiom 1, Axiom 2 (a position in the network is never evidence, so a layer cannot
-grant), Axiom 3 (what an agent learned is a record both witnesses need; counts always, content by grant), T21, T27, T36 (every crossing of
+grant), Axiom 3 (what an agent learned is a record both witnesses need; counts always, content by grant), T3 (no single part's loss stops a singularity: at least three nodes), T21, T27, T36 (every crossing of
 the horizon is an act, so it comes last and only when needed), C1 (every route runs through the one door, so asking it first costs no
 extra crossing). The owner's words (2026-10-26): "Tier 1 information is the information in the MW net, which is always consulted first
 and then outward as the VIBE net dictates"; "Privacy could be seen as singularities of VIBE space where not even the MW-net can pull the
 information out"; the knowledge warehouse "would simply be the knowledge layer, that is overlayed dynamically on the VIBE field, same with
 the other stuff", which "also makes the system extensible for any other kind of information layer", for example "network layout while maintaining ultimate
-trust in the cloud, or other load balancing". Evidence chain: `Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean`
+trust in the cloud, or other load balancing"; "CMOS contains all the information inside its Event Horizon"; "Each singularity
+should always be a cluster of at least 3 nodes. All singularities of the differnent layers may of course be the same, as long as it is
+DMP valid, but each singularity must still obey DMP." Evidence chain: `Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean`
 and `Dmp/R1Lens.lean` (a layer's reorganisation) in the gravity repository.
 
 Status: draft (redrafted 2026-10-26; was stable since DMP 0.1.0)
