@@ -35,6 +35,11 @@ body of people), **evidence** (what a witness verifies) and **time**.
   key, author, engine, operating image, person, time source, and whatever else the minting lists). Independence is always relative to that
   list; the list is configuration (T4).
 - A **layer** is a place where trust is decided; its two witnesses are its **halves**; the pair at a layer is the **Duality of Trust** (DoT).
+- A **voting share** is a voter's weight on its side of a layer, whatever value the configuration gives it (T4). A side's **total share**
+  is the sum of its voters' shares; the DoT's **total share** is the sum of both sides'. At the default every White Key holder carries one
+  equal share, so a share is a seat.
+- An **exclusion** is the tightening that shuts a part out (isolate, revoke, hold out); an **inclusion** is the loosening that lets it
+  resume (lift, release, admit back). Who may initiate each is T39.
 - A **record** is evidence that outlives the act it is about.
 - A part is **inside** at a time when a standing for it from both witnesses of its layer is valid then. A **door** is any point of use. A
   **surface** is a part whose standing includes receiving from parts that hold none. The **perimeter** is the set of what is inside.
@@ -58,6 +63,8 @@ body of people), **evidence** (what a witness verifies) and **time**.
 Status: stable since DMP 0.9.3
 Amended: the definition of "contains" approved by the owner 2026-10-26 14:01Z; the definition of "DMP-complete" approved by the owner
 2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
+Proposed in this pull request (not yet approved): the words "voting share", "exclusion" and "inclusion", from the owner's rule of
+2026-10-26 21:42Z and 21:43Z; they enter with T39 when the owner approves this pull request.
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -339,10 +346,11 @@ everything that loosens needs both witnesses (lift, unlock, override, promote, a
 every act on the Duality's own composition (seats, witnesses, roots, the pinned set), is an act under the dual gate and T5 in either
 direction: one half can never remove the other.
 
-- **Isolating with one White Key** is a standing per seat that the minting may grant, bounded by its scope and recorded; the side that owns
-  the seat may revoke a rogue seat of its own on the record alone; the other side may not.
-- **Restoring a signed state** needs one key only when the record shows no tightening since the state was signed; otherwise it is a lift
-  and needs two.
+- **Isolating** is a standing per seat that the minting may grant, bounded by its scope and recorded. Who may start one is no fixed number
+  of keys but the share rule of T39 (it was one White Key); the side that owns the seat may revoke a rogue seat of its own as T39 states;
+  the other side may not.
+- **Restoring a signed state** needs one key only when the record shows no tightening since the state was signed; otherwise it is a lift,
+  and who may initiate it is the share rule of T39 (it was two keys; decision D4 had set that count).
 - **Every tightening names its lift condition** in its record: the evidence against, and the evidence that would lift it, independent of
   the thing that was isolated. A stolen-key isolation lifts on nothing that key signs and ends in re-enrolment.
 
@@ -350,6 +358,9 @@ Derived from: the words (tightening, loosening), Axiom 1, Axiom 3, T5. (Decision
 owner's written White Key rule of 2026-10-25 07:16Z.)
 
 Status: stable since DMP 0.9.0
+Proposed in this pull request (not yet approved): the two fixed counts of the bullets ("one White Key", "needs two") replaced by the share
+rule of T39, from the owner's rule of 2026-10-26 21:42Z. The direction of this section — tighten on one witness, loosen with two — does not
+change.
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -379,6 +390,40 @@ any other: a door that signs its acts and admits what both witnesses refused has
 Derived from: Axiom 1, Axiom 2, Axiom 3, Axiom 4, T6, T24, T24b; the certificate and the window are construction and configuration.
 
 Status: stable since DMP 0.9.0
+Owner: CM coordinator
+Enforced by: DMP-021
+
+## T39 · Exclusion and inclusion by voting share
+
+Locking a part out (an exclusion) and letting it resume (an inclusion) are counted in **voting share**, never in a fixed number of keys.
+The owner's words it carries (2026-10-26 21:42Z): "The simple majority of one side of a DoT, but never while being the simple majority of
+the DoT, in which case it must logically work to restore balance above all, can initiate exclusion. An inclusion must be approved by two
+sides DoT, who can, as they would have to restore balance above all, also not vote with a simple majority which also holds the total
+simple majority." The measure (21:43Z): "It is about is percentage of the voting share, whichever value that happens to be."
+
+- **Exclusion.** A coalition of one side whose share is more than half of that side's total share may initiate an exclusion, but never
+  while its share is also more than half of the DoT's total share: a coalition that holds the total majority works to restore balance
+  above all, and does not extend its reach.
+- **Inclusion.** Both sides must approve. Each side approves by more than half of its own total share, and an approval stands when some
+  approving coalition of that side that holds more than half of the side's share holds no more than half of the DoT's total share: more
+  agreement never voids an approval, and a side's approvers still must not be the total majority.
+- **Shares, not seats.** The share of each voter, and which seats belong to which side, is configuration fixed at the minting (T4), never
+  below the floors (T3a). At the default every White Key holder carries one equal share, so shares are seat counts and the rule is decided
+  by counting seats; the thresholds themselves — more than half of the side, never more than half of the DoT — are fixed by DMP, not
+  configuration. A stricter threshold for acts on the seat set itself stays configuration (T5, T4).
+- **Initiation, not completion.** This rule names who may set an exclusion or an inclusion in motion. The act itself is completed as every
+  act of its layer is: under the dual gate and, for a majority of trust, T5.
+- **The voting share is not the mass.** The mass of T32 pulls and never votes (T5, T32); the voting share is what votes. The two are
+  different quantities and only the voting share decides exclusion and inclusion.
+- **The Duality itself stays out of reach.** One half can never remove the other (T24): setting a half aside is not an exclusion under
+  this rule but a re-minting (G0, T24b).
+
+Derived from: the words (voting share, exclusion, inclusion), Axiom 1, Axiom 4, T3a, T4, T5, T24. (The owner's rule of 2026-10-26 21:42Z
+replaces the fixed key counts for locking a part out and letting it resume; decision D4 had recorded the two-signature rule this follows,
+and the IM chapter's "Orders and the White Key" carries the counts it replaces.)
+
+Status: proposed in this pull request (not yet approved); the constitution has no draft sections, so the section enters only when the owner
+approves this pull request, together with the words it needs in "The words" above.
 Owner: CM coordinator
 Enforced by: DMP-021
 
