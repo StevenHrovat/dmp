@@ -191,7 +191,7 @@ Found while taking the inventory; to be confirmed by the drafting session, not a
 Theorems that no C cites today and that the owner's words created directly (candidates for the two-way check): T20 (time), T31 and T34
 (the floor), T32 and T33 (the field), T37, T38, T-P, T24c, T5, T6.
 
-## 6. State after drafting (2026-10-26 23:00Z) and the verification prompt for the second session
+## 6. State after drafting (2026-10-26 23:00Z) and the prompt for the second session (order set 23:54Z)
 
 The owner decided (2026-10-26 22:40Z): "Let's give it back to Fable here, we can then check if they are really how they should be and
 Team Fable can start by checking that the axioms and theorems actually provide the constraints they claim to." The drafting is done in this
@@ -234,46 +234,71 @@ with *argued* (C4, C10, C14, C21), 3 with *undershoot* (C3: a value's class trav
 clause). Every Lean name cited exists in gravity `main` (232 theorems); whether each theorem's statement says what the Coverage line claims
 is exactly what the second session checks.
 
+**The order of the verifying session (the owner, 2026-10-26 23:54Z, verbatim):** "But since the axioms changed and then the theorems
+will change, while what we want and achieve stays the same, I feel like any C made now, would just be using the wrong tools. Rederiving the
+generalized constraints to be stated simpler while stating the same, should be the last planned part of the session." So the session runs
+in three parts: first the theorem pass (re-derive and renumber against the three axioms), then the verification of the constraints as they
+stand (against the new theorems), and last the re-derivation of the constraints from the new theorems, each stated more simply while
+saying the same thing. What a constraint wants and achieves does not change in that last part; only its wording and its `Derived from:`
+and `Coverage:` links to the theorems are redone. The batch 0 claims (a) to (i) above are claims about the axioms and about T39 and T40,
+so they are tested inside the first part.
+
 Paste-ready prompt for the verifying session:
 
 ```
-You are verifying, not drafting, on StevenHrovat/dmp and StevenHrovat/gravity. Read dmp docs/proposals/c-constraints.md (sections 2, 3,
-6, 8 and 9) and then 01-constitution.md on main at 8d998bb (DMP 0.9.7: all six batches merged 2026-10-26 23:49Z-23:52Z, the owner's
-"Approved for merge in prep for Team Fable"). Start with the claims of batch 0 listed in section 6 ("New claims for the verifying session",
-items a to i), T39 first. Every C section
-is now a constraint with a Derived from: line (the axioms and theorems claimed to achieve it) and a Coverage: line (the Lean theorems
-claimed to reach it, or the part none reaches).
+You work on StevenHrovat/dmp and StevenHrovat/gravity. Read dmp docs/proposals/c-constraints.md (sections 2, 3, 4, 6, 8 and 9) and then
+01-constitution.md on main at 8d998bb (DMP 0.9.7: three axioms, T39 and T40, all six batches merged 2026-10-26 23:49Z-23:52Z on the
+owner's "Approved for merge in prep for Team Fable"). Every C section is a constraint with a Derived from: line (the axioms and theorems
+claimed to achieve it) and a Coverage: line (the Lean theorems claimed to reach it, or the part none reaches).
 
-For every constraint, in the order of the chapter:
-1. The derivation. Does the set named in Derived from: actually imply the constraint's sentence? Write the step that is missing, or say
-   it holds. Treat "construction" and "configuration" as what they are: design choices, not derivations.
-2. The Lean claim. Open every theorem the Coverage line names (gravity evidence/Dmp/*.lean). Does its statement say what the line claims
-   for it? Name every overclaim: a theorem about a weaker object (a standing instead of a class, one item instead of a flow, the shape
-   of the gate instead of the system).
-3. Try to break it. For each constraint marked proven, build a model in Lean (a new file evidence/Dmp/Break<Cn>.lean, core only, no
-   Mathlib) in which the axioms as modelled hold and the constraint's sentence fails, or prove that no such model exists for the part
-   claimed. For each undershoot, state the missing theorem precisely and, where it is small, prove it.
-4. The two-way check. The theorems no constraint cites are T5, T6, T25, T26, T32, T34 (section 8); say for each whether it serves a
-   constraint that should cite it, is a lemma of another theorem, or is a constraint in disguise. The theorems with no Lean naming
-   them are T0, T1, T2, T3 (its clauses b, c, d), T6, T19, T20, T21, T22, T23, T26, T27, T28, T30, T36; say which Gate, Record, Floor
-   or R1Wave theorem covers each implicitly, and which has nothing.
+The session has three parts, in this order (the owner, 23:54Z: "since the axioms changed and then the theorems will change, while what we
+want and achieve stays the same, ... any C made now, would just be using the wrong tools. Rederiving the generalized constraints to be
+stated simpler while stating the same, should be the last planned part of the session"). Do not start a part before the one before it is
+on a draft pull request.
 
-5. The theorem pass (the owner, 23:47Z and 23:49Z: "Since the axioms changed, the theorems would need to all be rederived as well, so I
-   am already renumbering them in my head"; "The theorem pass will be done by TF"). This is the one place you do change DMP text, as a
-   draft pull request on dmp that the owner approves in clusters: (a) re-derive every T section against the three axioms (its Derived
-   from: line rewritten; a Coverage: line as the C sections have; a Serves: line naming the constraints that cite it; the sentence itself
-   unchanged unless the derivation no longer holds, and then say so in the PR); (b) then renumber in one commit, in the order of the
-   chapter, which is the order of proof: T39 becomes T1 (trust and information gate each other), T40 becomes T2 (a minting needs G0 and a
-   DMP-complete state), and the rest follow; put a table "old number, new number" in the chapter intro and move every citation in the
-   chapters, in Gravity's Lean comments and in CM's docs mechanically; (c) keep DMP-021 green (every Derived from: cites only sections
-   above it; the Counts line keeps its parsed shape) and C∞ last (DMP-017). Lean needs no renaming: it names theorems by content.
+PART 1. The theorem pass (the owner, 23:47Z and 23:49Z: "Since the axioms changed, the theorems would need to all be rederived as well, so
+I am already renumbering them in my head"; "The theorem pass will be done by TF"). A draft pull request on dmp that the owner approves in
+clusters:
+  (a) Test the batch 0 claims first, T39 before anything else (section 6, items a to i): typed halves, "no information is ever trusted" as
+      a gate that takes no content, the content-free record, T3d under the balance, the hierarchy, T39 as the first theorem of the stitch,
+      a part as a Duality all the way down grounded in G0's five, the owner as a Duality against DMP-009, T40 as G0 and DMP-complete
+      together. Each claim: holds, or the Lean model that breaks it (evidence/Dmp/Break<Tn>.lean, core only, no Mathlib).
+  (b) Re-derive every T section against the three axioms: its Derived from: line rewritten; a Coverage: line as the C sections have; a
+      Serves: line naming the constraints that cite it; the sentence itself unchanged unless the derivation no longer holds, and then say
+      so in the pull request.
+  (c) Then renumber in one commit, in the order of the chapter, which is the order of proof: T39 becomes T1 (trust and information gate
+      each other), T40 becomes T2 (a minting needs G0 and a DMP-complete state), and the rest follow; put a table "old number, new number"
+      in the chapter intro and move every citation in the chapters, in Gravity's Lean comments and in CM's docs mechanically.
+  (d) Keep DMP-021 green (every Derived from: cites only sections above it; the Counts line keeps its parsed shape) and C∞ last
+      (DMP-017). Lean needs no renaming: it names theorems by content.
 
-Report per constraint: holds / overclaim (what the theorem really says) / counterexample (the Lean file) / missing theorem (stated or
-proven). Put the findings in gravity docs/findings.md as a draft pull request (one row per finding, the owner's queue) and new Lean as
-draft pull requests on gravity; apart from the theorem pass in step 5, change no DMP text and merge nothing: the owner reads the findings
-and decides. Run tools/scrub-scan.sh
-before every push. Roles, not values; no company facts; no model names in commits or pull requests; credit prior art as
-gravity/docs/acknowledgements.md does, Apache 2.0 only.
+PART 2. Verify the constraints as they stand, against the renumbered theorems of part 1. For every constraint, in the order of the chapter:
+  1. The derivation. Does the set named in Derived from: actually imply the constraint's sentence? Write the step that is missing, or
+     say it holds. Treat "construction" and "configuration" as what they are: design choices, not derivations.
+  2. The Lean claim. Open every theorem the Coverage line names (gravity evidence/Dmp/*.lean). Does its statement say what the line
+     claims for it? Name every overclaim: a theorem about a weaker object (a standing instead of a class, one item instead of a flow,
+     the shape of the gate instead of the system).
+  3. Try to break it. For each constraint marked proven, build a model in Lean (evidence/Dmp/Break<Cn>.lean, core only, no Mathlib) in
+     which the axioms as modelled hold and the constraint's sentence fails, or prove that no such model exists for the part claimed.
+     For each undershoot, state the missing theorem precisely and, where it is small, prove it.
+  4. The two-way check. The theorems no constraint cited before the pass are T5, T6, T25, T26, T32, T34 (old numbers, section 8); say
+     for each whether it serves a constraint that should cite it, is a lemma of another theorem, or is a constraint in disguise. The
+     theorems with no Lean naming them were T0, T1, T2, T3 (its clauses b, c, d), T6, T19, T20, T21, T22, T23, T26, T27, T28, T30, T36
+     (old numbers); say which Gate, Record, Floor or R1Wave theorem covers each implicitly, and which has nothing.
+  Report per constraint: holds / overclaim (what the theorem really says) / counterexample (the Lean file) / missing theorem (stated or
+  proven). Put the findings in gravity docs/findings.md as a draft pull request (one row per finding, the owner's queue) and new Lean as
+  draft pull requests on gravity. In this part change no DMP text: the owner reads the findings and decides.
+
+PART 3, last. Re-derive the generalized constraints from the new theorems. What every constraint wants and achieves stays exactly what it
+is now; redo only its wording and its links: each constraint stated more simply while saying the same thing, its Derived from: line
+naming the renumbered theorems that now carry it, its Coverage: line naming the Lean that part 2 confirmed (and the part still unreached),
+the "Where the old rules went" table kept. Where part 2 found an overclaim, the Coverage line says the weaker truth; where it found a
+missing theorem, the constraint cites it once it exists, not before. A draft pull request on dmp, one commit per constraint cluster in the
+order of batches 1 to 5, each merging only on the owner's "approved" for it. Do not widen or narrow any constraint in this part; a
+constraint you believe is wrong is a finding for the owner, not an edit.
+
+Throughout: run tools/scrub-scan.sh before every push; merge nothing; roles, not values; no company facts; no model names in commits or
+pull requests; credit prior art as gravity/docs/acknowledgements.md does, Apache 2.0 only.
 
 The owner's reminder (2026-10-26 23:14Z, 23:15Z): the axioms stitch two very well researched domains, General Relativity and
 Information Theory, together in a new way, and both come with axiom systems of their own. Do not unnecessarily repeat work that has
@@ -281,15 +306,17 @@ already withstood the test of time: where a sentence rests on a standard result 
 singularity and no-hair theorems, Bekenstein–Hawking entropy; Shannon and Khinchin, Landauer, noninterference and the flow lattice;
 Kolmogorov, safety/liveness, k-median on trees, Spanning Tree and its relatives (Perlman, MSTP, distributed MST, shortest-path
 routing), self-reorganising networks (demand-aware self-adjusting networks, splay trees, self-stabilization, gossip topology management),
-potential games, Byzantine agreement; the list with sources is section 4 of the brief), cite it, say where DMP's object differs, and prove only that difference in Lean. New Lean is for the
-stitching, never for the fabric.
+potential games, Byzantine agreement; the list with sources is section 4 of the brief), cite it, say where DMP's object differs, and
+prove only that difference in Lean. New Lean is for the stitching, never for the fabric.
 ```
 
 ## 9. State after the merges (2026-10-26 23:52Z)
 
 All six batches are on dmp main: #15 (902437b), #16 (e8e13ce), #17 (33f5f0b), #18 (76add84), #19 (94b763d), #21 (8d998bb, the head).
 DMP is 0.9.7 with three axioms, T39 and T40, and every C section a constraint. Gravity's vendor/dmp re-pin is a draft pull request on
-gravity; CM's re-pin follows once Gravity's lands (the root chain). The theorem pass is the verifying session's (step 5 of the prompt).
+gravity; CM's re-pin follows once Gravity's lands (the root chain). The verifying session runs in the order the owner set at 23:54Z: the
+theorem pass first, the verification of the constraints second, and last the re-derivation of the constraints from the new theorems,
+stated more simply while saying the same (the prompt in section 6).
 
 ## 8. The theorem pass: what the two-way check found (report, no change proposed yet)
 
