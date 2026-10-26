@@ -121,31 +121,74 @@ Found while taking the inventory; to be confirmed by the drafting session, not a
 Theorems that no C cites today and that the owner's words created directly (candidates for the two-way check): T20 (time), T31 and T34
 (the floor), T32 and T33 (the field), T37, T38, T-P, T24c, T5, T6.
 
-## 6. Paste-ready prompt for the drafting session
+## 6. State after drafting (2026-10-26 23:00Z) and the verification prompt for the second session
+
+The owner decided (2026-10-26 22:40Z): "Let's give it back to Fable here, we can then check if they are really how they should be and
+Team Fable can start by checking that the axioms and theorems actually provide the constraints they claim to." The drafting is done in this
+repository as five stacked draft pull requests, each merging only on the owner's word "approved" for it, in order: #15 (batch 1: C1, C2, C3,
+C18, C19; VERSION 0.9.7; the chapter intro and the mapping table), #16 (batch 2: C12, C13, C14, C15, C21; a new draft section of chapter 05),
+#17 (batch 3: C6, C17, C22, C∞), #18 (batch 4: C4 with C5 merged and retired, C7, C16, C24, C25), #19 (batch 5: C9, C10). Each was checked
+with CM's `tools/dmp` (DMP-007, 009, 017, 018 and 021 pass; only the pin differs until Gravity and CM re-pin) and with `tools/scrub-scan.sh`.
+
+**Coverage as claimed, to be verified:** 15 constraints open with *proven* (most of them proven for the shape and argued for the rest), 4
+with *argued* (C4, C10, C14, C21), 3 with *undershoot* (C3: a value's class travelling with it; C18 and C25: a route, T3's no-lockout
+clause). Every Lean name cited exists in gravity `main` (232 theorems); whether each theorem's statement says what the Coverage line claims
+is exactly what the second session checks.
+
+Paste-ready prompt for the verifying session:
 
 ```
-You are drafting on StevenHrovat/dmp (DMP 0.9.6) with StevenHrovat/gravity beside it. Read dmp docs/proposals/c-constraints.md first:
-it holds the owner's words, the task, the clusters, the prior art and every C section quoted in full. Then read 01-constitution.md whole
-and gravity evidence/README.md plus the theorem list (grep '^theorem' evidence/Dmp/*.lean).
+You are verifying, not drafting, on StevenHrovat/dmp and StevenHrovat/gravity. Read dmp docs/proposals/c-constraints.md (sections 2, 3,
+6 and 8) and then 01-constitution.md as it stands on the head of pull request #19 (the five batches #15 to #19 stacked). Every C section
+is now a constraint with a Derived from: line (the axioms and theorems claimed to achieve it) and a Coverage: line (the Lean theorems
+claimed to reach it, or the part none reaches).
 
-Task: recast every C section of 01-constitution.md as a derived constraint, per section 3 of the brief: one or two general sentences,
-no named system; a Derived from: line that names the axioms and T theorems that achieve it; a Coverage: line (proven with Lean names,
-argued, or undershoot naming the part no theorem reaches); operating detail moved to its chapter; a mapping table old C to new home in the
-chapter intro; every cross reference in the other chapters rewritten; C-infinity as the root constraint, last. Keep DMP-007, DMP-009,
-DMP-017 and DMP-021 green (cm tools/dmp holds the rules; read Rules.Derivation.cs and Rules.Stopgap.cs). Keep each C's number unless the
-owner says otherwise.
+For every constraint, in the order of the chapter:
+1. The derivation. Does the set named in Derived from: actually imply the constraint's sentence? Write the step that is missing, or say
+   it holds. Treat "construction" and "configuration" as what they are: design choices, not derivations.
+2. The Lean claim. Open every theorem the Coverage line names (gravity evidence/Dmp/*.lean). Does its statement say what the line claims
+   for it? Name every overclaim: a theorem about a weaker object (a standing instead of a class, one item instead of a flow, the shape
+   of the gate instead of the system).
+3. Try to break it. For each constraint marked proven, build a model in Lean (a new file evidence/Dmp/Break<Cn>.lean, core only, no
+   Mathlib) in which the axioms as modelled hold and the constraint's sentence fails, or prove that no such model exists for the part
+   claimed. For each undershoot, state the missing theorem precisely and, where it is small, prove it.
+4. The two-way check. The theorems no constraint cites are T5, T6, T25, T26, T32, T34 (section 8); say for each whether it serves a
+   constraint that should cite it, is a lemma of another theorem, or is a constraint in disguise. The theorems with no Lean naming
+   them are T0, T1, T2, T3 (its clauses b, c, d), T6, T19, T20, T21, T22, T23, T26, T27, T28, T30, T36; say which Gate, Record, Floor
+   or R1Wave theorem covers each implicitly, and which has nothing.
 
-Work in batches, one cluster per message to the owner (brief section 3, table "Batches"): old text and new text both quoted in full,
-the discharge, the coverage state, one recommendation where a choice exists, then "approved?". One draft pull request on dmp per batch
-(stacked on the previous batch's branch). Merge nothing without the owner's own word "approved" for that batch. Run tools/scrub-scan.sh
-before every push. Credit prior art (GSN, Common Criteria rationale, Gotel and Finkelstein) in the chapter intro or in
-gravity/docs/acknowledgements.md; Apache 2.0 only.
-
-When all five batches are approved, do not touch the T sections. Report instead: which theorems no constraint cites, which constraints cite
-a theorem with no Lean, and which theorem or preamble text still names a C. The owner decides whether the theorems get the same pass.
-
-Rules: look it up, don't guess (quote the line you change); roles, not values; no company facts; no model names in commits or PRs.
+Report per constraint: holds / overclaim (what the theorem really says) / counterexample (the Lean file) / missing theorem (stated or
+proven). Put the findings in gravity docs/findings.md as a draft pull request (one row per finding, the owner's queue) and new Lean as
+draft pull requests on gravity; change no DMP text and merge nothing: the owner reads the findings and decides. Run tools/scrub-scan.sh
+before every push. Roles, not values; no company facts; no model names in commits or pull requests; credit prior art as
+gravity/docs/acknowledgements.md does, Apache 2.0 only.
 ```
+
+## 8. The theorem pass: what the two-way check found (report, no change proposed yet)
+
+Run on the text at the head of #19.
+
+**Theorems no constraint cites.** T5 (majority of trust), T6 (stand-ins take over), T25 (thin surfaces), T26 (retention), T32 (the VIBE
+field), T34 (three roads to the floor). Reading: T5 serves C17 once C17 says how a half of people decides (the voting-share rule of the
+exclusion and inclusion brief, `docs/proposals/exclusion-inclusion.md`, lands exactly there); T6 is a lemma of T3 (continuity of the people
+half); T25 is a constraint in disguise ("what comes from outside enters as opaque bytes until admitted") that C12 or C13 should cite; T26 is a
+lemma of Axiom 3 and T24; T32 serves Axiom 4 and T33 (the direction, not a constraint); T34 serves C9 and C3 (containment) and should be cited
+there.
+
+**Theorems the evidence chain does not name.** Of 30 T sections, 15 are named by at least one Lean file (T3a, T4, T5, T24, T24c, T25, T29,
+T31, T32, T33, T34, T35, T37, T38, T-P) and 15 by none: T0, T1, T2, T3 (clauses b, c, d), T6, T19, T20, T21, T22, T23, T26, T27, T28, T30,
+T36. Some are covered without being named (T0 and T1 by `Gate.lean`, T21 by `Record.lean`'s entries that carry counts and verdicts only, T20's
+monotone clock by `R1Wave.wv_never_back`, T27's transitions by `Floor.lean`); T2, T3b to T3d, T6, T19, T22, T23, T26, T28, T30 and T36 have
+nothing.
+
+**Theorems that name a C.** No `Derived from:` line of a T section names a C. One body does: T29 ("the finding is a stopgap catch (C∞)"),
+which is the meta-rule and fine.
+
+**Does the T series need the same pass?** Not a rewrite: every T is already a derivation with a `Derived from:` line, and the sentences are the
+owner's. What they lack is the same `Coverage:` line, so that the 15 theorems without Lean show as undershoots of the evidence chain instead
+of reading as proven, and a `Serves:` line naming the constraints each one discharges, so that the two-way check is in the text and not in a
+script. Recommendation: one pull request that adds those two lines to the 30 T sections and changes no sentence, after the five batches are
+approved; the verifying session's findings then land on it. The owner decides.
 
 ## 7. The C sections, quoted in full (DMP 0.9.6, `01-constitution.md`, commit `ed23322`)
 
