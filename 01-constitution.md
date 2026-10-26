@@ -740,16 +740,17 @@ Singularities of different layers may be the same cluster, as long as that is va
 What an agent learns that no tier held goes back into Tier 1 through the MW net's intake.
 
 Derived from: the words (admission, containment, door), Axiom 1, Axiom 2 (a position in the network is never evidence, so a layer cannot
-grant), Axiom 3 (what an agent learned is a record both witnesses need; counts always, content by grant), T3 (no single part's loss stops a singularity: at least three nodes), T21, T27, T36 (every crossing of
-the horizon is an act, so it comes last and only when needed), C1 (every route runs through the one door, so asking it first costs no
-extra crossing). The owner's words (2026-10-26): "Tier 1 information is the information in the MW net, which is always consulted first
-and then outward as the VIBE net dictates"; "Privacy could be seen as singularities of VIBE space where not even the MW-net can pull the
-information out"; the knowledge warehouse "would simply be the knowledge layer, that is overlayed dynamically on the VIBE field, same with
-the other stuff", which "also makes the system extensible for any other kind of information layer", for example "network layout while maintaining ultimate
-trust in the cloud, or other load balancing"; "CMOS contains all the information inside its Event Horizon"; "Each singularity
-should always be a cluster of at least 3 nodes. All singularities of the differnent layers may of course be the same, as long as it is
-DMP valid, but each singularity must still obey DMP." Evidence chain: `Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean`
-and `Dmp/R1Lens.lean` (a layer's reorganisation) in the gravity repository.
+grant), Axiom 3 (what an agent learned is a record both witnesses need; counts always, content by grant), T3 (no single part's loss stops a
+singularity: at least three nodes), T21, T27, T36 (every crossing of the horizon is an act, so it comes last and only when needed), C1
+(every route runs through the one door, so asking it first costs no extra crossing). The owner's words (2026-10-26): "Tier 1 information is
+the information in the MW net, which is always consulted first and then outward as the VIBE net dictates"; "Privacy could be seen as
+singularities of VIBE space where not even the MW-net can pull the information out"; the knowledge warehouse "would simply be the knowledge
+layer, that is overlayed dynamically on the VIBE field, same with the other stuff", which "also makes the system extensible for any other
+kind of information layer", for example "network layout while maintaining ultimate trust in the cloud, or other load balancing"; "CMOS
+contains all the information inside its Event Horizon"; "Each singularity should always be a cluster of at least 3 nodes. All singularities
+of the differnent layers may of course be the same, as long as it is DMP valid, but each singularity must still obey DMP." Evidence chain:
+`Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean` and `Dmp/R1Lens.lean` (a layer's
+reorganisation) in the gravity repository.
 
 Status: draft (redrafted 2026-10-26; was stable since DMP 0.1.0)
 Owner: CM coordinator
