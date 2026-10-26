@@ -224,7 +224,10 @@ standing, and still acts; the Gate and Floor theorems (`Floor.road_gate`, `Recor
 words after 23:28Z: a part is a Duality, a half is a part, so the structure is a Duality all the way down and grounds in G0's five
 (`Layer.lean`'s `DoT.minted` reads a person list today; it should read five parts). (h) G0 after 23:32Z: the owner may itself be a
 Duality; when it is, both halves approve a change to the base DMP; check that nothing in the preamble's "Who maintains it" or in DMP-009
-assumes one signer.
+assumes one signer. (i) **T40** (the owner, 23:46Z: "Minting can only originate from both G0 and a DMP-complete state"): in Lean,
+`Recipe.verdict_proven_iff` and `Cmb` already say a seal needs the proven verdict; what is missing is the conjunction with G0 (a minting
+record naming at least five parts); state the theorem that no minted instance exists without both, and try a model that mints from a
+proven recipe with fewer than five parts or from five parts with an unproven line.
 
 **Coverage as claimed, to be verified:** 15 constraints open with *proven* (most of them proven for the shape and argued for the rest), 4
 with *argued* (C4, C10, C14, C21), 3 with *undershoot* (C3: a value's class travelling with it; C18 and C25: a route, T3's no-lockout
