@@ -55,19 +55,25 @@ and its record is the merged pull request the owner approved.
   DMP-009 refuses a change to the wording of a grant the owner did not approve.
 - **The standing grants here.** The CM coordinator keeps DMP and its marks (status, owner, enforcing rule) and merges what the owner
   approved; a constellation coordinator proposes changes to its own chapter; a change to the constitution needs the owner's approval.
-- **Clone, press, mint.** Any organisation may copy the root repositories onto its own systems. Whoever holds that copy is its owner, with
-  the same standing as above, and nothing in the copy depends on the copy it came from. The owner presses an instance (G0, T-P), and once
-  a pressing of the same configuration has passed, the organisation mints it (C17). The minting is a trust rotation: every key rotates,
+- **Clone, press, mint.** Any party (the words) may copy the root repositories onto its own systems. Whoever holds that copy is its owner,
+  with the same standing as above, and nothing in the copy depends on the copy it came from. The owner presses an instance (G0, T-P), and
+  once a pressing of the same configuration has passed, the party mints it (C17). The minting is a trust rotation: every key rotates,
   the owner role ends, and ultimate authority rests with the White Key holders under a majority of trust (T5). The minted instance is
   contained on its own: trust never crosses instances, so it shares none with any other CMOS, the root repositories included; a newer
   DMP reaches it only as information through an entry path its own two witnesses opened (T-P).
+- **Dwarf galaxies.** A party may instead be minted under the roots of another: its instance is then a **dwarf galaxy** of that **main
+  galaxy**. Everything in a dwarf galaxy trusts the main galaxy and nothing else. It holds no roots of its own, so it is not a separate
+  instance under T-P and no trust crosses an instance boundary; and each dwarf galaxy contains its own information from every other dwarf
+  galaxy of the same main galaxy (the words, "contains"; C12). A provider that runs CMOS for others is a main galaxy, and each of its
+  tenants is a dwarf galaxy: the tenants trust the provider, never each other.
 
-Derived from: G0, T-P, Axiom 1, Axiom 3, T1, T5, T24, C17. The owner (2026-10-26): "As the root DMP/IM/CM repos, they are in a permanent
+Derived from: the words (party, contains), G0, T-P, Axiom 1, Axiom 3, T1, T5, T24, C12, C17. The owner (2026-10-26): "As the root DMP/IM/CM repos, they are in a permanent
 non-minted state, so the ultimate authority goes to the owner (which is already defined and can from there be passed down/extended to
 agents/people etc.), until a minting takes place, at which point ultimate authority rests with the WKHs"; "So theoretically any company
 can git clone the repos to their own server, become the owner, then mint and have their own, fully contained, CMOS."
 
-Status: draft (proposed 2026-10-26; replaces the text stable since DMP 0.1.0)
+Status: draft
+Proposed: 2026-10-26, awaiting the owner (replaces the text stable since DMP 0.1.0).
 Owner: CM coordinator
 Enforced by: DMP-009
 
@@ -100,7 +106,8 @@ should be done that way. Everything should be complete in itself. DMP stands sin
 repo. IM has DMP and Gravity in the version it is intended for. CM contains all that is needed for it to be axiomatically sound. This
 seems logical for me and also fulfils the Event Horizon guarantee."
 
-Status: draft (proposed 2026-10-26)
+Status: draft
+Proposed: 2026-10-26, awaiting the owner.
 Owner: CM coordinator
 Enforced by: none yet
 
@@ -116,8 +123,8 @@ Enforced by: DMP-007
 
 ## How DMP hardens
 
-Until CMOS runs an organisation in production, DMP is best-effort and always changing. When it does, the chapters harden: many
-hands from that organisation go over them with great effort, and once final they are set in stone. Until then "written once"
+Until CMOS runs a party in production, DMP is best-effort and always changing. When it does, the chapters harden: many
+hands from that party go over them with great effort, and once final they are set in stone. Until then "written once"
 is true of the constitution only.
 
 Status: stable since DMP 0.1.0

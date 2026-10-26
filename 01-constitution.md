@@ -36,6 +36,8 @@ body of people), **evidence** (what a witness verifies) and **time**.
   list; the list is configuration (T4).
 - A **layer** is a place where trust is decided; its two witnesses are its **halves**; the pair at a layer is the **Duality of Trust** (DoT).
 - A **record** is evidence that outlives the act it is about.
+- A **party** is whoever runs CMOS for itself: a person at home, a group, an organisation, a provider and each of its tenants alike. DMP
+  never asks what kind of party it is.
 - A part is **inside** at a time when a standing for it from both witnesses of its layer is valid then. A **door** is any point of use. A
   **surface** is a part whose standing includes receiving from parts that hold none. The **perimeter** is the set of what is inside.
 - **Admission** is a grant: a record that names a piece of information's class and provenance, so that parts trusted for that class may act
@@ -55,8 +57,8 @@ body of people), **evidence** (what a witness verifies) and **time**.
 - A **tightening** is a witness withdrawing or withholding its own trust in a part it gates; a **loosening** is anything that lets an act
   happen that would not have happened before. Both are said of whose trust changes, never of an act alone.
 
-Status: stable since DMP 0.9.3
-Amended: the definition of "contains" approved by the owner 2026-10-26 14:01Z; the definition of "DMP-complete" approved by the owner
+Status: stable since DMP 0.9.4
+Amended: the definition of "party" proposed 2026-10-26, awaiting the owner; the definition of "contains" approved by the owner 2026-10-26 14:01Z; the definition of "DMP-complete" approved by the owner
 2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-021
@@ -124,7 +126,7 @@ Enforced by: none yet
 ## G0 · The ground
 
 The dual gate cannot witness its own first instance: somebody has to trust the first two witnesses. That is the **minting** (C17, the
-ceremony that forms LHC and makes the White Keys), done by people the organisation already trusts, outside CMOS. It is stated, not derived.
+ceremony that forms LHC and makes the White Keys), done by people the party already trusts, outside CMOS. It is stated, not derived.
 
 - Until the first LHC is minted, the owner's own words stand for both halves and the record says `LHC pending`. Every gate in DMP that asks
   for the owner's words is G0, not a theorem.
@@ -133,7 +135,7 @@ ceremony that forms LHC and makes the White Keys), done by people the organisati
 - A **pressed** instance is G0 as a standing mode: a minting with owner-authorised stand-ins and an owner key whose fresh signed challenge
   the instance requires. Both of its witnesses trace to one person, so it is marked as pressed in every artefact it issues, and nothing it
   does is fully trusted by a minted instance (T-P).
-- The loss of a whole half is recovered only by a new minting: the organisation re-grounds the Duality outside CMOS, as at the first
+- The loss of a whole half is recovered only by a new minting: the party re-grounds the Duality outside CMOS, as at the first
   minting, and ratifies or revokes what the surviving half held.
 - **Mint prep.** A minting is tried only for a configuration that is provably DMP-complete (the words). Preparing it stores every dependency
   inside the configuration's repository and verifies each one against its pin; without that no White Key is made, and the minting refuses to
@@ -142,8 +144,8 @@ ceremony that forms LHC and makes the White Keys), done by people the organisati
 What else no chain reaches is listed, not hidden, in the assumption register (chapter 06): the DMP text itself, the mapping of code to acts,
 the door's code until its run-time check exists, the failure-class list, the time authorities, the provers' logic, the shared machines.
 
-Status: stable since DMP 0.9.3
-Amended: mint prep approved by the owner 2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
+Status: stable since DMP 0.9.4
+Amended: "party" for "organisation" proposed 2026-10-26, awaiting the owner; mint prep approved by the owner 2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
@@ -854,7 +856,7 @@ Enforced by: DMP-013
 CMOS has no single owner (2026-10-25). It is controlled through the unity of two parts:
 
 - **The Administrator**, always written with a capital The, is a mythical entity, not a person. It is everyone who is allowed to fully
-  administer CMOS, allowed both by the organisation and by CMOS itself.
+  administer CMOS, allowed both by the party and by CMOS itself.
 - **LHC**, the Lighthole Council, is the minting ritual of CMOS. The fellowship of people it binds together, its members, is the other
   part.
 
@@ -870,7 +872,8 @@ scope, built once and tested once (chapter 02, "Foundation bricks are complete")
 Derived from: Axiom 1 at the governance layer, G0 (`LHC pending`), T24b, T24c (every system keeps every other in check); the two
 definitions stay definitions.
 
-Status: stable since DMP 0.3.0
+Status: stable since DMP 0.9.4
+Amended: "party" for "organisation" proposed 2026-10-26, awaiting the owner (stable since DMP 0.3.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
