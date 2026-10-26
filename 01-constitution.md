@@ -135,11 +135,15 @@ ceremony that forms LHC and makes the White Keys), done by people the organisati
   does is fully trusted by a minted instance (T-P).
 - The loss of a whole half is recovered only by a new minting: the organisation re-grounds the Duality outside CMOS, as at the first
   minting, and ratifies or revokes what the surviving half held.
+- **Mint prep.** A minting is tried only for a configuration that is provably DMP-complete (the words). Preparing it stores every dependency
+  inside the configuration's repository and verifies each one against its pin; without that no White Key is made, and the minting refuses to
+  even start. The root repositories are never minted, so they need not hold their dependencies and stay lean.
 
 What else no chain reaches is listed, not hidden, in the assumption register (chapter 06): the DMP text itself, the mapping of code to acts,
 the door's code until its run-time check exists, the failure-class list, the time authorities, the provers' logic, the shared machines.
 
-Status: stable since DMP 0.9.0
+Status: stable since DMP 0.9.3
+Amended: mint prep proposed 2026-10-26, awaiting the owner (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
