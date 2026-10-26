@@ -47,8 +47,9 @@ Enforced by: DMP-007
 
 DMP, IM, CM and Gravity are the **root repositories**. They are text and code, never an instance of CMOS, and they are never minted: they
 stay under G0 for good, with `LHC pending` in their record. In them the **owner**, the person who holds a copy of the root repositories,
-stands for both halves (G0). Every change to the constitution or to a stable section, and every grant of authority, is an act of the owner,
-and its record is the merged pull request the owner approved.
+stands for both halves (G0). The owner can be a Duality, but does not have to be; when it is one, both halves approve every change to the
+base DMP its CMOS is derived from (G0, the owner 2026-10-26 23:32Z). Every change to the constitution or to a stable section, and every grant
+of authority, is an act of the owner, and its record is the merged pull request the owner approved.
 
 - **Grants.** The owner may grant part of this authority to other parts (an agent, a coordinator, a person) for named acts. A grant is a
   record (Axiom 3) with a bound (T1); the owner alone may withdraw it, as a tightening (T24); it is never passed on unless it says so. Rule
@@ -73,7 +74,7 @@ agents/people etc.), until a minting takes place, at which point ultimate author
 can git clone the repos to their own server, become the owner, then mint and have their own, fully contained, CMOS."
 
 Status: stable since DMP 0.9.4
-Approved: by the owner 2026-10-26 15:19Z (replaces the text stable since DMP 0.1.0).
+Approved: by the owner 2026-10-26 15:19Z (replaces the text stable since DMP 0.1.0); the owner as a Duality, the owner 2026-10-26 23:32Z.
 Owner: CM coordinator
 Enforced by: DMP-009
 
