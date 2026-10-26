@@ -850,7 +850,7 @@ Coverage: proven for position never grants (`Config.relayout_never_votes`, by re
 floor is T3's premise and has no theorem).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0, redrafted 0.9.3 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0, redrafted 0.9.3 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -869,7 +869,7 @@ Coverage: proven for the order (`tr_milky_way_first`, `tr_exit_last`); argued fo
 models an asker or an intake).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.2.0, redrafted 0.9.3 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.2.0, redrafted 0.9.3 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -885,7 +885,7 @@ the record). Which paths exist and the lines an agent writes are construction (c
 Coverage: argued. No theorem models an author joining sources; the bound (no unsourced answer) is C21's, the completeness is the direction's.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -905,7 +905,7 @@ Coverage: proven for the shape (`Gate.stale_never_passes`: evidence past its val
 the read-back (no theorem models a write's expected state).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-012
 
@@ -1010,7 +1010,7 @@ itself; a memory is not evidence), Axiom 3 (the source named is the record), T0.
 Coverage: argued. No theorem models a statement as an act; until DMP 0.9.7 this rested on a premise, now the words carry it.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.6.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.6.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
