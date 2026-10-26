@@ -17,7 +17,8 @@ with the axioms and theorems. That lets us easily spot if we undershoot our goal
 with no named system, what the axiom system must achieve. Its `Derived from:` line names the axioms and theorems that achieve it, and what
 part is construction or configuration. Its `Coverage:` line says how far the proof chains reach it: **proven** (the Lean evidence chain in
 Gravity reaches the whole constraint; the theorem names follow), **argued** (the text derives it, no Lean yet) or **undershoot** (a part of
-the constraint that no theorem reaches, named, never hidden). The check runs both ways: a constraint without a theorem is an undershoot of the
+the constraint that no theorem reaches, named, never hidden). Most constraints are reached in part; the line then says which part each state
+applies to and opens with the weakest state. The check runs both ways: a constraint without a theorem is an undershoot of the
 axiom system; a theorem no constraint needs is a theorem looking for its purpose. A constraint keeps the number of the rule it came from and
 the constraints stand in clusters, not in number order. What a rule said about *how* (an agent's steps, a protocol's table) is not a
 constraint and lives in the chapter that explains it; the table "Where the old rules went" below maps every sentence. The shape is
@@ -1093,9 +1094,9 @@ Derived from: Axiom 1 (a deployment is an act), Axiom 2 (checked on the exact co
 the last route cuts a half off), Axiom 4 (the gaps only shrink). Channels, the route register, its cap and the workflow register are
 construction (DMP-020).
 
-Coverage: proven for the exact-commit shape (`Gate.stale_never_passes`, `Recipe.verdict_proven_iff`, `Recipe.one_unproven_line_unproves`: one
-line the chains do not carry unproves the whole); undershoot for no lockout: no theorem models a route, and T3's clause has none (shared with
-C18). The missing theorem: after any single act every half keeps at least one route to every action.
+Coverage: undershoot for no lockout: no theorem models a route, and T3's clause has none (shared with C18); the missing theorem is that
+after any single act every half keeps at least one route to every action. Proven for the exact-commit shape (`Gate.stale_never_passes`,
+`Recipe.verdict_proven_iff`, `Recipe.one_unproven_line_unproves`: one line the chains do not carry unproves the whole).
 
 Status: stable since DMP 0.9.7
 Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.8.0 before that).
