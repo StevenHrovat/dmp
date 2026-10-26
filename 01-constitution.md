@@ -33,7 +33,7 @@ serves an objective.
 | C2 | Every message verifies itself | C2 · Every message is its own evidence; the Law block is unchanged | "no public port opens before the verifier passed its class": chapter 06 "Where the class gates" |
 | C3 | Every value carries its class | C3 · A value reaches only parts trusted for its class | the token on every value and the identification axis: chapter 05 (the shield) |
 | C18 | IM stays backwards compatible once it is locked | C18 · A weakness is evidence against what it claims, never against the part | the lock, additions only, the corpus, the contained path: chapter 04 "Compatibility after the lock", DMP-015 |
-| C19 | A request is served only when it is secure and meant | C19 · Two witnesses on every served request, verified by the server itself | the two masters and how the signatures travel: chapter 04 "Serving at a warehouse", DMP-016 |
+| C19 | A request is served only when it is secure and meant | C19 · Two halves on every served request: trust and information, each verified by the server itself | the two masters and how the signatures travel: chapter 04 "Serving at a warehouse", DMP-016 |
 | C12 | Information is tiered | C12 · Position never grants, and routing reaches everything inside | the tiers, the layers in use, Lensing, credentials, the three-node floor, the owner's words: chapter 05 "The information tiers and the layers" |
 | C13 | The nearest tier is asked first | C13 · The record inside is read before anyone outside is asked | the agent's steps: chapter 14 "Ask the nearest tier first", "Knowledge goes back into Tier 1" |
 | C14 | Every path is combined | C14 · An answer rests on every piece of evidence its author can verify | the list of paths and the `Paths combined:` line: chapter 14 "Combine every path" |
@@ -971,20 +971,26 @@ Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since 
 Owner: Milky Way coordinator
 Enforced by: DMP-015
 
-## C19 · Two witnesses on every served request, verified by the server itself
+## C19 · Two halves on every served request: trust and information, each verified by the server itself
 
-A part serves a request only when the request carries the trust of both witnesses of its layer: the one that answers for security (the
-request is secure) and the one that answers for operation (the request is meant). The serving part verifies each itself at the point of use;
-that a carrier already checked the request does not count. A right to speak for one witness counts only when the other witness has signed
-that right too.
+A part serves a request only when the request carries both halves of its layer's Duality: the half that owns trust (the request may be
+served: who asks, under what standing) and the half that owns information (the request is meant: what is asked, and whether it is right to
+serve it). Neither half overrules the other; they keep each other constantly in check, and the serving part verifies both itself at the
+point of use; that a carrier already checked the request does not count. A right to speak for one half counts only when the other half has
+signed that right too.
 
-Derived from: Axiom 1 (two witnesses, each with full reach, gated only by the other), Axiom 2 (a carrier's check is not the server's
-evidence), T24b (a grant to sign for a witness is a lockstep act), T38 (the two halves of the layer that serves information). Which two
-parts hold the halves, and how their signatures travel in a message, are construction (chapter 04 "Serving at a warehouse").
+The owner (2026-10-26): "One authority owns Trust, the other owns Information. To exist inside of DMP, they are required to keep each other
+constantly in check and balance so that no element can overrule the other."
+
+Derived from: Axiom 1 (two witnesses, each with full reach, gated only by the other, the stricter stands), Axiom 2 (a carrier's check is not
+the server's evidence), Axiom 4 (the halves keep each other in balance), T24b (a grant to sign for a half is a lockstep act), T24c (a half
+that contradicts the state both certified has incriminated itself), T38 (the two responsibilities of an information layer). Which parts hold
+the two halves, and how their signatures travel in a message, are construction (chapter 04 "Serving at a warehouse").
 
 Coverage: proven for the shape (`Gate.gate_pass_iff`, `Gate.act_needs_both_with_evidence`, `Layer.DoT.gate_pass_needs_both`,
 `Recipe.pass_has_two_live_witnesses`: a pass at any line means two independent halves both passed on live evidence); argued for "never taken
-from a carrier" (Axiom 2 per component, the evidence chain's job) and for the co-signed right to speak (no theorem models a grant to sign).
+from a carrier", for the co-signed right to speak, and for the halves being one of each kind: the model types no half, so "a Duality holds one
+trust half and one information half" is a theorem still to add.
 
 Status: stable since DMP 0.9.7
 Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
