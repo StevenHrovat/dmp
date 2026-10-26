@@ -192,7 +192,7 @@ part itself is part of a higher order DoT. Management and experts turned into an
 Derived from: the words (layer, halves, independent), Axiom 1, G0.
 
 Status: stable since DMP 0.9.5
-Proposed: 2026-10-26, awaiting the owner.
+Approved: by the owner 2026-10-26 15:36Z ("Approved!").
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -727,7 +727,7 @@ Derived from: T1 (the rule is trust bounded, written for agents), T38 (every lay
 is configuration (T4).
 
 Status: stable since DMP 0.9.5
-Proposed: 2026-10-26, awaiting the owner (stable since DMP 0.1.0 before that).
+Amended: grant abstracted onto T38, approved by the owner 2026-10-26 15:36Z (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-009
 
