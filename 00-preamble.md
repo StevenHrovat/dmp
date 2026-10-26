@@ -97,9 +97,9 @@ To hold a repository is to carry a byte-for-byte copy of it in a folder of its o
 version, and a sha256 over its files in ordinal path order. A copy that no longer matches its pin is refused by the gate. Nothing ever
 points back up the chain, so a clone of any root repository is whole without the network, and nothing a later repository does can change
 an earlier one. The chain is the Event Horizon guarantee for the root repositories: everything each one needs is inside its own boundary,
-and no trust crosses that boundary (the words, "contains"; Axiom 4; T37).
+and no trust crosses that boundary (the words, "contains"; Axiom 1; T37).
 
-Derived from: the words (contains, DMP-complete), Axiom 1, Axiom 4, G0 (mint prep), T37, C12, and "Who maintains it". The owner (2026-10-26): "DMP is the ultimate
+Derived from: the words (contains, DMP-complete), Axiom 1 (the gate and the balance), G0 (mint prep), T37, C12, and "Who maintains it". The owner (2026-10-26): "DMP is the ultimate
 abstraction layer between information layers and how they interact, as well as how their interaction shapes the VIBE field through
 interconnected layers of separate information types. If something can be broken down to a layer or a sublayer of other information, it
 should be done that way. Everything should be complete in itself. DMP stands singular. Gravity has the DMP version it is based on in its
