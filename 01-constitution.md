@@ -768,7 +768,7 @@ Coverage: argued. The nearest theorems are the frame rule (`Recipe.extend_preser
 and `Standing.loosening_needs_both`; nothing models a contract or its version.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint and merged with C5 (financial data freezes at production), approved by the owner 2026-10-26 (both stable since
+Amended: recast as a constraint and merged with C5 (financial data freezes at production), approved by the owner 2026-10-26 23:49Z (both stable since
 DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: none yet
@@ -794,7 +794,7 @@ intersection of the grants; `Recipe.pass_has_two_independent_witnesses`: whateve
 `Standing.loosening_needs_both`); argued for the grant as a readable record with a bound (no theorem models a grant's wording or scope).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, the grant unchanged, approved by the owner 2026-10-26 (stable since DMP 0.1.0, grant abstracted 0.9.5 before that).
+Amended: recast as a constraint, the grant unchanged, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0, grant abstracted 0.9.5 before that).
 Owner: CM coordinator
 Enforced by: DMP-009
 
@@ -812,7 +812,7 @@ Coverage: proven for the recipe (`Recipe.file_determines`: the recipe read back 
 system is the one its recipe describes (that is the evidence chain per deployment, C25).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-004
 
@@ -874,7 +874,7 @@ Coverage: proven for position never grants (`Config.relayout_never_votes`, by re
 floor is T3's premise and has no theorem).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0, redrafted 0.9.3 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0, redrafted 0.9.3 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -893,7 +893,7 @@ Coverage: proven for the order (`tr_milky_way_first`, `tr_exit_last`); argued fo
 models an asker or an intake).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.2.0, redrafted 0.9.3 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.2.0, redrafted 0.9.3 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -909,7 +909,7 @@ the record). Which paths exist and the lines an agent writes are construction (c
 Coverage: argued. No theorem models an author joining sources; the bound (no unsourced answer) is C21's, the completeness is the direction's.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -929,7 +929,7 @@ Coverage: proven for the shape (`Gate.stale_never_passes`: evidence past its val
 the read-back (no theorem models a write's expected state).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-012
 
@@ -947,7 +947,7 @@ Coverage: proven for the shape (`Standing.loosening_needs_both`); argued for the
 minting declares, T4).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-013
 
@@ -971,7 +971,7 @@ Coverage: proven for the shape (`Ground.minted_no_single_control`, `Layer.one_pe
 both halves' words" (the register is construction, DMP-014).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0, "organisation" replaced 0.9.4 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0, "organisation" replaced 0.9.4 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
@@ -1037,7 +1037,7 @@ itself; a memory is not evidence), Axiom 3 (the source named is the record), T0.
 Coverage: argued. No theorem models a statement as an act; until DMP 0.9.7 this rested on a premise, now the words carry it.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.6.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.6.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -1061,7 +1061,7 @@ line; `Recipe.one_unproven_line_unproves`; `Cmb.sealed_needs_both`, `Cmb.sealed_
 is checked per engine (gravity finding F3: the exporter is one step both kernels share, T29).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.4.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.4.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -1081,7 +1081,7 @@ the plan is chosen by the live field, never the proof, and refused under other p
 gravity finding F10 is open on the restoring environment's capability).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.7.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.7.0 before that).
 Owner: Black Hole coordinator
 Enforced by: none yet
 
@@ -1105,7 +1105,7 @@ after any single act every half keeps at least one route to every action. Proven
 `Recipe.verdict_proven_iff`, `Recipe.one_unproven_line_unproves`: one line the chains do not carry unproves the whole).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.8.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.8.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002, DMP-020
 Not yet checked in cm: the tie between the actions named in the audit log and `DMP/routes.txt`, and the plan's refusal of a
@@ -1143,6 +1143,6 @@ Coverage: proven for the thesis (`Gate.one_witness_never_acts`, `Gate.act_needs_
 acts, and nothing is performed, without both witnesses on live evidence); the meta-rule is not a theorem and has no coverage to claim.
 
 Status: stable since DMP 0.9.7
-Amended: named the root constraint and given its Coverage line, approved by the owner 2026-10-26 (stable since DMP 0.5.0 before that).
+Amended: named the root constraint and given its Coverage line, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.5.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002, DMP-017
