@@ -45,12 +45,19 @@ body of people), **evidence** (what a witness verifies) and **time**.
   gate can only reshape the field so that the boundary moves (an export, T19, or an admission, T27, is that reshaping). The Event Horizon
   contains everything inside it, and a singularity contains what it holds even from the rest of the inside (C12). **Containment** is
   being contained.
+- A configuration of CM, interconnected through IM, is **DMP-complete** when it obeys DMP's axiomatic system completely and provably so:
+  the words, every axiom and every theorem of this constitution hold for all of it, and both chains prove it (C22). The configuration
+  includes the repository it is built from: every dependency needed to build, check, prove, deploy and restore it (the root repositories
+  it holds, packages, toolchains, proof engines, images) is inside that repository, pinned by hash, so the configuration can heal itself
+  with no connection across its Event Horizon (T3). A part where the chains disagree, that neither chain reaches, or that needs anything
+  from outside its repository counts as unproven, and a configuration with an unproven part is not DMP-complete.
 - **Live** means within the validity, at the start of each indivisible step of an act; an act's steps are acts of their own.
 - A **tightening** is a witness withdrawing or withholding its own trust in a part it gates; a **loosening** is anything that lets an act
   happen that would not have happened before. Both are said of whose trust changes, never of an act alone.
 
-Status: stable since DMP 0.9.2
-Amended: the definition of "contains" approved by the owner 2026-10-26 14:01Z (stable since DMP 0.9.0 before that).
+Status: stable since DMP 0.9.3
+Amended: the definition of "contains" approved by the owner 2026-10-26 14:01Z; the definition of "DMP-complete" approved by the owner
+2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -128,11 +135,15 @@ ceremony that forms LHC and makes the White Keys), done by people the organisati
   does is fully trusted by a minted instance (T-P).
 - The loss of a whole half is recovered only by a new minting: the organisation re-grounds the Duality outside CMOS, as at the first
   minting, and ratifies or revokes what the surviving half held.
+- **Mint prep.** A minting is tried only for a configuration that is provably DMP-complete (the words). Preparing it stores every dependency
+  inside the configuration's repository and verifies each one against its pin; without that no White Key is made, and the minting refuses to
+  even start. The root repositories are never minted, so they need not hold their dependencies and stay lean.
 
 What else no chain reaches is listed, not hidden, in the assumption register (chapter 06): the DMP text itself, the mapping of code to acts,
 the door's code until its run-time check exists, the failure-class list, the time authorities, the provers' logic, the shared machines.
 
-Status: stable since DMP 0.9.0
+Status: stable since DMP 0.9.3
+Amended: mint prep approved by the owner 2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
@@ -774,7 +785,8 @@ of the differnent layers may of course be the same, as long as it is DMP valid, 
 `Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean` and `Dmp/R1Lens.lean` (a layer's
 reorganisation) in the gravity repository.
 
-Status: draft (redrafted 2026-10-26; was stable since DMP 0.1.0)
+Status: stable since DMP 0.9.3
+Redrafted: 2026-10-26, approved by the owner 2026-10-26 15:04Z (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -786,7 +798,8 @@ owner (chapter 14). C12 is the other direction of the same loop: what the agent 
 
 Derived from: Axiom 2, Axiom 3 (the record is read first), C12, T36; "first" is construction.
 
-Status: draft (redrafted 2026-10-26; was stable since DMP 0.2.0)
+Status: stable since DMP 0.9.3
+Redrafted: 2026-10-26, approved by the owner 2026-10-26 15:04Z (stable since DMP 0.2.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
