@@ -238,8 +238,9 @@ Paste-ready prompt for the verifying session:
 
 ```
 You are verifying, not drafting, on StevenHrovat/dmp and StevenHrovat/gravity. Read dmp docs/proposals/c-constraints.md (sections 2, 3,
-6 and 8) and then 01-constitution.md as it stands on the head of pull request #21 (batch 0, the three axioms, stacked on the five batches
-#15 to #19). Start with the five claims of batch 0 listed in section 6 ("New claims for the verifying session"). Every C section
+6, 8 and 9) and then 01-constitution.md on main at 8d998bb (DMP 0.9.7: all six batches merged 2026-10-26 23:49Z-23:52Z, the owner's
+"Approved for merge in prep for Team Fable"). Start with the claims of batch 0 listed in section 6 ("New claims for the verifying session",
+items a to i), T39 first. Every C section
 is now a constraint with a Derived from: line (the axioms and theorems claimed to achieve it) and a Coverage: line (the Lean theorems
 claimed to reach it, or the part none reaches).
 
@@ -257,9 +258,20 @@ For every constraint, in the order of the chapter:
    them are T0, T1, T2, T3 (its clauses b, c, d), T6, T19, T20, T21, T22, T23, T26, T27, T28, T30, T36; say which Gate, Record, Floor
    or R1Wave theorem covers each implicitly, and which has nothing.
 
+5. The theorem pass (the owner, 23:47Z and 23:49Z: "Since the axioms changed, the theorems would need to all be rederived as well, so I
+   am already renumbering them in my head"; "The theorem pass will be done by TF"). This is the one place you do change DMP text, as a
+   draft pull request on dmp that the owner approves in clusters: (a) re-derive every T section against the three axioms (its Derived
+   from: line rewritten; a Coverage: line as the C sections have; a Serves: line naming the constraints that cite it; the sentence itself
+   unchanged unless the derivation no longer holds, and then say so in the PR); (b) then renumber in one commit, in the order of the
+   chapter, which is the order of proof: T39 becomes T1 (trust and information gate each other), T40 becomes T2 (a minting needs G0 and a
+   DMP-complete state), and the rest follow; put a table "old number, new number" in the chapter intro and move every citation in the
+   chapters, in Gravity's Lean comments and in CM's docs mechanically; (c) keep DMP-021 green (every Derived from: cites only sections
+   above it; the Counts line keeps its parsed shape) and C∞ last (DMP-017). Lean needs no renaming: it names theorems by content.
+
 Report per constraint: holds / overclaim (what the theorem really says) / counterexample (the Lean file) / missing theorem (stated or
 proven). Put the findings in gravity docs/findings.md as a draft pull request (one row per finding, the owner's queue) and new Lean as
-draft pull requests on gravity; change no DMP text and merge nothing: the owner reads the findings and decides. Run tools/scrub-scan.sh
+draft pull requests on gravity; apart from the theorem pass in step 5, change no DMP text and merge nothing: the owner reads the findings
+and decides. Run tools/scrub-scan.sh
 before every push. Roles, not values; no company facts; no model names in commits or pull requests; credit prior art as
 gravity/docs/acknowledgements.md does, Apache 2.0 only.
 
@@ -272,6 +284,12 @@ routing), self-reorganising networks (demand-aware self-adjusting networks, spla
 potential games, Byzantine agreement; the list with sources is section 4 of the brief), cite it, say where DMP's object differs, and prove only that difference in Lean. New Lean is for the
 stitching, never for the fabric.
 ```
+
+## 9. State after the merges (2026-10-26 23:52Z)
+
+All six batches are on dmp main: #15 (902437b), #16 (e8e13ce), #17 (33f5f0b), #18 (76add84), #19 (94b763d), #21 (8d998bb, the head).
+DMP is 0.9.7 with three axioms, T39 and T40, and every C section a constraint. Gravity's vendor/dmp re-pin is a draft pull request on
+gravity; CM's re-pin follows once Gravity's lands (the root chain). The theorem pass is the verifying session's (step 5 of the prompt).
 
 ## 8. The theorem pass: what the two-way check found (report, no change proposed yet)
 
