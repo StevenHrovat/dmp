@@ -6,8 +6,9 @@ halves of the Duality, G0).
 
 **How this chapter is built (DMP 0.9.0).** The owner asked (2026-10-25 19:38Z) for DMP to be reduced to its axioms about trust: "every
 axiom just has to state how trust relates to the system ... if we can define trust, we can define all other theorems from it." So the
-chapter is an axiom system. It opens with **the words** (names only; a definition forbids nothing), then **three bounds** (the dual gate,
-evidence, the record) and **one direction** (restoration), then **the ground** G0 (the minting, stated, not derived). Everything after
+chapter is an axiom system. It opens with **the words** (names only; a definition forbids nothing), then the **three building blocks** as
+three axioms (the Duality, Trust, Information; until DMP 0.9.7 they were three bounds and one direction, see "The three building blocks"
+below), then **the ground** G0 (the minting, stated, not derived). Everything after
 that is a **theorem**: the T sections are the theorems found while distilling the axioms, the C sections are the **constraints**. Every
 theorem carries a `Derived from:` line that names only axioms, G0, the words and sections above it, so the order of the chapter is the order
 of proof (rule DMP-021). C∞ stands last, as it always has (DMP-017).
@@ -25,6 +26,27 @@ constraint and lives in the chapter that explains it; the table "Where the old r
 prior work: Goal Structuring Notation (Kelly, *Arguing Safety*, 1998; the GSN Community Standard), where a goal with no solution is drawn as
 undeveloped, and the two-way rationale of Common Criteria (ISO/IEC 15408-1), where every objective meets a requirement and every requirement
 serves an objective.
+
+**The three building blocks (DMP 0.9.7).** The owner (2026-10-26 22:56Z): "One authority owns Trust, the other owns Information. To exist
+inside of DMP, they are required to keep each other constantly in check and balance so that no element can overrule the other. Actually, can
+we reduce the 4 Axioms to the 3 basic building blocks? Trust, Information and the DoT?"; (22:59Z) "No Information is ever trusted and no
+information, besides its existence, can be derived from trust."; (23:03Z) "Also extends to the field and how it behaves: Trust is
+gravitational, Information is hierarchical."; (23:10Z) "All natural systems, which exchange information, lay themselves out in hierarchical
+order, which can be optimized for its highest total cohesion, so how much every part of the system has to work to get information, so how
+many nodes it needs to hop. [...] So Gravity, if it is strong enough, is sufficient, as proven by GR, to contain all Information but Entropy,
+while Information naturally organizes itself both to facilitate optimal access across its information layers, but also, as a consequence of
+actively maintaining the median state, naturally keeps the DoT stable." Approved 23:02Z. So the chapter has three axioms, one per building block, and the four axioms
+of DMP 0.9.0 went into them without losing a sentence:
+
+| Was (DMP 0.9.0) | Is (DMP 0.9.7) | What the block adds |
+|---|---|---|
+| Axiom 1 · The dual gate, and Axiom 4 · The direction | Axiom 1 · The Duality | the halves are typed, one owns trust and one owns information; the direction is their balance |
+| Axiom 2 · Evidence | Axiom 2 · Trust | no information is ever trusted; trust is gravitational (the field of T32 is how trust behaves, not a construction on top); gravity contains |
+| Axiom 3 · The record | Axiom 3 · Information | from trust nothing but existence can be derived; admission and containment (the words); information is hierarchical and evolves towards the fewest hops |
+
+The numbers of the three that stayed are kept, so every `Derived from:` line in this chapter and every comment in Gravity keeps its meaning;
+a citation of Axiom 4 in an older text reads Axiom 1. The numbers do not rank the blocks: read in the owner's order (Trust, Information, the
+Duality) the system is the same, since each axiom names only the words and the other two.
 
 **Where the old rules went.** One row per rule recast; the rows grow with each approved cluster.
 
@@ -59,15 +81,15 @@ theorem T4), or *premise* (an assumption no chain reaches, kept in the assumptio
 follows from what it names. The prose arguments behind the axioms (a distillation and a cold review) are working notes kept outside this specification. An argument becomes a proof when both proof chains of chapter 06 carry it:
 Gravity down from these sentences, Lean up from the code (the gravitational wave test). Until then a theorem is argued, not proven.
 
-**Counts.** 3 bounds, 1 direction, 1 ground, 1 meta-rule (C∞). C8 and C11 left the constitution (they are conventions, not about trust:
+**Counts.** 2 bounds, 1 direction that is also the gate: three axioms, one per building block (the Duality, Trust, Information); 1 ground, 1 root constraint (C∞). C8 and C11 left the constitution (they are conventions, not about trust:
 chapter 10 "Language and runtime", chapter 14 "Completion goals, never time plans"); C20 and C26 were never stable; C23 is C∞.
 
 ## The words
 
-Undefined, like point and line: a **part** (anything that can be trusted: a person, a body, an agent, a system, a node, a key, a chain, a
-rule, a deployment), an **act** (anything done in or to CMOS: a message, a read, a write, a grant, a merge, a promotion, a deployment, a
-decision, an answer an agent gives, a seat taken), a **witness** (a part that decides trust for others: Doppler, the operations master, a proof chain, a
-body of people), **evidence** (what a witness verifies) and **time**.
+Undefined, like point and line: a **part** (a Duality of Trust: two halves, one owning trust and one owning information; nothing further is
+said about what a part is made of), an **act** (anything done in or to CMOS: a message, a read, a write, a grant, a merge, a promotion, a
+deployment, a decision, an answer an agent gives, a seat taken), a **witness** (a part that decides trust for others), **evidence** (what a
+witness verifies) and **time**.
 
 - **Trust** is a relation between a witness, a part, an act and a time, written `T(w, p, a, t)`: the witness trusts the part for that act
   at that time. Nothing else; what grounds trust is the evidence axiom.
@@ -75,7 +97,9 @@ body of people), **evidence** (what a witness verifies) and **time**.
 - Two witnesses are **independent** when they share no member of the failure classes declared for their layer in the minting record (host,
   key, author, engine, operating image, person, time source, and whatever else the minting lists). Independence is always relative to that
   list; the list is configuration (T4).
-- A **layer** is a place where trust is decided; its two witnesses are its **halves**; the pair at a layer is the **Duality of Trust** (DoT).
+- A **layer** is a place where trust is decided; its two witnesses are its **halves**, one the **trust half** (it answers whether an act may
+  happen: who, under what standing) and one the **information half** (it answers whether the act is meant and right: what, and whether it
+  is true); the pair at a layer is the **Duality of Trust** (DoT).
 - A **record** is evidence that outlives the act it is about.
 - A part is **inside** at a time when a standing for it from both witnesses of its layer is valid then. A **door** is any point of use. A
   **surface** is a part whose standing includes receiving from parts that hold none. The **perimeter** is the set of what is inside.
@@ -98,81 +122,112 @@ body of people), **evidence** (what a witness verifies) and **time**.
 
 Status: stable since DMP 0.9.3
 Amended: the definition of "contains" approved by the owner 2026-10-26 14:01Z; the definition of "DMP-complete" approved by the owner
-2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
+2026-10-26 15:04Z; the halves typed as trust half and information half approved by the owner 2026-10-26 23:02Z; a part defined as a Duality
+of Trust and nothing further, the owner 2026-10-26 23:28Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-021
 
-## Axiom 1 · The dual gate
+## Axiom 1 · The Duality
 
-A part acts in CMOS only while two independent witnesses, each with full reach over the act and gated only by the other, trust it for that
-act. What they do not both trust does not act: the message is refused, the pull request does not merge, the stage is not promoted, the
-running part is cut off. Every input gets exactly one answer, and the gate has no other way through: no debug switch, no allow list, no
-trusted network. Where the two disagree, the stricter answer stands, and nothing that depends on the disagreement moves until they agree.
-This holds at every layer.
+A part acts in CMOS only while the two halves of its layer, two independent witnesses, each with full reach over the act and gated only by
+the other, trust it for that act. One half owns trust and the other owns information; neither overrules the other, and the two keep each
+other constantly in check and balance. What they do not both trust does not act: the message is refused, the pull request does not merge,
+the stage is not promoted, the running part is cut off. Every input gets exactly one answer, and the gate has no other way through: no debug
+switch, no allow list, no trusted network. Where the two disagree, the stricter answer stands, and nothing that depends on the disagreement
+moves until they agree. This holds at every layer.
+
+The balance is the direction of the system. Every part inside the declared boundary works towards the trust the Duality declared for that
+boundary: what was lost without evidence against it, it restores by evidence; what the boundary claims and lacks, it builds by evidence;
+what it cannot restore, it reports. No part lowers the bar of evidence, widens a grant or moves the boundary to get there. Axiom 2 and
+Axiom 3 only forbid, and together with the gate they govern every step; where they stop a step, the balance waits. A system that does
+nothing keeps the bounds and fails the balance: the balance is the one commitment that asks for something to happen, and it ranks below the
+bounds (T3d).
 
 The owner's words it carries: "Everything that is not fully trusted is automatically ejected" (C∞); "The duality of trust is the single
-concept that goes through every layer and every concept of DMP" (19:36Z); "The entire point of CMOS is to never trust any one
-interconnected system" (14:25Z). It is the gate (what trust does) and the Duality (who makes it) as one commitment: the second sentence of
-the Duality already contains the first.
+concept that goes through every layer and every concept of DMP" (2026-10-25 19:36Z); "The entire point of CMOS is to never trust any one
+interconnected system" (14:25Z); "One authority owns Trust, the other owns Information. To exist inside of DMP, they are required to keep
+each other constantly in check and balance so that no element can overrule the other" (2026-10-26 22:56Z); "All systems that trust each
+other actively work towards increasing the total amount of trust in the network claimed by its declared boundary" (2026-10-25). It is the
+gate (what trust does), the Duality (who makes it) and the balance (where it moves) as one commitment: the second sentence of the Duality
+already contains the first. Until DMP 0.9.7 the gate was Axiom 1 and the balance Axiom 4; an older citation of Axiom 4 reads Axiom 1.
 
-Status: stable since DMP 0.9.0
+Status: stable since DMP 0.9.7
+Amended: Axiom 1 · The dual gate and Axiom 4 · The direction of DMP 0.9.0 merged into one, the halves typed as trust and information,
+approved by the owner 2026-10-26 23:02Z.
 Owner: CM coordinator
 Enforced by: DMP-008, DMP-017, DMP-018, DMP-020
 
-## Axiom 2 · Evidence
+## Axiom 2 · Trust
 
 A witness trusts only on evidence it verified itself at the point of use: from the live state of the part wherever the act's trust depends
 on the part, and from the current state of the record, including every loss recorded against the standing. Never a carrier's check, an
-earlier read, a claim, a memory or a position in the network. The absence of evidence moves nothing: without evidence for an act, the act
+earlier read, a claim, a memory or a position in the network. No information is ever trusted: what a part says, carries, stores or forwards
+is never evidence of itself, however it is signed or where it came from; evidence is what the witness verifies, and a message, a document
+or a record is at most the thing verified, never the verifier. The absence of evidence moves nothing: without evidence for an act, the act
 does not happen; without evidence against a standing, the standing does not change. A standing is evidence with a validity, and no
 validity is longer than the time the minting accepts between a loss and its effect at the point of use.
 
+Trust is gravitational. It is a field, never a position: every standing has a source (the witness that granted it), a depth (its grant
+chain back to the pair) and a freshness that decays with the time since its last live verification. The field bends trustspace, so that a
+boundary contains what no trust reaches (the words), and restoration moves along it, from the pair outward (T32). The field adds levels of
+consequence and of proof demanded, never levels of trust: the weight never votes. Gravity contains: a boundary strong enough bends
+trustspace so that no act carries information across it, and what still leaves is entropy and nothing else (T31, the floor); where trust
+is strong enough, containment needs no wall.
+
 The owner's words it carries: "a write first reads the live state it will change" (C15); "look it up, don't guess" (C21); "That a carrier
 already checked the request does not count; the warehouse checks it again" (C19); "Isolating on silence would hand anyone who can cut a cable
-a switch that shuts the company down" (Q6).
+a switch that shuts the company down" (Q6); "No Information is ever trusted" (2026-10-26 22:59Z); "Trust is gravitational" (23:03Z); "Gravity, if it is strong enough, is sufficient,
+as proven by GR, to contain all Information but Entropy" (23:10Z).
 
-Status: stable since DMP 0.9.0
+Status: stable since DMP 0.9.7
+Amended: Axiom 2 · Evidence of DMP 0.9.0 with "no information is ever trusted", the field and containment, approved by the owner
+2026-10-26 23:02Z, 23:03Z and 23:10Z.
 Owner: CM coordinator
 Enforced by: DMP-012, DMP-018
 
-## Axiom 3 · The record
+## Axiom 3 · Information
 
 Every grant, every use and every loss of trust leaves a record, written at the act, that every witness of that act can read in full and
-that outlives the act. Any other reader sees the counts always and the content only by a grant. A record is kept as long as the law
-requires and no longer than it allows; until then it is never destroyed by fewer than both witnesses of its layer.
+that outlives the act. Any other reader sees the counts always and the content only by a grant. From trust nothing can be derived about
+information but its existence: a standing, a refusal or a count says that information is there, never what it says. Content moves only by
+a grant to a part trusted for its class (an admission, the words), and where no trust reaches, information is contained (the words, T27,
+T37). A record is kept as long as the law requires and no longer than it allows; until then it is never destroyed by fewer than both halves
+of its layer.
 
-The owner's mission it carries: "while maintaining absolute Observability".
+Information is hierarchical. Every piece of information sits in one layer; every layer has its own Duality (T38) and is a tree rooted
+there, which routing walks from the nearest place outward and crosses the horizon last (C12); a sub-layer only tightens what the layer
+above it allows, and nothing in a layer is reached except through its tree. The tree carries no trust: where a piece of information sits
+never decides who may act on it.
 
-Status: stable since DMP 0.9.0
+Information evolves. A system whose parts exchange information lays itself out in that hierarchy and reorganises towards its highest total
+cohesion: the fewest hops in total that its parts need to reach the information they ask for, taken over the composition of requests that
+is representative of the system during its evolution. The layout is the median of that demand, recomputed by both halves of the layer and
+never by one (C12), and it moves only when the demand has; by maintaining that state the information keeps its Duality stable.
+
+The owner's mission it carries: "while maintaining absolute Observability". The owner's words: "no information, besides its existence, can
+be derived from trust" (2026-10-26 22:59Z); "Information is hierarchical" (23:03Z); "Information naturally organizes itself both to
+facilitate optimal access across its information layers, but also, as a consequence of actively maintaining the median state, naturally
+keeps the DoT stable" (23:10Z).
+
+Status: stable since DMP 0.9.7
+Amended: Axiom 3 · The record of DMP 0.9.0 with "from trust only existence", admission, containment, the hierarchy and its evolution,
+approved by the owner 2026-10-26 23:02Z, 23:03Z and 23:10Z.
 Owner: CM coordinator
 Enforced by: DMP-009, DMP-018
-
-## Axiom 4 · The direction
-
-Every part inside the declared boundary works towards the trust the Duality declared for that boundary: what was lost without evidence
-against it, it restores by evidence; what the boundary claims and lacks, it builds by evidence; what it cannot restore, it reports. No part
-lowers the bar of evidence, widens a grant or moves the boundary to get there. The three bounds govern every step; where they stop a step,
-the direction waits.
-
-The owner's words (2026-10-25): "All systems that trust each other actively work towards increasing the total amount of trust in the network
-claimed by its declared boundary." The three bounds only forbid; a system that does nothing keeps them all. The direction is the one
-commitment that asks for something to happen, and it ranks below the bounds (T3d).
-
-Status: stable since DMP 0.9.0
-Owner: CM coordinator
-Enforced by: none yet
 
 ## G0 · The ground
 
 The dual gate cannot witness its own first instance: somebody has to trust the first two witnesses. That is the **minting** (C17, the
-ceremony that forms LHC and makes the White Keys), done by people the owner already trusts, outside CMOS. It is stated, not derived.
+ceremony that forms LHC and makes the White Keys): at least five parts become the White Key Holders, and that minting draws the boundary of
+the instance. No further claim is made about those parts, so that any system can remint and redeploy. It is stated, not derived.
 
 - Until the first LHC is minted, the owner's own words stand for both halves and the record says `LHC pending`. Every gate in DMP that asks
-  for the owner's words is G0, not a theorem.
+  for the owner's words is G0, not a theorem. The owner can be a Duality, but does not have to be. When the owner is one, that Duality, both
+  halves, approves every change to the base DMP the owner's CMOS is derived from (the owner, 2026-10-26 23:32Z).
 - The minting ratifies or revokes every act taken under `LHC pending`, by record class and hash range, never one by one; C∞ catches what
   the classes miss.
 - A **pressed** instance is G0 as a standing mode: a minting with owner-authorised stand-ins and an owner key whose fresh signed challenge
-  the instance requires. Both of its witnesses trace to one person, so it is marked as pressed in every artefact it issues, and nothing it
+  the instance requires. Both of its witnesses trace to one part, so it is marked as pressed in every artefact it issues, and nothing it
   does is fully trusted by a minted instance (T-P).
 - The loss of a whole half is recovered only by a new minting: whoever holds authority over CMOS re-grounds the Duality outside CMOS, as
   at the first minting, and ratifies or revokes what the surviving half held.
@@ -180,11 +235,18 @@ ceremony that forms LHC and makes the White Keys), done by people the owner alre
   inside the configuration's repository and verifies each one against its pin; without that no White Key is made, and the minting refuses to
   even start. The root repositories are never minted, so they need not hold their dependencies and stay lean.
 
+The owner (2026-10-26 23:28Z): "The boundary is not drawn by people, it is drawn by the minting of at least 5 constituent parts that become the
+WKHs. No further claim is made. Otherwise no system could remint and redeploy. The part is defined as a Duality of Trust, one owns trust, the
+other information. No further statements about its constituents."; (23:32Z) "The owner CAN, but does not have to, be a DoT. If the owner
+is, the DoT has to approve changes to the base DMP that the owner's CMOS is derived from."
+
 What else no chain reaches is listed, not hidden, in the assumption register (chapter 06): the DMP text itself, the mapping of code to acts,
 the door's code until its run-time check exists, the failure-class list, the time authorities, the provers' logic, the shared machines.
 
 Status: stable since DMP 0.9.4
-Amended: "organisation" replaced, approved by the owner 2026-10-26 15:19Z; mint prep approved by the owner 2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
+Amended: "organisation" replaced, approved by the owner 2026-10-26 15:19Z; mint prep approved by the owner 2026-10-26 15:04Z; the minting
+of at least five parts draws the boundary, the owner 2026-10-26 23:28Z; the owner may be a Duality, 23:32Z (stable since DMP 0.9.0 before
+that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
@@ -237,6 +299,44 @@ Approved: by the owner 2026-10-26 15:36Z ("Approved!").
 Owner: CM coordinator
 Enforced by: DMP-021
 
+## T39 · Trust and information gate each other
+
+No trust without information: a witness trusts only on evidence it verified itself, and that evidence is the live state of the part and the
+current state of the record, which is information (Axiom 2, Axiom 3). No information without trust: information is inside only while an
+admission holds, an admission is a grant both halves made, and content reaches only a part trusted for its class; what no trust reaches is
+contained where it lies (Axiom 3, Axiom 1, T37). So the two blocks gate each other from the axioms themselves, and only a Duality that is
+both trusted for its acts and holds the information admitted to it is a part of a minted CMOS. A part trusted with no information has nothing
+it may act on; information with no part trusted for it is contained; neither is inside.
+
+The owner (2026-10-26 23:42Z): "They also logically gate each other from the axioms themselves, no trust without information and no
+information without trust. Logically only a DoT, that is both trusted AND has the right information, can be a part of a minted CMOS."
+
+Derived from: the words (part, inside, admission, contains), Axiom 1, Axiom 2, Axiom 3, G0 (minted), T0, T37, T38.
+
+Status: stable since DMP 0.9.7
+Approved: by the owner 2026-10-26 23:42Z (his words above; the section states them).
+Owner: CM coordinator
+Enforced by: DMP-021
+
+## T40 · A minting originates only from G0 and a DMP-complete state
+
+A minting has exactly two sources and needs both: the ground, G0 (the owner's words until the first minting, and the at least five parts
+that become the White Key Holders), and a DMP-complete state of the configuration being minted (the words: every axiom and theorem holds
+for all of it and both chains prove it; mint prep stores and verifies every dependency first). Neither alone mints: G0 without a
+DMP-complete state has nothing proven to ground, and a DMP-complete state without G0 has no first two witnesses (Axiom 1 cannot witness its
+own first instance). A reminting after a loss (G0) and a redeployment of a sealed state are the same act with the same two sources, so any
+system can remint and redeploy, and none can mint from less.
+
+The owner (2026-10-26 23:46Z): "Minting can only originate from both G0 and a DMP-complete state."
+
+Derived from: the words (DMP-complete), G0 (the minting, mint prep), Axiom 1 (the first two witnesses are not derived), Axiom 2 (the proof
+of completeness is evidence verified at the minting, never a claim), T39.
+
+Status: stable since DMP 0.9.7
+Approved: by the owner 2026-10-26 23:46Z (his words above; the section states them).
+Owner: CM coordinator
+Enforced by: DMP-014, DMP-021
+
 ## T1 · Trust is bounded
 
 A part holds trust for named acts only, and never more than both witnesses granted: the acts it may do are the intersection of what each
@@ -275,9 +375,9 @@ this theorem.
   a contact carries no authority, and its rate is configuration. An isolated part keeps this standing (it may always ask); a revoked one
   does not exist inside any more.
 - **T3d · Safety before liveness.** If a whole half refuses or falls silent, nothing loosens: the state holds for as long as the standings'
-  validities run, nothing is promoted, the system is safe and not live, and the direction waits.
+  validities run, nothing is promoted, the system is safe and not live, and the balance waits.
 
-Derived from: Axiom 1, Axiom 2, Axiom 3, Axiom 4 (the restoration after a loss); premise: a half answers by a majority of its nodes (the
+Derived from: Axiom 1 (the gate, and the balance: the restoration after a loss), Axiom 2, Axiom 3; premise: a half answers by a majority of its nodes (the
 node floor); the contact standing is construction.
 
 Status: stable since DMP 0.9.0
@@ -292,7 +392,7 @@ majority of trust, never below a floor. CMOS verifies the configuration, works t
 "Asking CMOS to at the end of the day have ultimate decision authority over how resilient it needs to be is unreasonable to expect" (the
 owner, 2026-10-25 19:10Z).
 
-Derived from: Axiom 1, Axiom 3, Axiom 4, T3.
+Derived from: Axiom 1 (the gate and the balance), Axiom 3, T3.
 
 Status: stable since DMP 0.9.0
 Owner: CM coordinator
@@ -417,7 +517,7 @@ witnesses of that layer); for the top layer that is G0. After a configured numbe
 escalates (T3d). Two nodes suffice for correction by proof; three stay the floor for continuity by majority (T3a). The door is a part like
 any other: a door that signs its acts and admits what both witnesses refused has incriminated itself the same way (T28).
 
-Derived from: Axiom 1, Axiom 2, Axiom 3, Axiom 4, T6, T24, T24b; the certificate and the window are construction and configuration.
+Derived from: Axiom 1 (the gate and the balance), Axiom 2, Axiom 3, T6, T24, T24b; the certificate and the window are construction and configuration.
 
 Status: stable since DMP 0.9.0
 Owner: CM coordinator
@@ -543,7 +643,7 @@ Enforced by: DMP-021
 
 ## T34 · Three roads to the floor
 
-Each of the three bounds alone brings contained information to the entropy floor of T31, by a road of its own:
+Each of the three axioms alone brings contained information to the entropy floor of T31, by a road of its own:
 
 - **By the dual gate alone:** no part is trusted for any act on contained information, so no act reads it (the trap). It stays at the floor
   where it lies.
@@ -574,7 +674,7 @@ grantor. A member's **shortfall** is what the boundary declares for it and its n
 **VIBE field** (Variable Influence Balancing Expression, the owner's name, 2026-10-26) is mass times shortfall, per member; its sum is the
 **potential**, zero exactly when the boundary holds what it declares.
 
-- The direction follows the field downhill: refresh before a lapse, heaviest and stalest first, grantor before child. Restoration moves
+- The balance follows the field downhill: refresh before a lapse, heaviest and stalest first, grantor before child. Restoration moves
   outward from the pair one layer per verification round.
 - The evidence a part must give (chapter 06) rises with its nearness to the pair; windows lengthen with depth; a surface is the field's
   edge.
@@ -590,7 +690,7 @@ grantor. A member's **shortfall** is what the boundary declares for it and its n
 The formulas and their parameters are Gravity's constant (`CM.BlackHole/docs/gravity.md`, "The constant"); the parameters are
 configuration (T4).
 
-Derived from: the words (standing, record), Axiom 1, Axiom 2, Axiom 3, Axiom 4, T1, T4, T23, T24b; the graph, the readout and the members'
+Derived from: the words (standing, record), Axiom 1 (the gate and the balance), Axiom 2 (the field), Axiom 3, T1, T4, T23, T24b; the graph, the readout and the members'
 shares are construction.
 
 Status: stable since DMP 0.9.0
@@ -605,7 +705,7 @@ the two proof chains the forward chain's expected field and the reverse chain's 
 moves the field only where its declaration moved. Each stable publishes a VIBE digest (the canonical field under role names, hashed) next
 to its proof-run hash.
 
-Derived from: Axiom 1 (the two proof chains are two witnesses), Axiom 3, Axiom 4, T4, T32; the digest is construction.
+Derived from: Axiom 1 (the two proof chains are two witnesses; the balance), Axiom 3, T4, T32; the digest is construction.
 
 Status: stable since DMP 0.9.0
 Owner: CM coordinator
@@ -884,8 +984,8 @@ Before a question crosses the horizon or reaches a person, every record inside t
 record it rests on or says that none held it. What was learned outside is written back inside as a record, so that the next asker finds it
 inside.
 
-Derived from: Axiom 2 (evidence the asker verified itself: the record first, never a memory), Axiom 3 (the record is there to be read), Axiom 4
-(what the boundary lacks is built by evidence: the write-back), T36 (a crossing is an act and comes last), C12 (one routing, nearest first).
+Derived from: Axiom 2 (evidence the asker verified itself: the record first, never a memory), Axiom 3 (the record is there to be read), Axiom 1
+(the balance: what the boundary lacks is built by evidence: the write-back), T36 (a crossing is an act and comes last), C12 (one routing, nearest first).
 The order of the tiers and the steps an agent takes are construction (chapter 14 "Ask the nearest tier first", "Knowledge goes back into
 Tier 1").
 
@@ -902,11 +1002,11 @@ Enforced by: DMP-002
 When one source does not give the full picture, the answer rests on every read path its author can verify itself, joined, and says what is
 still unknown. A write path is read through its trail or its dry run, never by writing to find something out.
 
-Derived from: Axiom 2 (only evidence the author verified itself), Axiom 4 (the direction asks for the complete answer, the bound only forbids
-the unsourced one), T0 and Axiom 1 (a write to find something out is an act with no trust behind it), Axiom 3 (the trail of past writes is
+Derived from: Axiom 2 (only evidence the author verified itself), Axiom 1 (the balance asks for the complete answer, the bounds only forbid
+the unsourced one; and a write to find something out is an act with no trust behind it, T0), Axiom 3 (the trail of past writes is
 the record). Which paths exist and the lines an agent writes are construction (chapter 14 "Combine every path").
 
-Coverage: argued. No theorem models an author joining sources; the bound (no unsourced answer) is C21's, the completeness is the direction's.
+Coverage: argued. No theorem models an author joining sources; the bound (no unsourced answer) is C21's, the completeness is the balance's.
 
 Status: stable since DMP 0.9.7
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
@@ -1009,8 +1109,8 @@ signed that right too.
 The owner (2026-10-26): "One authority owns Trust, the other owns Information. To exist inside of DMP, they are required to keep each other
 constantly in check and balance so that no element can overrule the other."
 
-Derived from: Axiom 1 (two witnesses, each with full reach, gated only by the other, the stricter stands), Axiom 2 (a carrier's check is not
-the server's evidence), Axiom 4 (the halves keep each other in balance), T24b (a grant to sign for a half is a lockstep act), T24c (a half
+Derived from: Axiom 1 (two witnesses, each with full reach, gated only by the other, the stricter stands; the halves keep each other in
+balance), Axiom 2 (a carrier's check is not the server's evidence), T24b (a grant to sign for a half is a lockstep act), T24c (a half
 that contradicts the state both certified has incriminated itself), T38 (the two responsibilities of an information layer). Which parts hold
 the two halves, and how their signatures travel in a message, are construction (chapter 04 "Serving at a warehouse").
 
@@ -1096,8 +1196,8 @@ The rule has a history (the owner, 2026-10-25): the stable channel once served a
 needed, with no other supported route left. "We MUST learn from this, so when configuring an impossible situation, we must create rules that
 enforce it never happens again."
 
-Derived from: Axiom 1 (a deployment is an act), Axiom 2 (checked on the exact commit, not an earlier run), T3 (its no-lockout clause: removing
-the last route cuts a half off), Axiom 4 (the gaps only shrink). Channels, the route register, its cap and the workflow register are
+Derived from: Axiom 1 (a deployment is an act; the balance: the gaps only shrink), Axiom 2 (checked on the exact commit, not an earlier run),
+T3 (its no-lockout clause: removing the last route cuts a half off). Channels, the route register, its cap and the workflow register are
 construction (DMP-020).
 
 Coverage: undershoot for no lockout: no theorem models a route, and T3's clause has none (shared with C18); the missing theorem is that
