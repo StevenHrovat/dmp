@@ -43,9 +43,8 @@ body of people), **evidence** (what a witness verifies) and **time**.
 - A boundary **contains** information when it bends trustspace around it so strongly that the information cannot cross it: no part beyond
   the boundary is trusted for any act on that information, so no act carries it across. Nothing crosses a containing boundary; the dual
   gate can only reshape the field so that the boundary moves (an export, T19, or an admission, T27, is that reshaping). The Event Horizon
-  contains everything inside it, and a singularity contains what it holds even from the rest of the inside (C12). **Containment** with
-  no boundary named is containment at the item itself, the tightest boundary there is: no admission, so no part is trusted for any act on
-  that information.
+  contains everything inside it, and a singularity contains what it holds even from the rest of the inside (C12). **Containment** is
+  being contained.
 - **Live** means within the validity, at the start of each indivisible step of an act; an act's steps are acts of their own.
 - A **tightening** is a witness withdrawing or withholding its own trust in a part it gates; a **loosening** is anything that lets an act
   happen that would not have happened before. Both are said of whose trust changes, never of an act alone.
@@ -143,6 +142,22 @@ No evidence, no trust; no trust, no act.
 Derived from: Axiom 2, Axiom 1.
 
 Status: stable since DMP 0.9.0
+Owner: CM coordinator
+Enforced by: DMP-021
+
+## T37 · Collapse
+
+Information that no admission names is contained at the item itself. With no admission there is no trust in any part for any act on it
+(T0), so no act reaches it (Axiom 1): in the absence of any external trust, trustspace collapses in on the item, and the item's own
+boundary contains it. Nothing defines this boundary; it follows. Admission is the only act that lifts the collapse, and it is a loosening
+(T27).
+
+The owner (2026-10-26): "The containment with no boundary should not have to be defined, it should logically follow from the axioms. In
+the absence of any external trust, the trust space collapses in on itself which produces containment automatically."
+
+Derived from: the words (contains, admission), Axiom 1, T0.
+
+Status: draft (2026-10-26)
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -394,7 +409,7 @@ admitted, the information is held as opaque bytes: stored and recorded, never in
 cannot be made later than the receipt. Nothing at a surface drops an axiom; the owner's "two of three" (20:35Z) names which one cannot wait:
 the record.
 
-Derived from: the words (surface, admission, containment), Axiom 1, Axiom 2, Axiom 3, T1, T23.
+Derived from: the words (surface, admission, contains), Axiom 1, Axiom 2, Axiom 3, T1, T23, T37.
 
 Status: stable since DMP 0.9.0
 Owner: CM coordinator
@@ -425,7 +440,7 @@ item and nothing else; where an item cannot be re-wrapped under its own key (an 
 the date by a two-witness act scheduled at containment. Revoking a root does not destroy what it wraps. CMOS holds personal data only on
 a grant with a validity; when the grant lapses the data is contained and destroyed by the legal date.
 
-Derived from: the words (admission, containment), Axiom 1, Axiom 2, Axiom 3, T1, T24, T25, T26.
+Derived from: the words (admission, contains), Axiom 1, Axiom 2, Axiom 3, T1, T24, T25, T26, T37.
 
 Status: stable since DMP 0.9.0
 Owner: CM coordinator
@@ -444,7 +459,7 @@ it can learn of random bytes of the same length, and of the inside as a whole on
 horizon's evaporation time is the cipher's lifetime: whatever must never come out is destroyed before then, and the roots' cryptographic
 lifetime is longer than the longest legal retention of anything they wrap, or the retention plan destroys first.
 
-Derived from: the words (containment), Axiom 1, Axiom 3, T1, T26, T27; the floor is premise (physics, the cipher).
+Derived from: the words (contains), Axiom 1, Axiom 3, T1, T26, T27, T37; the floor is premise (physics, the cipher).
 
 Status: stable since DMP 0.9.0
 Owner: CM coordinator
@@ -744,7 +759,7 @@ Singularities of different layers may be the same cluster, as long as that is va
 
 What an agent learns that no tier held goes back into Tier 1 through the MW net's intake.
 
-Derived from: the words (admission, containment, door), Axiom 1, Axiom 2 (a position in the network is never evidence, so a layer cannot
+Derived from: the words (admission, contains, door), Axiom 1, Axiom 2 (a position in the network is never evidence, so a layer cannot
 grant), Axiom 3 (what an agent learned is a record both witnesses need; counts always, content by grant), T3 (no single part's loss stops a
 singularity: at least three nodes), T21, T27, T36 (every crossing of the horizon is an act, so it comes last and only when needed), C1
 (every route runs through the one door, so asking it first costs no extra crossing). The owner's words (2026-10-26): "Tier 1 information is
