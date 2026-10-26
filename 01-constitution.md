@@ -713,20 +713,36 @@ Enforced by: DMP-002
 
 ## C12 · Information is tiered
 
-CMOS owns all the information it holds, and every piece of it is reached through one routing: tiers, routed by the Milky Way net (the
-MW net).
+CMOS holds all the information inside its Event Horizon, and every piece of it is reached through one routing: tiers, routed by the
+Milky Way net (the MW net). What CMOS makes is its own; personal data it holds only on a grant (T27).
 
 - **Tier 1** is the information in the MW net itself. It is always consulted first.
-- **Tier 2** is information the MW net routes the asker to: a source in the VIBE net, outward as the VIBE net dictates. Information
-  of one kind can have its own sub-VIBE net with its own configuration, each routed by a clustered MW net.
-- **Tier 3** is information outside the Event Horizon, reached only through an exit node (chapter 05).
+- **Tier 2** is information the MW net routes the asker to: a source in the VIBE net, outward in the order the VIBE field gives.
+- **Tier 3** is information outside the Event Horizon, reached only through an exit node (chapter 05), and only when no tier inside
+  answers.
 
-Credentials are information like any other and route the same way. **Privacy** is a singularity of VIBE space: information there
-cannot be pulled out, not even by the MW net. What an agent learns that no tier held goes back into Tier 1 through the MW net's
-intake.
+**Information layers.** Information of one kind forms a **layer**: its own sub-VIBE net with its own configuration, overlaid on the one
+VIBE field and routed by a clustered MW net. The knowledge warehouse is the knowledge layer; the relational warehouse and the files
+warehouse are layers in the same way. Each layer reorganises by Lensing on its own: the field's pull computes the layout from the signed
+state, and both witnesses recompute it and sign. **A layer places information, never grants trust**: who may act on a piece of
+information comes only from its admission and the dual gate, never from the layer, tier or position it sits in.
 
-Derived from: Axiom 3 (what an agent learned is a record both witnesses need); premise: a statement an agent makes is a write.
-Redrafted 2026-10-26 from the owner's words; the derivation of the tiers and of the privacy singularity is to be rechecked.
+**Privacy** is a singularity of VIBE space: information there is admitted only for the class its grant names, and no routing pulls it
+out, not even the MW net, which holds no admission for it. Routing behaves exactly as if the singularity were empty, so neither an answer
+nor its absence reveals what a singularity holds; its record shows counts, never content. A part trusted for that class acts on it at
+the singularity itself, under the dual gate. **Credentials** are information like any other and route the same way; each sits in a
+singularity of its own kind, so routing reaches the point of use, never the secret.
+
+What an agent learns that no tier held goes back into Tier 1 through the MW net's intake.
+
+Derived from: the words (admission, containment, door), Axiom 1, Axiom 2 (a position in the network is never evidence, so a layer cannot
+grant), Axiom 3 (what an agent learned is a record both witnesses need; counts always, content by grant), T21, T27, T36 (every crossing of
+the horizon is an act, so it comes last and only when needed), C1 (every route runs through the one door, so asking it first costs no
+extra crossing). The owner's words (2026-10-26): "Tier 1 information is the information in the MW net, which is always consulted first
+and then outward as the VIBE net dictates"; "Privacy could be seen as singularities of VIBE space where not even the MW-net can pull the
+information out"; the knowledge warehouse "would simply be the knowledge layer, that is overlayed dynamically on the VIBE field, same with
+the other stuff". Evidence chain: `Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean`
+and `Dmp/R1Lens.lean` (a layer's reorganisation) in the gravity repository.
 
 Status: draft (redrafted 2026-10-26; was stable since DMP 0.1.0)
 Owner: CM coordinator
@@ -734,11 +750,11 @@ Enforced by: DMP-002
 
 ## C13 · The nearest tier is asked first
 
-Whenever an agent is unsure, it asks Tier 1 first and then outward, tier by tier, before it asks the owner. It cites the record it
-used, or records that the search came up empty, and only then asks the owner (chapter 14). C12 is the other direction of the same
-loop: what the agent learns goes back into Tier 1.
+Whenever an agent is unsure, it asks Tier 1 first and then outward, tier by tier, before it asks the owner; Tier 3 only through an exit
+node and only when no tier inside answered. It cites the record it used, or records that the search came up empty, and only then asks the
+owner (chapter 14). C12 is the other direction of the same loop: what the agent learns goes back into Tier 1.
 
-Derived from: Axiom 2, Axiom 3 (the record is read first), C12; "first" is construction.
+Derived from: Axiom 2, Axiom 3 (the record is read first), C12, T36; "first" is construction.
 
 Status: draft (redrafted 2026-10-26; was stable since DMP 0.2.0)
 Owner: CM coordinator
