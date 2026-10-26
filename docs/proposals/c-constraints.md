@@ -144,6 +144,15 @@ never votes, Axiom 2), and the hierarchy inside the horizon keeps contained info
 keeps it from leaving (Axiom 3); the counts-only readout is the radiation. The two properties to prove are therefore "demand never moves
 the layout alone" and "nothing but counts leaves the horizon"; everything else is the fabric.
 
+The owner added (23:22Z, verbatim): "AND self healing as a nice bonus. While holding only state and being one click redeployable. Composable
+information for any system that is in its network, essentially, while also having full trust both from one to all and from all to one,
+implicitly, with Type correction." Where each already lives, for the verifier: self-healing is self-stabilization (`st_self_stabilizing`,
+`st_no_root_takeover`); holding only state and one-click redeployable is the CMB cold-start plan in Gravity (redeploy iff the digest matches,
+else a Big Bang from the same proven recipe; `Cmb.lean`); composable information is the mission sentence and `Recipe.extend_preserves_decisions`
+(a new layer changes no decision); trust from one to all and all to one is the field (every member's grant chain back to the pair, T32) under
+live verification by the pair (Axiom 2); type correction is IM's typed sentences and kinds, refused at the gate when ill-typed (im, the
+differential check). None of these needs a new theory; each needs the Lean name that carries it.
+
 Where each sentence of the axioms already stands on that prior work, and what is left to prove:
 
 - **Trust is gravitational; gravity contains; only entropy leaves** (Axiom 2): the field is a potential over a graph (T32 is a potential
