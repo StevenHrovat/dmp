@@ -80,6 +80,7 @@ question "approved?". Suggested clusters, in this order:
 
 | Batch | Cluster | Cs |
 |---|---|---|
+| 0 | The axioms (added 2026-10-26 23:02Z, the owner's ask of 22:56Z) | the four axioms become three building blocks: the Duality, Trust, Information |
 | 1 | The door and the message | C1, C2, C3, C18, C19 |
 | 2 | Information | C12, C13, C14, C15, C21 |
 | 3 | Authority | C6, C17, C22, C∞ |
@@ -130,6 +131,24 @@ C18, C19; VERSION 0.9.7; the chapter intro and the mapping table), #16 (batch 2:
 #17 (batch 3: C6, C17, C22, C∞), #18 (batch 4: C4 with C5 merged and retired, C7, C16, C24, C25), #19 (batch 5: C9, C10). Each was checked
 with CM's `tools/dmp` (DMP-007, 009, 017, 018 and 021 pass; only the pin differs until Gravity and CM re-pin) and with `tools/scrub-scan.sh`.
 
+**Batch 0, the axioms (#20, stacked under #19).** While batch 1 was on the table the owner asked (22:56Z) "can we reduce the 4 Axioms to the
+3 basic building blocks? Trust, Information and the DoT?", added (22:59Z) "No Information is ever trusted and no information, besides its
+existence, can be derived from trust", approved the three-block text (23:02Z) and added (23:03Z) "Trust is gravitational, Information is
+hierarchical". #20 carries it: Axiom 1 · The Duality (the dual gate and the direction as one, the halves typed as a trust half and an
+information half that keep each other in balance), Axiom 2 · Trust (evidence, plus "no information is ever trusted" and the field), Axiom 3 ·
+Information (the record, plus "from trust only existence", admission, containment and the hierarchy). The numbers of the three that stayed
+are kept; every citation of Axiom 4 reads Axiom 1. The `Counts.` line keeps the shape DMP-021 parses ("2 bounds, 1 direction that is also the
+gate"); loosening that regex to count axiom sections directly is a one-line CM change to make at the re-pin.
+
+**New claims for the verifying session, from batch 0.** (a) Typed halves: the Lean types no half; the theorem to add is that a Duality holds
+one trust half and one information half and that neither can discharge the other's check (C19, T38, C17, C22 all instantiate it). (b) "No
+information is ever trusted": state it as the gate's decision taking no message content as an argument (the shape of `Config.relayout_never_votes`),
+and try to break it with a model where a signed payload moves a standing. (c) "From trust only existence": the record function is content-free
+(`Record.lean` holds counts and verdicts only; prove the projection to any reader without a grant is the count). (d) The balance inside the
+Duality: T3d (safety before liveness) must still follow; build the model where restoration fires while a bound stops the step and show the
+gate refuses it. (e) The hierarchy: every layer a tree rooted at its Duality, sub-layers only tightening (`Recipe.extend_preserves_decisions`,
+`tr_*`); find the sentence of Axiom 3 that no theorem reaches.
+
 **Coverage as claimed, to be verified:** 15 constraints open with *proven* (most of them proven for the shape and argued for the rest), 4
 with *argued* (C4, C10, C14, C21), 3 with *undershoot* (C3: a value's class travelling with it; C18 and C25: a route, T3's no-lockout
 clause). Every Lean name cited exists in gravity `main` (232 theorems); whether each theorem's statement says what the Coverage line claims
@@ -139,7 +158,8 @@ Paste-ready prompt for the verifying session:
 
 ```
 You are verifying, not drafting, on StevenHrovat/dmp and StevenHrovat/gravity. Read dmp docs/proposals/c-constraints.md (sections 2, 3,
-6 and 8) and then 01-constitution.md as it stands on the head of pull request #19 (the five batches #15 to #19 stacked). Every C section
+6 and 8) and then 01-constitution.md as it stands on the head of pull request #20 (batch 0, the three axioms, stacked on the five batches
+#15 to #19). Start with the five claims of batch 0 listed in section 6 ("New claims for the verifying session"). Every C section
 is now a constraint with a Derived from: line (the axioms and theorems claimed to achieve it) and a Coverage: line (the Lean theorems
 claimed to reach it, or the part none reaches).
 
