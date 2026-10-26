@@ -685,7 +685,7 @@ both verdicts in the record; `Recipe.decide_pass_iff`: an act passes a line only
 system: that no component reaches another beside its door is shown per component by the evidence chain (chapter 06), not by the theory.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:29Z (stable since DMP 0.1.0 before that).
 Owner: Milky Way coordinator
 Enforced by: DMP-008
 
@@ -721,7 +721,7 @@ the counterexamples `r1l_alwaysRefuse_L1` to `r1l_alwaysRefuse_L4`) and from the
 lets the same frame verify twice (`r1bW_clock_rollback_replays`); L3 holds as worded and T20 forbids the clock.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, the Law block unchanged, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
+Amended: recast as a constraint, the Law block unchanged, approved by the owner 2026-10-26 23:29Z (stable since DMP 0.1.0 before that).
 Owner: Milky Way coordinator
 Enforced by: DMP-018
 
@@ -740,7 +740,7 @@ a standing, not of a class of readers. The missing theorem: a value's class is n
 part outside its class (Denning's lattice: a flow is allowed only where every class on the path allows it).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:29Z (stable since DMP 0.1.0 before that).
 Owner: Milky Way coordinator
 Enforced by: none yet
 
@@ -967,7 +967,7 @@ an algorithm and evidence against a part, and T3b has no theorem at all. The mis
 keeps at least one route.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 22:56Z (stable since DMP 0.3.0 before that).
 Owner: Milky Way coordinator
 Enforced by: DMP-015
 
