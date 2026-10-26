@@ -102,10 +102,24 @@ opening a pull request; Apache 2.0 content only, with credit for prior work as `
 - **Requirements traceability** in general (Gotel and Finkelstein, "An analysis of the requirements traceability problem", *ICRE 1994*): the
   mapping table from old rule to new home.
 
-**Two settled domains, stitched (the owner, 2026-10-26 23:14Z).** The three axioms of batch 0 join two very well researched fields in a new
-way; the research itself is not new. "Please remind Team Fable in the PR to not unnecessarily repeat work that has already withstood the test
-of time." So: do not re-derive what a standard result gives; cite it, state where DMP's object differs, and prove only that difference.
-Where each sentence of the axioms already stands on prior work:
+**Two settled domains, stitched (the owner, 2026-10-26 23:14Z and 23:15Z).** The three axioms of batch 0 join two very well researched fields
+in a new way; the research itself is not new. "Please remind Team Fable in the PR to not unnecessarily repeat work that has already withstood
+the test of time." The owner means **General Relativity and Information Theory, and the axiom systems related to them**, not earlier work of
+this project (23:15Z). So: do not re-derive what a standard result or a standard axiom system gives; cite it, state where DMP's object differs,
+and prove only that difference. The axiom systems to stand on rather than rebuild:
+
+- **General Relativity:** the equivalence principle and the Einstein field equations (1915); the singularity theorems (Penrose 1965, Hawking
+  and Penrose 1970); the no-hair theorem (Israel 1967, Carter 1971, Robinson 1975); black-hole thermodynamics (Bardeen, Carter and Hawking
+  1973), Bekenstein's entropy and bound (1973, 1981), Hawking radiation (1975). "Gravity contains all information but entropy" is these
+  results; DMP only maps its objects onto them (trust = curvature, the horizon = containment, the floor = the radiation).
+- **Information Theory:** Shannon's axioms and theorems (1948), the Khinchin axioms for entropy (1957), Landauer's principle (1961,
+  information is physical), noninterference (Goguen and Meseguer 1982) and the information-flow lattice (Denning 1976). "No information is
+  ever trusted; from trust only existence" is a flow statement in that lattice; prove the flow, not the lattice.
+- **Related axiom systems:** Kolmogorov's probability axioms (1933) under every "representative composition of requests"; Lieb and
+  Yngvason's axiomatic entropy (1999) if the floor is argued thermodynamically; Alpern and Schneider's safety/liveness decomposition (1985)
+  for "the balance ranks below the bounds"; the axioms of a metric and of a tree median (Goldman 1971) for the layout.
+
+Where each sentence of the axioms already stands on that prior work, and what is left to prove:
 
 - **Trust is gravitational; gravity contains; only entropy leaves** (Axiom 2): the field is a potential over a graph (T32 is a potential
   game, Monderer and Shapley 1996; restoration is gradient descent on it); containment is the horizon picture: the no-hair theorem (Israel
@@ -204,11 +218,13 @@ draft pull requests on gravity; change no DMP text and merge nothing: the owner 
 before every push. Roles, not values; no company facts; no model names in commits or pull requests; credit prior art as
 gravity/docs/acknowledgements.md does, Apache 2.0 only.
 
-The owner's reminder (2026-10-26 23:14Z): the axioms stitch two very well researched domains (gravitation and the information sciences)
-together in a new way. Do not unnecessarily repeat work that has already withstood the test of time: where a sentence rests on a
-standard result (k-median on trees, self-stabilization, potential games, Byzantine agreement, Shannon entropy, noninterference, the
-no-hair theorem and black-hole entropy; the list with sources is section 4 of the brief), cite it, say where DMP's object differs, and
-prove only that difference in Lean. New Lean is for the stitching, never for the fabric.
+The owner's reminder (2026-10-26 23:14Z, 23:15Z): the axioms stitch two very well researched domains, General Relativity and
+Information Theory, together in a new way, and both come with axiom systems of their own. Do not unnecessarily repeat work that has
+already withstood the test of time: where a sentence rests on a standard result or a standard axiom system (the Einstein equations, the
+singularity and no-hair theorems, Bekenstein–Hawking entropy; Shannon and Khinchin, Landauer, noninterference and the flow lattice;
+Kolmogorov, safety/liveness, k-median on trees, self-stabilization, potential games, Byzantine agreement; the list with sources is
+section 4 of the brief), cite it, say where DMP's object differs, and prove only that difference in Lean. New Lean is for the
+stitching, never for the fabric.
 ```
 
 ## 8. The theorem pass: what the two-way check found (report, no change proposed yet)
