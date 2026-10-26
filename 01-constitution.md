@@ -34,6 +34,11 @@ serves an objective.
 | C3 | Every value carries its class | C3 · A value reaches only parts trusted for its class | the token on every value and the identification axis: chapter 05 (the shield) |
 | C18 | IM stays backwards compatible once it is locked | C18 · A weakness is evidence against what it claims, never against the part | the lock, additions only, the corpus, the contained path: chapter 04 "Compatibility after the lock", DMP-015 |
 | C19 | A request is served only when it is secure and meant | C19 · Two halves on every served request: trust and information, each verified by the server itself | the two masters and how the signatures travel: chapter 04 "Serving at a warehouse", DMP-016 |
+| C12 | Information is tiered | C12 · Position never grants, and routing reaches everything inside | the tiers, the layers in use, Lensing, credentials, the three-node floor, the owner's words: chapter 05 "The information tiers and the layers" |
+| C13 | The nearest tier is asked first | C13 · The record inside is read before anyone outside is asked | the agent's steps: chapter 14 "Ask the nearest tier first", "Knowledge goes back into Tier 1" |
+| C14 | Every path is combined | C14 · An answer rests on every piece of evidence its author can verify | the list of paths and the `Paths combined:` line: chapter 14 "Combine every path" |
+| C15 | A write first reads what it changes | C15 · A write lands only on a state its writer verified live | retries, hard and soft failure: chapter 10 "Guarded writes" |
+| C21 | Look it up, don't guess | C21 · A statement is a write | the sources per kind of name and the `Looked up:` line: chapter 14 "Look it up, don't guess" |
 
 **What a derivation is here.** Each `Derived from:` line names what the theorem rests on and, where it applies, one status word:
 *construction* (a design choice the axioms allow and recommend but do not force), *configuration* (a number or a list set at the minting,
@@ -811,93 +816,85 @@ Status: stable since DMP 0.1.0
 Owner: Black Hole coordinator
 Enforced by: DMP-002
 
-## C12 · Information is tiered
+## C12 · Position never grants, and routing reaches everything inside
 
-CMOS contains all the information inside its Event Horizon, and every piece of it is reached through one routing: tiers, routed by the
-Milky Way net (the MW net). What CMOS makes is its own; personal data it holds only on a grant (T27).
+Every piece of information inside the Event Horizon is reachable by one routing that asks the nearest place first and crosses the horizon
+last, only when nothing inside answers. Where a piece of information sits, and how a layer places information or work, never decides who
+may act on it: that comes only from its admission and the dual gate. A new kind of information is a new layer that inherits the gate, the
+record and the placement and changes nothing else. A private place is one routing cannot see into: neither an answer nor its absence reveals
+what it holds, its record shows counts and never content, and no single loss removes it.
 
-- **Tier 1** is the information in the MW net itself. It is always consulted first.
-- **Tier 2** is information the MW net routes the asker to: a source in the VIBE net, outward in the order the VIBE field gives.
-- **Tier 3** is information outside the Event Horizon, reached only through an exit node (chapter 05), and only when no tier inside
-  answers.
+Derived from: the words (admission, contains, layer, door), Axiom 1, Axiom 2 (a position in the network is never evidence, so a place cannot
+grant), Axiom 3 (counts always, content by grant), T3 (no single part's loss stops a place that holds information), T21, T27, T36 (every
+crossing of the horizon is an act, so it comes last and only when needed), T37 (what no admission names is contained where it lies), T38
+(every information layer has its own Duality), C1 (every route runs through the one door). The tiers, the net that routes, the layers in use,
+the reorganisation by the field, and the floor of three nodes per private place are construction and configuration (chapter 05 "The
+information tiers and the layers", chapter 14 "Ask the nearest tier first").
 
-**Information layers.** Information of one kind forms a **layer**: its own sub-VIBE net with its own configuration, overlaid on the one
-VIBE field and routed by a clustered MW net. The knowledge warehouse is the knowledge layer; the relational warehouse and the files
-warehouse are layers in the same way. Each layer reorganises by Lensing on its own: the field's pull computes the layout from the signed
-state, and both witnesses recompute it and sign. **A layer places information, never grants trust**: who may act on a piece of information
-comes only from its admission and the dual gate, never from the layer, tier or position it sits in. The set of layers is open: a new kind
-of information is a new layer that declares its kind, its sub-VIBE configuration and its route, and inherits the dual gate, the record and
-Lensing; no other part of CMOS changes for it. A layer may place work as well as information (a network layout, load balancing, placement
-in a cloud): it decides where, never who may.
+Coverage: proven for position never grants (`Config.relayout_never_votes`, by reflexivity: placement is not an argument of the gate;
+`Field.n1b_schedule_never_votes`), for the routing order and the invisible private place (`tr_milky_way_first`, `tr_exit_last`,
+`tr_never_singular`, `tr_singularity_invisible`, `tr_first_scrub`), for a new layer changing nothing existing (`Recipe.extend_preserves_decisions`,
+`Recipe.extend_wf`) and for a layer reorganising only on both witnesses' own recomputation and healing from any state (`ms_accepted_agrees`,
+`ms_wrong_layout_refused`, `ln_signed_moves`, `st_self_stabilizing`, `st_no_root_takeover`); argued for "no single loss removes it" (the node
+floor is T3's premise and has no theorem).
 
-**Privacy** is a singularity of VIBE space: information there is admitted only for the class its grant names, and no routing pulls it out,
-not even the MW net, which holds no admission for it. Routing behaves exactly as if the singularity were empty, so neither an answer nor
-its absence reveals what a singularity holds; its record shows counts, never content. A part trusted for that class acts on it at the
-singularity itself, under the dual gate. **Credentials** are information like any other and route the same way; each sits in a singularity
-of its own kind, so routing reaches the point of use, never the secret. Each singularity is a cluster of at least three nodes.
-Singularities of different layers may be the same cluster, as long as that is valid under DMP, and every singularity obeys DMP on its own.
-
-What an agent learns that no tier held goes back into Tier 1 through the MW net's intake.
-
-Derived from: the words (admission, contains, door), Axiom 1, Axiom 2 (a position in the network is never evidence, so a layer cannot
-grant), Axiom 3 (what an agent learned is a record both witnesses need; counts always, content by grant), T3 (no single part's loss stops a
-singularity: at least three nodes), T21, T27, T36 (every crossing of the horizon is an act, so it comes last and only when needed), C1
-(every route runs through the one door, so asking it first costs no extra crossing). The owner's words (2026-10-26): "Tier 1 information is
-the information in the MW net, which is always consulted first and then outward as the VIBE net dictates"; "Privacy could be seen as
-singularities of VIBE space where not even the MW-net can pull the information out"; the knowledge warehouse "would simply be the knowledge
-layer, that is overlayed dynamically on the VIBE field, same with the other stuff", which "also makes the system extensible for any other
-kind of information layer", for example "network layout while maintaining ultimate trust in the cloud, or other load balancing"; "CMOS
-contains all the information inside its Event Horizon"; "Each singularity should always be a cluster of at least 3 nodes. All singularities
-of the differnent layers may of course be the same, as long as it is DMP valid, but each singularity must still obey DMP." Evidence chain:
-`Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean` and `Dmp/R1Lens.lean` (a layer's
-reorganisation) in the gravity repository.
-
-Status: stable since DMP 0.9.3
-Redrafted: 2026-10-26, approved by the owner 2026-10-26 15:04Z (stable since DMP 0.1.0 before that).
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0, redrafted 0.9.3 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
-## C13 · The nearest tier is asked first
+## C13 · The record inside is read before anyone outside is asked
 
-Whenever an agent is unsure, it asks Tier 1 first and then outward, tier by tier, before it asks the owner; Tier 3 only through an exit
-node and only when no tier inside answered. It cites the record it used, or records that the search came up empty, and only then asks the
-owner (chapter 14). C12 is the other direction of the same loop: what the agent learns goes back into Tier 1.
+Before a question crosses the horizon or reaches a person, every record inside that could answer it has been read, and the answer names the
+record it rests on or says that none held it. What was learned outside is written back inside as a record, so that the next asker finds it
+inside.
 
-Derived from: Axiom 2, Axiom 3 (the record is read first), C12, T36; "first" is construction.
+Derived from: Axiom 2 (evidence the asker verified itself: the record first, never a memory), Axiom 3 (the record is there to be read), Axiom 4
+(what the boundary lacks is built by evidence: the write-back), T36 (a crossing is an act and comes last), C12 (one routing, nearest first).
+The order of the tiers and the steps an agent takes are construction (chapter 14 "Ask the nearest tier first", "Knowledge goes back into
+Tier 1").
 
-Status: stable since DMP 0.9.3
-Redrafted: 2026-10-26, approved by the owner 2026-10-26 15:04Z (stable since DMP 0.2.0 before that).
+Coverage: proven for the order (`tr_milky_way_first`, `tr_exit_last`); argued for "names the record" and for the write-back (no theorem
+models an asker or an intake).
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.2.0, redrafted 0.9.3 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
-## C14 · Every path is combined
+## C14 · An answer rests on every piece of evidence its author can verify
 
-When no single source gives the full picture, the agent does not stop at the first answer. It asks itself how combining every
-read path and every write path it has can answer the question: the information tiers, the live reads of the systems, the repositories and the
-state of the tree, and the trail every write leaves (the audit log, job steps, plans, dry runs, git history). It names the paths it
-combined and what is still unknown. A write path is read through its trail or its dry run, never by writing to find something out.
-Only what no combination answers goes to the owner. C13 and C12 frame it: the nearest tier first, then every path combined, then the owner,
-and what the combination found goes back into Tier 1.
+When one source does not give the full picture, the answer rests on every read path its author can verify itself, joined, and says what is
+still unknown. A write path is read through its trail or its dry run, never by writing to find something out.
 
-Derived from: Axiom 2 (every evidence the agent can verify itself), Axiom 1 (a write is an act, not a read), C12, C13.
+Derived from: Axiom 2 (only evidence the author verified itself), Axiom 4 (the direction asks for the complete answer, the bound only forbids
+the unsourced one), T0 and Axiom 1 (a write to find something out is an act with no trust behind it), Axiom 3 (the trail of past writes is
+the record). Which paths exist and the lines an agent writes are construction (chapter 14 "Combine every path").
 
-Status: stable since DMP 0.3.0
+Coverage: argued. No theorem models an author joining sources; the bound (no unsourced answer) is C21's, the completeness is the direction's.
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
-## C15 · A write first reads what it changes
+## C15 · A write lands only on a state its writer verified live
 
-In the owner's words (2026-10-25): "a write first reads the live state it will change and asserts what it expects: absent for a
-create, a named value for an overwrite." The read is live from the target system, never a value read earlier; a retry reads again
-before each attempt; every write is read back afterwards and must show the wanted state. When the expected state is not found,
-nothing is written: the step fails hard when later steps depend on it, soft (skipped, reported, never a clean run) when none do.
-The tenant, host and account a write goes to are expected state too. This holds for every write CMOS makes; for scripts it is
-checked by DMP-012, the pattern is chapter 10 "Guarded writes".
+In the owner's words (2026-10-25): "a write first reads the live state it will change and asserts what it expects: absent for a create, a
+named value for an overwrite." The read is live from the target at the point of use, never a value read earlier; when the expected state is
+not found, nothing is written; every write is read back and must show the wanted state. The target of a write (the system, the tenant, the
+host, the account) is part of what was granted.
 
-Derived from: Axiom 2 (live state at the point of use), Axiom 3 (the read-back is the record), T1 (tenant, host and account are part of
-what was granted).
+Derived from: Axiom 2 (live state at the point of use; an earlier read is never evidence; the absence of the expected state is the absence of
+evidence, and nothing moves), Axiom 3 (the read-back is the record of the act), T1 (the target is part of the grant). Retries, hard and soft
+failure and the script pattern are construction (chapter 10 "Guarded writes").
 
-Status: stable since DMP 0.3.0
+Coverage: proven for the shape (`Gate.stale_never_passes`: evidence past its validity never passes; `Gate.guard_pass_needs_evidence`;
+`Record.step_records_at_act`: the act and its record are one step, no path performs one without the other); argued for the expected state and
+the read-back (no theorem models a write's expected state).
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-012
 
@@ -991,18 +988,20 @@ Amended: recast as a constraint, approved by the owner 2026-10-26 23:30Z (stable
 Owner: Black Hole coordinator
 Enforced by: DMP-016
 
-## C21 · Look it up, don't guess
+## C21 · A statement is a write
 
-Whenever something is unclear, or two candidates are close (a person, a username, a host, a group, a system, a value: anything), the
-agent looks it up in the source of truth itself before it acts or asks (2026-10-25): the directory through the operations master for people and
-accounts, the inventory for machines, the system itself for its own values. It quotes the match it found and where it came from. If
-more than one record still fits, it names every one and asks which is meant; it never silently picks one. C14 covers the question
-the agent knows it cannot answer; C21 covers the answer it only thinks it knows.
+What a part states to a person or to the record is an act. It rests on a source the part read itself and names; an unsourced statement does
+not land. Where more than one record fits, every one is named and none is picked. C14 covers the question the author knows it cannot
+answer; this constraint covers the answer it only thinks it knows.
 
-Derived from: Axiom 2, Axiom 3; premise: a statement an agent makes to a person or to the record is a write, its sources are its evidence,
-and an unsourced statement is a write without evidence.
+Derived from: the words (an answer an agent gives is an act), Axiom 1 (an act needs trust), Axiom 2 (trust needs evidence the part verified
+itself; a memory is not evidence), Axiom 3 (the source named is the record), T0. The lines an agent writes (`Looked up:`) are construction
+(chapter 14 "Look it up, don't guess").
 
-Status: stable since DMP 0.6.0
+Coverage: argued. No theorem models a statement as an act; until DMP 0.9.7 this rested on a premise, now the words carry it.
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.6.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
