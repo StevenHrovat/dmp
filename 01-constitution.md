@@ -39,8 +39,13 @@ body of people), **evidence** (what a witness verifies) and **time**.
 - A part is **inside** at a time when a standing for it from both witnesses of its layer is valid then. A **door** is any point of use. A
   **surface** is a part whose standing includes receiving from parts that hold none. The **perimeter** is the set of what is inside.
 - **Admission** is a grant: a record that names a piece of information's class and provenance, so that parts trusted for that class may act
-  on it. Information is **inside** while its admission is valid. **Containment** is the absence of any admission: no part is trusted for any
-  act on that information.
+  on it. Information is **inside** while its admission is valid.
+- A boundary **contains** information when it bends trustspace around it so strongly that the information cannot cross it: no part beyond
+  the boundary is trusted for any act on that information, so no act carries it across. Nothing crosses a containing boundary; the dual
+  gate can only reshape the field so that the boundary moves (an export, T19, or an admission, T27, is that reshaping). The Event Horizon
+  contains everything inside it, and a singularity contains what it holds even from the rest of the inside (C12). **Containment** with
+  no boundary named is containment at the item itself, the tightest boundary there is: no admission, so no part is trusted for any act on
+  that information.
 - **Live** means within the validity, at the start of each indivisible step of an act; an act's steps are acts of their own.
 - A **tightening** is a witness withdrawing or withholding its own trust in a part it gates; a **loosening** is anything that lets an act
   happen that would not have happened before. Both are said of whose trust changes, never of an act alone.
