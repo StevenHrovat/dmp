@@ -75,9 +75,9 @@ Status: draft
 
 ## Names in use
 
-The original modules keep their Canis Major star names (Sirius, Adhara, Wezen, Mirzam). Security names are primordial forces
-under Black Hole: Event Horizon, CMB, Doppler, Supernova, GRB (Gamma Ray Burst), Singularity. Doppler takes the module role of
-the former Mirzam; Mirzam names Doppler's Scout and its repository stays the content home. Federated Milky Ways form a galaxy group (idea, not built).
+Security names are primordial forces
+under Black Hole: Event Horizon, CMB, Doppler, Supernova, GRB (Gamma Ray Burst), Singularity. Doppler's
+reconnaissance part is its Scout. Federated Milky Ways form a galaxy group (idea, not built).
 
 Status: stable since DMP 0.1.0
 Owner: CM coordinator

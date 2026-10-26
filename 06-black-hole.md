@@ -29,11 +29,11 @@ class is **passed**, **failed** or **not claimed**; a component without a passed
 
 **How the class is set.** By distance from the core, counted in steps downstream along the edges of the graph (a step is one edge that
 carries a call, a token or a write; this is not the computed layer of the glossary, which counts up from the bottom). The **core** is DMP,
-IM and the CMOS foundation (`cm.io`, `cm.os`) with Sirius and Doppler.
+IM and the CMOS foundation (`cm.io`, `cm.os`) with the operations master and Doppler.
 
 | Class | The component is | Examples |
 |---|---|---|
-| IIb | the core, or one step downstream of it: the systems attached to Sirius and Doppler, in particular anything that interacts directly with DMP, IM or CMOS | the Milky Way IM verifier and gate, Doppler server and agent, the issuing CA endpoint, the Sirius credential store, a Sagittarius node serving IM requests (C19) |
+| IIb | the core, or one step downstream of it: the systems attached to the operations master and Doppler, in particular anything that interacts directly with DMP, IM or CMOS | the Milky Way IM verifier and gate, Doppler server and agent, the issuing CA endpoint, the operations master's credential store, a Sagittarius node serving IM requests (C19) |
 | IIn | one step further downstream | |
 | II-L | one step further again | |
 | II-P | everything else | DMP's own tooling (`tools/dmp`), the map template, a generator |
@@ -74,9 +74,9 @@ and control or, at the very least, contain on its own, and that containment mech
 company's systems additionally needs the owner's declaration of advanced testing for that system (chapter 14), which names a passed
 Supernova class as its first entry criterion.
 
-**First assignments** (by distance and the two lines above). IIb: the Milky Way verifier and gate; `cm.os.Trust` (inherited); the Sirius
-server; Doppler server and agent; the issuing CA endpoint; the Sirius credential store; the Event Horizon decision layer; Sagittarius nodes
-(they serve IM requests, C19; were level 2); Wezen probes running in the Sirius server (attached to Sirius; were level 1). IIn: the Pictor
+**First assignments** (by distance and the two lines above). IIb: the Milky Way verifier and gate; `cm.os.Trust` (inherited); the operations master
+server; Doppler server and agent; the issuing CA endpoint; the operations master's credential store; the Event Horizon decision layer; Sagittarius nodes
+(they serve IM requests, C19; were level 2); monitoring probes running in the operations master (attached to it; were level 1). IIn: the Pictor
 shell; owner scripts (they write). II-L: a report that only reads, two steps out. II-P: DMP, its templates and `tools/dmp`.
 
 Status: draft

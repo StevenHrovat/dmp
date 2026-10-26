@@ -126,7 +126,7 @@ Status: draft
 ## The heartbeat board
 
 The board keeps, per device subject, the last verified heartbeat: role, sequence, status, agent version, when it was sent and when
-it arrived, marked **verified**. It accepts only verified messages and keeps the newest by `sent at`. It is what the Sirius board
+it arrived, marked **verified**. It accepts only verified messages and keeps the newest by `sent at`. It is what the operations board
 shows for Promise B once the listener exists; until then the sandbox tests read it.
 
 Status: draft

@@ -94,7 +94,7 @@ Enforced by: none yet
 ## Scripts an administrator runs
 
 A script the owner runs has a read-only Check, a dry run that prints WOULD lines, an explicit `-Apply`, and is idempotent.
-It also starts with the shared guard (`tools/lib/SiriusGuard.psm1`): the script stops at once unless the computer it runs on is the one the command
+It also starts with the shared guard (`tools/lib/Guard.psm1`): the script stops at once unless the computer it runs on is the one the command
 block names (`-ExpectedHost`, never a host name in the repository), the session is the right kind, and, when it applies a change, the checkout is
 the merged one. It says whether it changes anything, names Windows groups by their well-known SID and never by name (the systems may run in a localized Windows),
 and parses in Windows PowerShell 5.1 before anyone is handed it. The standard is [docs/process/owner-scripts.md](https://github.com/StevenHrovat/cm/blob/main/docs/process/owner-scripts.md).
@@ -105,12 +105,12 @@ Enforced by: DMP-011
 
 ## Guarded writes
 
-How a script keeps constitution C15. Every change sits in the `-Write { }` block of `Invoke-SiriusGuardedWrite` (`tools/lib/SiriusGuard.psm1`),
+How a script keeps constitution C15. Every change sits in the `-Write { }` block of `Invoke-GuardedWrite` (`tools/lib/Guard.psm1`),
 with a live `-Read` of the target, an `-Expect` naming the state that may be overwritten (absent for a create), an optional `-Done` for
 "already as wanted", a `-Verify` read back, and `-DependentSteps` naming the later steps that need it (`@()` when none: then a mismatch is
-skipped and reported, and the script ends with `exit (Write-SiriusRunSummary)`, exit code 3). `-Attempts` re-reads before each try. The
+skipped and reported, and the script ends with `exit (Write-RunSummary)`, exit code 3). `-Attempts` re-reads before each try. The
 read also runs in a dry run, so a dry run shows every mismatch. A script that connects to Microsoft Graph or Exchange Online calls
-`Assert-SiriusTenant` before its first write; host, account and session are the guard's first act. A line that only touches the
+`Assert-Tenant` before its first write; host, account and session are the guard's first act. A line that only touches the
 script's own scratch file ends with `# lint-ok: unguarded <why>`. Writes older than this rule are counted per script in
 `tools/lib/unguarded-writes.txt`, and those numbers only go down. Not checked by the machine: that the read and the write name the same
 object and that `-Expect` is the right condition; review that. Details: [docs/process/owner-scripts.md](https://github.com/StevenHrovat/cm/blob/main/docs/process/owner-scripts.md).

@@ -25,7 +25,7 @@ chapter 10 "Language and runtime", chapter 14 "Completion goals, never time plan
 
 Undefined, like point and line: a **part** (anything that can be trusted: a person, a body, an agent, a system, a node, a key, a chain, a
 rule, a deployment), an **act** (anything done in or to CMOS: a message, a read, a write, a grant, a merge, a promotion, a deployment, a
-decision, an answer an agent gives, a seat taken), a **witness** (a part that decides trust for others: Doppler, Sirius, a proof chain, a
+decision, an answer an agent gives, a seat taken), a **witness** (a part that decides trust for others: Doppler, the operations master, a proof chain, a
 body of people), **evidence** (what a witness verifies) and **time**.
 
 - **Trust** is a relation between a witness, a part, an act and a time, written `T(w, p, a, t)`: the witness trusts the part for that act
@@ -666,7 +666,7 @@ it names the owner and the IT mailbox read "the owner" and "the IT mailbox" here
 names.)
 
 <!-- authority-grant:begin -->
-> Agents may build and deploy CMOS's own new estate on their own authority: new VMs on the cluster, the new CA, Milky Way, Doppler, test tenant objects and Sagittarius development data, using credentials held in Sirius, under plan, audit and four eyes where a second admin exists. The running company's systems still need the owner's own words per action until the owner declares advanced testing reached for that system: real users and groups in AD and Entra, production mail, the old CA, the financial production path, and anything irreversible outside CMOS's own estate, though the accounts of the owner and the IT mailbox are exempt and are allowable with express permission by the owner.
+> Agents may build and deploy CMOS's own new estate on their own authority: new VMs on the cluster, the new CA, Milky Way, Doppler, test tenant objects and Sagittarius development data, using credentials held in the operations master, under plan, audit and four eyes where a second admin exists. The running company's systems still need the owner's own words per action until the owner declares advanced testing reached for that system: real users and groups in AD and Entra, production mail, the old CA, the financial production path, and anything irreversible outside CMOS's own estate, though the accounts of the owner and the IT mailbox are exempt and are allowable with express permission by the owner.
 <!-- authority-grant:end -->
 
 Derived from: T1 (the rule is trust bounded, written for agents), Axiom 3 (the wording is tamper-evident), G0 (until the minting the owner's
@@ -711,37 +711,47 @@ Status: stable since DMP 0.1.0
 Owner: Black Hole coordinator
 Enforced by: DMP-002
 
-## C12 · Knowledge goes back to Adhara
+## C12 · Information is tiered
 
-Anything worth keeping that did not come from Adhara goes back to Adhara, which organizes it. How it gets there is Adhara's
-intake and can change without changing this rule (chapter 14).
+CMOS owns all the information it holds, and every piece of it is reached through one routing: tiers, routed by the Milky Way net (the
+MW net).
+
+- **Tier 1** is the information in the MW net itself. It is always consulted first.
+- **Tier 2** is information the MW net routes the asker to: a source in the VIBE net, outward as the VIBE net dictates. Information
+  of one kind can have its own sub-VIBE net with its own configuration, each routed by a clustered MW net.
+- **Tier 3** is information outside the Event Horizon, reached only through an exit node (chapter 05).
+
+Credentials are information like any other and route the same way. **Privacy** is a singularity of VIBE space: information there
+cannot be pulled out, not even by the MW net. What an agent learns that no tier held goes back into Tier 1 through the MW net's
+intake.
 
 Derived from: Axiom 3 (what an agent learned is a record both witnesses need); premise: a statement an agent makes is a write.
+Redrafted 2026-10-26 from the owner's words; the derivation of the tiers and of the privacy singularity is to be rechecked.
 
-Status: stable since DMP 0.1.0
+Status: draft (redrafted 2026-10-26; was stable since DMP 0.1.0)
 Owner: CM coordinator
 Enforced by: DMP-002
 
-## C13 · Adhara is asked first
+## C13 · The nearest tier is asked first
 
-Whenever an agent is unsure, it asks Adhara before it asks the owner. It cites the article it used, or records that the search
-came up empty, and only then asks the owner (chapter 14). C12 is the other direction of the same loop: what the
-agent learns goes back.
+Whenever an agent is unsure, it asks Tier 1 first and then outward, tier by tier, before it asks the owner. It cites the record it
+used, or records that the search came up empty, and only then asks the owner (chapter 14). C12 is the other direction of the same
+loop: what the agent learns goes back into Tier 1.
 
 Derived from: Axiom 2, Axiom 3 (the record is read first), C12; "first" is construction.
 
-Status: stable since DMP 0.2.0
+Status: draft (redrafted 2026-10-26; was stable since DMP 0.2.0)
 Owner: CM coordinator
 Enforced by: DMP-002
 
 ## C14 · Every path is combined
 
 When no single source gives the full picture, the agent does not stop at the first answer. It asks itself how combining every
-read path and every write path it has can answer the question: Adhara, the live reads of the systems, the repositories and the
+read path and every write path it has can answer the question: the information tiers, the live reads of the systems, the repositories and the
 state of the tree, and the trail every write leaves (the audit log, job steps, plans, dry runs, git history). It names the paths it
 combined and what is still unknown. A write path is read through its trail or its dry run, never by writing to find something out.
-Only what no combination answers goes to the owner. C13 and C12 frame it: Adhara first, then every path combined, then the owner,
-and what the combination found goes back to Adhara.
+Only what no combination answers goes to the owner. C13 and C12 frame it: the nearest tier first, then every path combined, then the owner,
+and what the combination found goes back into Tier 1.
 
 Derived from: Axiom 2 (every evidence the agent can verify itself), Axiom 1 (a write is an act, not a read), C12, C13.
 
@@ -830,12 +840,12 @@ Enforced by: DMP-015
 
 ## C19 · A request is served only when it is secure and meant
 
-An information warehouse (Sagittarius, Crater, Adhara) serves an IM request only when the request carries two signatures and the
+An information warehouse (Sagittarius, Crater, the knowledge warehouse) serves an IM request only when the request carries two signatures and the
 warehouse checks both itself (the owner, 2026-10-25). One is under the security chain, which Doppler holds: the request is secure. The
-other is under the operational chain, which Sirius holds: the request is meant to be served. Each comes from a cluster of that master or
+other is under the operational chain, which the operations master holds: the request is meant to be served. Each comes from a cluster of that master or
 from an authority that master granted the right to sign on its behalf. A grant counts only when the other master has signed the same
-authority too: Doppler cannot give anyone the right to sign IM requests unless Sirius has signed that authority, and Sirius cannot unless
-Doppler has. That a carrier (Milky Way, Sirius) already checked the request does not count; the warehouse checks it again. A request
+authority too: Doppler cannot give anyone the right to sign IM requests unless the operations master has signed that authority, and the operations master cannot unless
+Doppler has. That a carrier (Milky Way, the operations master) already checked the request does not count; the warehouse checks it again. A request
 that lacks either signature, or whose authority only one master signed, is refused.
 
 Derived from: Axiom 1 (two masters), Axiom 2 (a carrier's check is not the warehouse's evidence), T24b (a grant to sign is a lockstep act).
@@ -847,7 +857,7 @@ Enforced by: DMP-016
 ## C21 · Look it up, don't guess
 
 Whenever something is unclear, or two candidates are close (a person, a username, a host, a group, a system, a value: anything), the
-agent looks it up in the source of truth itself before it acts or asks (2026-10-25): the directory through Sirius for people and
+agent looks it up in the source of truth itself before it acts or asks (2026-10-25): the directory through the operations master for people and
 accounts, the inventory for machines, the system itself for its own values. It quotes the match it found and where it came from. If
 more than one record still fits, it names every one and asks which is meant; it never silently picks one. C14 covers the question
 the agent knows it cannot answer; C21 covers the answer it only thinks it knows.
