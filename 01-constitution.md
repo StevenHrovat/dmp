@@ -56,8 +56,8 @@ body of people), **evidence** (what a witness verifies) and **time**.
   happen that would not have happened before. Both are said of whose trust changes, never of an act alone.
 
 Status: stable since DMP 0.9.3
-Amended: the definition of "contains" approved by the owner 2026-10-26 14:01Z; the definition of "DMP-complete" proposed 2026-10-26,
-awaiting the owner (stable since DMP 0.9.0 before that).
+Amended: the definition of "contains" approved by the owner 2026-10-26 14:01Z; the definition of "DMP-complete" approved by the owner
+2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -143,7 +143,7 @@ What else no chain reaches is listed, not hidden, in the assumption register (ch
 the door's code until its run-time check exists, the failure-class list, the time authorities, the provers' logic, the shared machines.
 
 Status: stable since DMP 0.9.3
-Amended: mint prep proposed 2026-10-26, awaiting the owner (stable since DMP 0.9.0 before that).
+Amended: mint prep approved by the owner 2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
@@ -786,7 +786,7 @@ of the differnent layers may of course be the same, as long as it is DMP valid, 
 reorganisation) in the gravity repository.
 
 Status: stable since DMP 0.9.3
-Redrafted: 2026-10-26, awaiting the owner (stable since DMP 0.1.0 before that).
+Redrafted: 2026-10-26, approved by the owner 2026-10-26 15:04Z (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -799,7 +799,7 @@ owner (chapter 14). C12 is the other direction of the same loop: what the agent 
 Derived from: Axiom 2, Axiom 3 (the record is read first), C12, T36; "first" is construction.
 
 Status: stable since DMP 0.9.3
-Redrafted: 2026-10-26, awaiting the owner (stable since DMP 0.2.0 before that).
+Redrafted: 2026-10-26, approved by the owner 2026-10-26 15:04Z (stable since DMP 0.2.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
