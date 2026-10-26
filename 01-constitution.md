@@ -31,14 +31,18 @@ serves an objective.
 inside of DMP, they are required to keep each other constantly in check and balance so that no element can overrule the other. Actually, can
 we reduce the 4 Axioms to the 3 basic building blocks? Trust, Information and the DoT?"; (22:59Z) "No Information is ever trusted and no
 information, besides its existence, can be derived from trust."; (23:03Z) "Also extends to the field and how it behaves: Trust is
-gravitational, Information is hierarchical." Approved 23:02Z. So the chapter has three axioms, one per building block, and the four axioms
+gravitational, Information is hierarchical."; (23:10Z) "All natural systems, which exchange information, lay themselves out in hierarchical
+order, which can be optimized for its highest total cohesion, so how much every part of the system has to work to get information, so how
+many nodes it needs to hop. [...] So Gravity, if it is strong enough, is sufficient, as proven by GR, to contain all Information but Entropy,
+while Information naturally organizes itself both to facilitate optimal access across its information layers, but also, as a consequence of
+actively maintaining the median state, naturally keeps the DoT stable." Approved 23:02Z. So the chapter has three axioms, one per building block, and the four axioms
 of DMP 0.9.0 went into them without losing a sentence:
 
 | Was (DMP 0.9.0) | Is (DMP 0.9.7) | What the block adds |
 |---|---|---|
 | Axiom 1 · The dual gate, and Axiom 4 · The direction | Axiom 1 · The Duality | the halves are typed, one owns trust and one owns information; the direction is their balance |
-| Axiom 2 · Evidence | Axiom 2 · Trust | no information is ever trusted; trust is gravitational (the field of T32 is how trust behaves, not a construction on top) |
-| Axiom 3 · The record | Axiom 3 · Information | from trust nothing but existence can be derived; admission and containment (the words); information is hierarchical |
+| Axiom 2 · Evidence | Axiom 2 · Trust | no information is ever trusted; trust is gravitational (the field of T32 is how trust behaves, not a construction on top); gravity contains |
+| Axiom 3 · The record | Axiom 3 · Information | from trust nothing but existence can be derived; admission and containment (the words); information is hierarchical and evolves towards the fewest hops |
 
 The numbers of the three that stayed are kept, so every `Derived from:` line in this chapter and every comment in Gravity keeps its meaning;
 a citation of Axiom 4 in an older text reads Axiom 1. The numbers do not rank the blocks: read in the owner's order (Trust, Information, the
@@ -166,15 +170,18 @@ validity is longer than the time the minting accepts between a loss and its effe
 Trust is gravitational. It is a field, never a position: every standing has a source (the witness that granted it), a depth (its grant
 chain back to the pair) and a freshness that decays with the time since its last live verification. The field bends trustspace, so that a
 boundary contains what no trust reaches (the words), and restoration moves along it, from the pair outward (T32). The field adds levels of
-consequence and of proof demanded, never levels of trust: the weight never votes.
+consequence and of proof demanded, never levels of trust: the weight never votes. Gravity contains: a boundary strong enough bends
+trustspace so that no act carries information across it, and what still leaves is entropy and nothing else (T31, the floor); where trust
+is strong enough, containment needs no wall.
 
 The owner's words it carries: "a write first reads the live state it will change" (C15); "look it up, don't guess" (C21); "That a carrier
 already checked the request does not count; the warehouse checks it again" (C19); "Isolating on silence would hand anyone who can cut a cable
-a switch that shuts the company down" (Q6); "No Information is ever trusted" (2026-10-26 22:59Z); "Trust is gravitational" (23:03Z).
+a switch that shuts the company down" (Q6); "No Information is ever trusted" (2026-10-26 22:59Z); "Trust is gravitational" (23:03Z); "Gravity, if it is strong enough, is sufficient,
+as proven by GR, to contain all Information but Entropy" (23:10Z).
 
 Status: stable since DMP 0.9.7
-Amended: Axiom 2 · Evidence of DMP 0.9.0 with "no information is ever trusted" and the field, approved by the owner 2026-10-26 23:02Z
-and 23:03Z.
+Amended: Axiom 2 · Evidence of DMP 0.9.0 with "no information is ever trusted", the field and containment, approved by the owner
+2026-10-26 23:02Z, 23:03Z and 23:10Z.
 Owner: CM coordinator
 Enforced by: DMP-012, DMP-018
 
@@ -192,12 +199,19 @@ there, which routing walks from the nearest place outward and crosses the horizo
 above it allows, and nothing in a layer is reached except through its tree. The tree carries no trust: where a piece of information sits
 never decides who may act on it.
 
+Information evolves. A system whose parts exchange information lays itself out in that hierarchy and reorganises towards its highest total
+cohesion: the fewest hops in total that its parts need to reach the information they ask for, taken over the composition of requests that
+is representative of the system during its evolution. The layout is the median of that demand, recomputed by both halves of the layer and
+never by one (C12), and it moves only when the demand has; by maintaining that state the information keeps its Duality stable.
+
 The owner's mission it carries: "while maintaining absolute Observability". The owner's words: "no information, besides its existence, can
-be derived from trust" (2026-10-26 22:59Z); "Information is hierarchical" (23:03Z).
+be derived from trust" (2026-10-26 22:59Z); "Information is hierarchical" (23:03Z); "Information naturally organizes itself both to
+facilitate optimal access across its information layers, but also, as a consequence of actively maintaining the median state, naturally
+keeps the DoT stable" (23:10Z).
 
 Status: stable since DMP 0.9.7
-Amended: Axiom 3 · The record of DMP 0.9.0 with "from trust only existence", admission, containment and the hierarchy, approved by the
-owner 2026-10-26 23:02Z and 23:03Z.
+Amended: Axiom 3 · The record of DMP 0.9.0 with "from trust only existence", admission, containment, the hierarchy and its evolution,
+approved by the owner 2026-10-26 23:02Z, 23:03Z and 23:10Z.
 Owner: CM coordinator
 Enforced by: DMP-009, DMP-018
 
