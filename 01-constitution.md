@@ -724,10 +724,11 @@ Milky Way net (the MW net). What CMOS makes is its own; personal data it holds o
 **Information layers.** Information of one kind forms a **layer**: its own sub-VIBE net with its own configuration, overlaid on the one
 VIBE field and routed by a clustered MW net. The knowledge warehouse is the knowledge layer; the relational warehouse and the files
 warehouse are layers in the same way. Each layer reorganises by Lensing on its own: the field's pull computes the layout from the signed
-state, and both witnesses recompute it and sign. **A layer places information, never grants trust**: who may act on a piece of
-information comes only from its admission and the dual gate, never from the layer, tier or position it sits in. The set of layers is open: a new kind of information is a new layer that declares its
-kind, its sub-VIBE configuration and its route, and inherits the dual gate, the record and Lensing; no other part of CMOS changes for it. A layer may place work as well as information (a network layout, load balancing, placement in a
-cloud): it decides where, never who may.
+state, and both witnesses recompute it and sign. **A layer places information, never grants trust**: who may act on a piece of information
+comes only from its admission and the dual gate, never from the layer, tier or position it sits in. The set of layers is open: a new kind
+of information is a new layer that declares its kind, its sub-VIBE configuration and its route, and inherits the dual gate, the record and
+Lensing; no other part of CMOS changes for it. A layer may place work as well as information (a network layout, load balancing, placement
+in a cloud): it decides where, never who may.
 
 **Privacy** is a singularity of VIBE space: information there is admitted only for the class its grant names, and no routing pulls it
 out, not even the MW net, which holds no admission for it. Routing behaves exactly as if the singularity were empty, so neither an answer
