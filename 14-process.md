@@ -114,7 +114,8 @@ owner, and then it asks with the empty search or the thin record in hand. A fact
 source. A second opinion from the owner stays welcome at any time; this rule fixes the order, not the right to ask. The sister rule
 is the next section: the nearest tier answers first, and what no tier knew goes back.
 
-Status: draft (redrafted 2026-10-26; was stable since DMP 0.2.0)
+Status: draft
+Redrafted: 2026-10-26 (was stable since DMP 0.2.0).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -124,7 +125,8 @@ Whenever an agent learns something worth keeping that no tier held, it hands it 
 the MW net. The rule does not depend on how the intake works or how the information is stored: colleagues by role, no secret, and
 nobody bypasses the intake.
 
-Status: draft (redrafted 2026-10-26; was stable since DMP 0.1.0)
+Status: draft
+Redrafted: 2026-10-26 (was stable since DMP 0.1.0).
 Owner: CM coordinator
 Enforced by: DMP-002
 
