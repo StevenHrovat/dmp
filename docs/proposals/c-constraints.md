@@ -121,6 +121,16 @@ and prove only that difference. The axiom systems to stand on rather than rebuil
   OSPF) and the hierarchical small-world routing of Kleinberg (2000). The layers of Axiom 3 are spanning trees under a signed root instead
   of an elected one; prove the signed root and the two-witness recomputation, and take convergence, loop-freedom and the tree properties
   as given.
+- **Self-reorganising networks (the owner, 23:18Z):** the closest prior work to "information lays itself out for the fewest hops under its
+  demand" is **self-adjusting, demand-aware networks** (Avin and Schmid, "Toward demand-aware networking: a theory for self-adjusting
+  networks", 2019; SplayNet, Schmid et al. 2016), which reconfigure a tree or overlay to minimise expected route length under a demand
+  distribution and prove the lower bound: expected path length is at least the conditional entropy of the demand. That bound ties the
+  "median state" of Axiom 3 to Shannon directly. Behind it: splay trees and the working-set and static-optimality theorems (Sleator and
+  Tarjan 1985; the dynamic optimality conjecture), self-stabilization (Dijkstra 1974; Dolev 2000), gossip-based topology management
+  (T-Man, Jelasity and Babaoglu 2005; epidemic algorithms, Demers et al. 1987), self-organising overlays (Chord, Kademlia), hierarchical
+  organisation in complex networks (Ravasz and Barabási 2003; preferential attachment, Barabási and Albert 1999; small worlds, Watts and
+  Strogatz 1998), and 3GPP Self-Organising Networks (self-configuration, self-optimisation, self-healing). DMP's difference: the layout is
+  recomputed by two witnesses and signed, never by the nodes voting with their traffic; prove that, and take the optimality bounds as given.
 - **Related axiom systems:** Kolmogorov's probability axioms (1933) under every "representative composition of requests"; Lieb and
   Yngvason's axiomatic entropy (1999) if the floor is argued thermodynamically; Alpern and Schneider's safety/liveness decomposition (1985)
   for "the balance ranks below the bounds"; the axioms of a metric and of a tree median (Goldman 1971) for the layout.
@@ -229,7 +239,8 @@ Information Theory, together in a new way, and both come with axiom systems of t
 already withstood the test of time: where a sentence rests on a standard result or a standard axiom system (the Einstein equations, the
 singularity and no-hair theorems, Bekenstein–Hawking entropy; Shannon and Khinchin, Landauer, noninterference and the flow lattice;
 Kolmogorov, safety/liveness, k-median on trees, Spanning Tree and its relatives (Perlman, MSTP, distributed MST, shortest-path
-routing), self-stabilization, potential games, Byzantine agreement; the list with sources is section 4 of the brief), cite it, say where DMP's object differs, and prove only that difference in Lean. New Lean is for the
+routing), self-reorganising networks (demand-aware self-adjusting networks, splay trees, self-stabilization, gossip topology management),
+potential games, Byzantine agreement; the list with sources is section 4 of the brief), cite it, say where DMP's object differs, and prove only that difference in Lean. New Lean is for the
 stitching, never for the fabric.
 ```
 
