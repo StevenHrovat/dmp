@@ -49,7 +49,7 @@ body of people), **evidence** (what a witness verifies) and **time**.
 - A **tightening** is a witness withdrawing or withholding its own trust in a part it gates; a **loosening** is anything that lets an act
   happen that would not have happened before. Both are said of whose trust changes, never of an act alone.
 
-Status: stable since DMP 0.9.0
+Status: stable since DMP 0.9.0; the definition of "contains" approved by the owner 2026-10-26 14:01Z
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -157,7 +157,7 @@ the absence of any external trust, the trust space collapses in on itself which 
 
 Derived from: the words (contains, admission), Axiom 1, T0.
 
-Status: draft (2026-10-26)
+Status: approved by the owner 2026-10-26 14:01Z ("I like it, approved!"); stable from the next DMP version
 Owner: CM coordinator
 Enforced by: DMP-021
 
