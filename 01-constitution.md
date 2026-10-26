@@ -766,7 +766,7 @@ Coverage: argued. The nearest theorems are the frame rule (`Recipe.extend_preser
 and `Standing.loosening_needs_both`; nothing models a contract or its version.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint and merged with C5 (financial data freezes at production), approved by the owner 2026-10-26 (both stable since
+Amended: recast as a constraint and merged with C5 (financial data freezes at production), approved by the owner 2026-10-26 23:49Z (both stable since
 DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: none yet
@@ -810,7 +810,7 @@ Coverage: proven for the recipe (`Recipe.file_determines`: the recipe read back 
 system is the one its recipe describes (that is the evidence chain per deployment, C25).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-004
 
@@ -934,7 +934,7 @@ Coverage: proven for the shape (`Standing.loosening_needs_both`); argued for the
 minting declares, T4).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-013
 
@@ -1068,7 +1068,7 @@ the plan is chosen by the live field, never the proof, and refused under other p
 gravity finding F10 is open on the restoring environment's capability).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.7.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.7.0 before that).
 Owner: Black Hole coordinator
 Enforced by: none yet
 
@@ -1092,7 +1092,7 @@ after any single act every half keeps at least one route to every action. Proven
 `Recipe.verdict_proven_iff`, `Recipe.one_unproven_line_unproves`: one line the chains do not carry unproves the whole).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.8.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.8.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002, DMP-020
 Not yet checked in cm: the tie between the actions named in the audit log and `DMP/routes.txt`, and the plan's refusal of a
