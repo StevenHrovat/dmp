@@ -299,6 +299,25 @@ Approved: by the owner 2026-10-26 15:36Z ("Approved!").
 Owner: CM coordinator
 Enforced by: DMP-021
 
+## T39 · Trust and information gate each other
+
+No trust without information: a witness trusts only on evidence it verified itself, and that evidence is the live state of the part and the
+current state of the record, which is information (Axiom 2, Axiom 3). No information without trust: information is inside only while an
+admission holds, an admission is a grant both halves made, and content reaches only a part trusted for its class; what no trust reaches is
+contained where it lies (Axiom 3, Axiom 1, T37). So the two blocks gate each other from the axioms themselves, and only a Duality that is
+both trusted for its acts and holds the information admitted to it is a part of a minted CMOS. A part trusted with no information has nothing
+it may act on; information with no part trusted for it is contained; neither is inside.
+
+The owner (2026-10-26 23:42Z): "They also logically gate each other from the axioms themselves, no trust without information and no
+information without trust. Logically only a DoT, that is both trusted AND has the right information, can be a part of a minted CMOS."
+
+Derived from: the words (part, inside, admission, contains), Axiom 1, Axiom 2, Axiom 3, G0 (minted), T0, T37, T38.
+
+Status: stable since DMP 0.9.7
+Approved: by the owner 2026-10-26 23:42Z (his words above; the section states them).
+Owner: CM coordinator
+Enforced by: DMP-021
+
 ## T1 · Trust is bounded
 
 A part holds trust for named acts only, and never more than both witnesses granted: the acts it may do are the intersection of what each
