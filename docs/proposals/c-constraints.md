@@ -135,6 +135,15 @@ and prove only that difference. The axiom systems to stand on rather than rebuil
   Yngvason's axiomatic entropy (1999) if the floor is argued thermodynamically; Alpern and Schneider's safety/liveness decomposition (1985)
   for "the balance ranks below the bounds"; the axioms of a metric and of a tree median (Goldman 1971) for the layout.
 
+The owner's own statement of the stitch (23:20Z, verbatim): "This is basically marriage of demand aware self-adjusted routing with GR's
+informational black hole, applied purposefully for their advantages, while cancelling out the disadvantages of the other at the same time
+through DoT and interpreted for general Software Alignment." Read for the verifier: a demand-aware network's weakness is that whoever
+shapes the demand shapes the network, and its reconfiguration leaks the demand; the black hole's weakness is that what it contains is
+unreachable and only entropy comes out. The Duality cancels both: the layout moves only when both halves recompute and sign it (demand
+never votes, Axiom 2), and the hierarchy inside the horizon keeps contained information reachable to the trusted inside while the field
+keeps it from leaving (Axiom 3); the counts-only readout is the radiation. The two properties to prove are therefore "demand never moves
+the layout alone" and "nothing but counts leaves the horizon"; everything else is the fabric.
+
 Where each sentence of the axioms already stands on that prior work, and what is left to prove:
 
 - **Trust is gravitational; gravity contains; only entropy leaves** (Axiom 2): the field is a potential over a graph (T32 is a potential
