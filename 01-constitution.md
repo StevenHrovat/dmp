@@ -39,6 +39,10 @@ serves an objective.
 | C14 | Every path is combined | C14 · An answer rests on every piece of evidence its author can verify | the list of paths and the `Paths combined:` line: chapter 14 "Combine every path" |
 | C15 | A write first reads what it changes | C15 · A write lands only on a state its writer verified live | retries, hard and soft failure: chapter 10 "Guarded writes" |
 | C21 | Look it up, don't guess | C21 · A statement is a write | the sources per kind of name and the `Looked up:` line: chapter 14 "Look it up, don't guess" |
+| C6 | The gates and the authority grant | C6 · Who may act on what is a bounded grant in the record; the grant block unchanged | nothing; "the gates hold" is C∞ |
+| C17 | The first level belongs to The Administrator and LHC | C17 · The top layer is a Duality like every other; the two names stay as definitions | the level-1 approval record and the foundation bricks were already chapter 02 |
+| C22 | Prove forward and back: two chains, neither trusted alone | C22 · "Proven" is an act with two witnesses | which engine carries which chain and the lemma ledger were already chapter 06 |
+| C∞ | The stopgap | C∞ · The root constraint, unchanged in substance, with its Coverage line | nothing |
 
 **What a derivation is here.** Each `Derived from:` line names what the theorem rests on and, where it applies, one status word:
 *construction* (a design choice the axioms allow and recommend but do not force), *configuration* (a number or a list set at the minting,
@@ -763,21 +767,28 @@ Status: stable since DMP 0.1.0
 Owner: Sagittarius coordinator
 Enforced by: none yet
 
-## C6 · The gates and the authority grant
+## C6 · Who may act on what is a bounded grant in the record
 
-The gates hold. What agents may do on their own authority and what needs the words of a layer's two halves is written in the grant below,
-word for word. The wording is protected: rule DMP-009 refuses a change to it.
+No part acts beyond its grant, and a grant is a record both witnesses can read, with a bound. An act on a system or on information outside
+CMOS's own estate needs both halves of the layer it belongs to; a widening of what a part may do on its own is a loosening; anything
+irreversible outside that estate needs the halves' words per act. The standing grant to agents is the record below, word for word, and
+rule DMP-009 refuses a change to it.
 
 <!-- authority-grant:begin -->
 > Agents may build, change and deploy CMOS's own estate on their own authority, using credentials held in the operations master, under plan, audit and four eyes where a second administrator exists. An act on a system or on information outside CMOS's own estate needs both halves of the layer it belongs to (T38), its organisational and its factual responsibility. Each half may declare advanced testing reached for its layer; until both have, every act there needs their words per act, and anything irreversible outside CMOS's own estate always does. Until the minting the owner's own words stand for both halves (G0).
 <!-- authority-grant:end -->
 
-Derived from: T1 (the rule is trust bounded, written for agents), T38 (every layer outside CMOS's own estate has its two halves), Axiom 3
-(the wording is tamper-evident), G0 (until the minting the owner's words are both halves); which layers exist and who holds their halves
-is configuration (T4).
+Derived from: T1 (trust is bounded: the acts a part may do are what both witnesses granted), Axiom 3 (the grant is a record, tamper-evident),
+T38 (every layer outside CMOS's own estate has its organisational and its factual half), T24 (declaring advanced testing reached, and every
+other widening, is a loosening), G0 (until the minting the owner's words are both halves). Which layers exist, who holds their halves, and the
+wording of the grant are configuration (T4).
 
-Status: stable since DMP 0.9.5
-Amended: grant abstracted onto T38, approved by the owner 2026-10-26 15:36Z (stable since DMP 0.1.0 before that).
+Coverage: proven for the shape (`Gate.gate_pass_iff` and `meet_pass_iff`: an act passes only what every witness on the chain passed, the
+intersection of the grants; `Recipe.pass_has_two_independent_witnesses`: whatever passes was passed by a minted Duality on its chain;
+`Standing.loosening_needs_both`); argued for the grant as a readable record with a bound (no theorem models a grant's wording or scope).
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, the grant unchanged, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0, grant abstracted 0.9.5 before that).
 Owner: CM coordinator
 Enforced by: DMP-009
 
@@ -913,29 +924,27 @@ Status: stable since DMP 0.3.0
 Owner: Black Hole coordinator
 Enforced by: DMP-013
 
-## C17 · The first level belongs to The Administrator and LHC
+## C17 · The top layer is a Duality like every other
 
-CMOS has no single owner (2026-10-25). It is controlled through the unity of two parts:
+CMOS has no single owner. Whoever administers it does so as one half, checked by the other half, the body of people the minting binds;
+neither half acts on the composition of CMOS alone. A new part at the top of the composition needs the words of both halves, recorded;
+until the first minting the owner's words stand for both (G0). Every system keeps every other system in check while keeping it running in
+the best shape it can.
 
-- **The Administrator**, always written with a capital The, is a mythical entity, not a person. It is everyone who is allowed to fully
-  administer CMOS, allowed both by whoever holds authority over CMOS and by CMOS itself.
-- **LHC**, the Lighthole Council, is the minting ritual of CMOS. The fellowship of people it binds together, its members, is the other
-  part.
+The two halves at the top have names (2026-10-25). **The Administrator**, always written with a capital The, is a mythical entity, not a
+person: everyone who is allowed to fully administer CMOS, allowed both by whoever holds authority over CMOS and by CMOS itself. **LHC**,
+the Lighthole Council, is the minting ritual of CMOS; the fellowship of people it binds together, its members, is the other half.
 
-CMOS is a balance and a check of power at every level: every system keeps every other system in check while keeping it optimised and
-running in the best shape possible, through the interplay of The Administrator and LHC.
+Derived from: Axiom 1 at the governance layer, G0 (`LHC pending`), T24b (lockstep: neither half grants itself more), T24c (every system
+keeps every other in check), T38 (the layer's two responsibilities). The approval record of a new top-level part, and what the levels below
+it are, are construction (chapter 02 "Adding a node", "Foundation bricks are complete"); the two names are definitions.
 
-The children of CM, level 1 of the composition tree (`cm.io`, `cm.os` and the constellations), carry oversight and insight into the
-whole system. A new node at that level is created only with the words of both The Administrator and LHC, recorded in
-`DMP/tree-approvals.txt`. Until the first LHC is minted, The Administrator's words are recorded alone and the line says that LHC's
-confirmation is pending. Below level 1, the foundation is laid out: a brick of `cm.io` or a part of `cm.os` is complete within its
-scope, built once and tested once (chapter 02, "Foundation bricks are complete").
+Coverage: proven for the shape (`Ground.minted_no_single_control`, `Layer.one_person_is_no_duality`, `Layer.same_part_is_no_duality`,
+`Recipe.root_minted`: the galaxy at the end of every chain is minted; `Recipe.pressed_root_not_wf`); argued for "a new part at the top needs
+both halves' words" (the register is construction, DMP-014).
 
-Derived from: Axiom 1 at the governance layer, G0 (`LHC pending`), T24b, T24c (every system keeps every other in check); the two
-definitions stay definitions.
-
-Status: stable since DMP 0.9.4
-Amended: "organisation" replaced, approved by the owner 2026-10-26 15:19Z (stable since DMP 0.3.0 before that).
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0, "organisation" replaced 0.9.4 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
@@ -1005,30 +1014,27 @@ Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable
 Owner: CM coordinator
 Enforced by: DMP-002
 
-## C22 · Prove forward and back: two chains, neither trusted alone
+## C22 · "Proven" is an act with two witnesses
 
-"The entire point of CMOS is to never trust any one interconnected system" (the owner, 2026-10-25). Every proof therefore runs both
-ways, as two totally independent end-to-end chains that always verify each other's state:
+"The entire point of CMOS is to never trust any one interconnected system" (the owner, 2026-10-25). That a part is proven is therefore
+decided by two independent chains: one from the intent down to the code, one from the code up to the intent. They share nothing they could
+fail together beyond the roots they declare, each starts from its own source, and neither takes a result from the other. A part counts as
+proven only where both agree; a mismatch leaves it unproven, the gate turns red, the stricter answer stands at run time, and nothing that
+depends on it moves until both agree again. The chains prove that text, code and run agree; the text itself is verified only by a reader
+who did not write it. "This approach applies universally throughout CM, it has to be implemented wherever it is technically possible"
+(the owner, 2026-10-25).
 
-- the **intent chain** proves forward, DMP to IM to CM: what is meant becomes the protocol, the protocol becomes the code;
-- the **evidence chain** proves in reverse, CM up to IM to DMP: it starts from what is actually there (the code, its configuration, the
-  measured running state), derives which IM that code really speaks, and proves which DMP rules that IM really keeps.
+Derived from: Axiom 1 (two independent witnesses for the act "this part is proven"), Axiom 2 (each reads its own source), T22 (a change
+to a law is an act with a cold read), T29 (a shared cause turns the proof layer into one witness), T30 (where the second chain cannot be
+built yet is a record with a validity, never an escape). Which engine carries which chain, the lemma ledger and the alarm are construction
+(chapter 06 "The gravitational wave test").
 
-The chains share nothing they could fail together beyond the roots they declare: not the author, not the proof engine, not the cases, not
-the input they start from (the intent chain starts from DMP's sentences, the evidence chain from the code). Both end at the DMP text on
-purpose: it is the central mass that ties them. Neither takes a result from the other. They cross-check each other at every layer they both
-reach (IM, DMP) and at run time. A layer counts as proven only when both chains agree on it. A mismatch is never settled by trusting one
-chain: the gate turns red, the part where they disagree counts as unproven, the stricter answer stands at run time, an alarm reaches the
-owner, and nothing that depends on it is promoted until both chains agree again. Gravity carries the intent chain and Lean the evidence
-chain (the gravitational wave test, chapter 06); the lemma ledger (chapter 06) counts an IM command as proven safe only when both chains
-prove it. The two chains prove that text, code and run agree; the text itself is verified only by a reader who did not write it.
+Coverage: proven for the verdict (`Recipe.verdict_proven_iff`: proven exactly when the recipe is well formed and the ledger carries every
+line; `Recipe.one_unproven_line_unproves`; `Cmb.sealed_needs_both`, `Cmb.sealed_proven_complete`); argued for the chains' independence, which
+is checked per engine (gravity finding F3: the exporter is one step both kernels share, T29).
 
-"This approach applies universally throughout CM, it has to be implemented wherever it is technically possible" (the owner,
-2026-10-25).
-
-Derived from: Axiom 1 (two independent witnesses for "this layer is proven"), Axiom 2 (each reads its own source), T29, T30.
-
-Status: stable since DMP 0.4.0
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.4.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -1074,11 +1080,11 @@ Not yet checked in cm: the tie between the actions named in the audit log and `D
 deployment that would remove a route. The administration tool's own test holds them until its code moves into cm;
 DMP-020 checks the gate on every deployment workflow, the route register, its cap and its ratchet.
 
-## C∞ · The stopgap: what is not fully trusted is ejected
+## C∞ · The root constraint: what is not fully trusted is ejected
 
-"Everything that is not fully trusted is automatically ejected" (the owner, 2026-10-25). This is the thesis of DMP and its permanent
-stopgap. Its reserved number is C23; it is written C∞ because it always stands last: every new section of this chapter is inserted
-above it, so whatever the sections above do not catch, it does. **Fully trusted** means what the dual gate says; at the proof layer its two
+"Everything that is not fully trusted is automatically ejected" (the owner, 2026-10-25). This is the thesis of DMP, the root constraint
+that every other constraint refines, and its permanent stopgap. Its reserved number is C23; it is written C∞ because it always stands
+last: every new section of this chapter is inserted above it, so whatever the sections above do not catch, it does. **Fully trusted** means what the dual gate says; at the proof layer its two
 witnesses are the two chains (C22), so a part is fully trusted for merging, promoting and deploying only when it is compliant with DMP, with
 IM and with CM and proven by both chains. "Everything that does not comply with DMP and IM and CM is automatically critical" (the owner,
 2026-10-25): such a finding carries the severity **critical** by definition, and nobody rates it down; no label, review state, deadline
@@ -1101,6 +1107,10 @@ the count stays at zero.
 
 Derived from: Axiom 1 (the thesis sentence is the dual gate's); the rest is the meta-rule about the axiom system itself.
 
-Status: stable since DMP 0.5.0
+Coverage: proven for the thesis (`Gate.one_witness_never_acts`, `Gate.act_needs_both_with_evidence`, `Record.performed_only_with_both`: nothing
+acts, and nothing is performed, without both witnesses on live evidence); the meta-rule is not a theorem and has no coverage to claim.
+
+Status: stable since DMP 0.9.7
+Amended: named the root constraint and given its Coverage line, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.5.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002, DMP-017
