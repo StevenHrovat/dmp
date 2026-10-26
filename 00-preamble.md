@@ -71,6 +71,38 @@ Status: draft (proposed 2026-10-26; replaces the text stable since DMP 0.1.0)
 Owner: CM coordinator
 Enforced by: DMP-009
 
+## The root chain
+
+DMP is the ultimate abstraction layer between information layers: how they interact, and how their interaction shapes the VIBE field
+through interconnected layers of separate information types (C12). What can be broken down into a layer, or a sublayer of other
+information, is broken down that way, and every layer is complete in itself.
+
+The root repositories follow the same rule. Each is complete in itself, and each depends only on the ones before it, in one direction:
+
+- **DMP stands singular.** It depends on nothing. It names the rules that check it (`Enforced by:`), but it holds no code and no copy
+  of anything else.
+- **Gravity** holds the version of DMP it is based on.
+- **IM** holds DMP and Gravity in the versions it is intended for.
+- **CM** holds everything it needs to be axiomatically sound: DMP, Gravity and IM in the versions it is built against, and the code that
+  checks them (`tools/dmp`, `tools/verify`).
+
+To hold a repository is to carry a byte-for-byte copy of it in a folder of its own, next to a pin: the source repository, the commit, the
+version, and a sha256 over its files in ordinal path order. A copy that no longer matches its pin is refused by the gate. Nothing ever
+points back up the chain, so a clone of any root repository is whole without the network, and nothing a later repository does can change
+an earlier one. The chain is the Event Horizon guarantee for the root repositories: everything each one needs is inside its own boundary,
+and no trust crosses that boundary (the words, "contains"; Axiom 4; T37).
+
+Derived from: the words (contains), Axiom 1, Axiom 4, T37, C12, and "Who maintains it". The owner (2026-10-26): "DMP is the ultimate
+abstraction layer between information layers and how they interact, as well as how their interaction shapes the VIBE field through
+interconnected layers of separate information types. If something can be broken down to a layer or a sublayer of other information, it
+should be done that way. Everything should be complete in itself. DMP stands singular. Gravity has the DMP version it is based on in its
+repo. IM has DMP and Gravity in the version it is intended for. CM contains all that is needed for it to be axiomatically sound. This
+seems logical for me and also fulfils the Event Horizon guarantee."
+
+Status: draft (proposed 2026-10-26)
+Owner: CM coordinator
+Enforced by: none yet
+
 ## The version
 
 `DMP/VERSION` holds the DMP version, `MAJOR.MINOR.PATCH`. It moves only in a pull request that promotes a section to stable
