@@ -726,7 +726,8 @@ VIBE field and routed by a clustered MW net. The knowledge warehouse is the know
 warehouse are layers in the same way. Each layer reorganises by Lensing on its own: the field's pull computes the layout from the signed
 state, and both witnesses recompute it and sign. **A layer places information, never grants trust**: who may act on a piece of
 information comes only from its admission and the dual gate, never from the layer, tier or position it sits in. The set of layers is open: a new kind of information is a new layer that declares its
-kind, its sub-VIBE configuration and its route, and inherits the dual gate, the record and Lensing; no other part of CMOS changes for it.
+kind, its sub-VIBE configuration and its route, and inherits the dual gate, the record and Lensing; no other part of CMOS changes for it. A layer may place work as well as information (a network layout, load balancing, placement in a
+cloud): it decides where, never who may.
 
 **Privacy** is a singularity of VIBE space: information there is admitted only for the class its grant names, and no routing pulls it
 out, not even the MW net, which holds no admission for it. Routing behaves exactly as if the singularity were empty, so neither an answer
@@ -742,7 +743,8 @@ the horizon is an act, so it comes last and only when needed), C1 (every route r
 extra crossing). The owner's words (2026-10-26): "Tier 1 information is the information in the MW net, which is always consulted first
 and then outward as the VIBE net dictates"; "Privacy could be seen as singularities of VIBE space where not even the MW-net can pull the
 information out"; the knowledge warehouse "would simply be the knowledge layer, that is overlayed dynamically on the VIBE field, same with
-the other stuff", which "also makes the system extensible for any other kind of information layer". Evidence chain: `Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean`
+the other stuff", which "also makes the system extensible for any other kind of information layer", for example "network layout while maintaining ultimate
+trust in the cloud, or other load balancing". Evidence chain: `Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean`
 and `Dmp/R1Lens.lean` (a layer's reorganisation) in the gravity repository.
 
 Status: draft (redrafted 2026-10-26; was stable since DMP 0.1.0)
