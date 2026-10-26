@@ -49,6 +49,8 @@ serves an objective.
 | C16 | Company data reaches general testing only with its proof | C16 · Widening who may use a feature on information is a loosening | the two stages, the register, the template and the owner's words: chapter 14 "The data gate" |
 | C24 | Stable company-wide needs a survived cold start | C24 · Restorable is shown, never claimed | the catalogue, the pass line, the assistant and the bundle were already chapter 11 |
 | C25 | Every deployment obeys DMP | C25 · A deployment is gated on the exact thing deployed, and removes no route | nothing; the history stays in the section |
+| C9 | Open source: roles, not values | C9 · What is published holds nothing that is inside | nothing; the licence was already chapter 14 |
+| C10 | The defensive charter | C10 · CMOS is trusted only for acts on its own estate | nothing; the wording stays in CHARTER.md |
 
 **What a derivation is here.** Each `Derived from:` line names what the theorem rests on and, where it applies, one status word:
 *construction* (a design choice the axioms allow and recommend but do not force), *configuration* (a number or a list set at the minting,
@@ -813,27 +815,38 @@ Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since 
 Owner: CM coordinator
 Enforced by: DMP-004
 
-## C9 · Open source: roles, not values
+## C9 · What is published holds nothing that is inside
 
-No secret, no company fact and no person beyond a role ever enters the tree: colleagues by role, never by name; no host, share,
-address or internal system name; real values live in the settings store of the administration tool or are passed as parameters.
-The public tree holds no trust for company facts. (The licence, Apache 2.0, is a decision, not a
-theorem: chapter 14 "The licence".)
+Nothing inside leaves except by an export. What CMOS publishes (its code, its text, its public tree) holds no secret, no fact about the
+organisation that runs it and no person beyond a role; real values stay inside and are passed as parameters. The public tree holds no
+trust for anything inside.
 
-Derived from: T0, T1, T27 (a value in the public tree has left the perimeter).
+Derived from: T19 ("leave CMOS" is an act with no trust by default), T27 (contained to outside is an export and needs both halves), T31
+(contained information reaches no part outside by any act), T0, T1. The scan of the tree, the settings store and the licence are
+construction and decisions (DMP-001, DMP-006, chapter 14 "The licence").
 
-Status: stable since DMP 0.1.0
+Coverage: proven for the trap (`Floor.road_gate`: a contained item is never read, forwarded or sent; `Floor.destroyed_stays`); argued for
+a publication being an export (no theorem models a public tree).
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-001, DMP-006
 
-## C10 · The defensive charter
+## C10 · CMOS is trusted only for acts on its own estate
 
-This repository and every brief in it serve defensive security and privacy engineering of the company's own systems. The
-charter is [CHARTER.md](CHARTER.md), and every security-shaped brief carries its one-line security context.
+CMOS acts only on the systems and the information that whoever holds authority over it holds authority over. No act aims at a third
+party's systems, no act harvests or evades on anyone else's, and no test touches a productive system without a record naming the
+signatory, the targets and the window. A request that would break this is refused. The wording is the charter, [CHARTER.md](CHARTER.md).
 
-Derived from: T1 (CMOS is trusted only for acts on the company's own systems); the charter text is the wording of that bound.
+Derived from: T1 (trust is bounded to named acts on named parts), T0 (an act outside the estate has no trust), G0 (authority comes from
+whoever holds authority over CMOS, outside CMOS), Axiom 3 (the scope file is the record). That every security-shaped brief carries its
+one-line context is construction (DMP-002).
 
-Status: stable since DMP 0.1.0
+Coverage: argued. The gate shape (`Gate.one_witness_never_acts`) is the only theorem that bears; nothing models the estate's boundary.
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-002
 
