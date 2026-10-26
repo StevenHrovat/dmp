@@ -4,7 +4,9 @@ Milky Way is the one door into CMOS, out of it and between its parts (constituti
 message, and can simulate I/O so that everything, the cold start included, can be tested in a sandbox. This chapter holds what IM
 version 0 needs of Milky Way: the gate, the quiet answer, the verifier, the heartbeat board, the simulator, the settings and the
 contract with Doppler. The protocol bricks it proxies, the shield (classes, tokens on values, grants, the canary, recipient
-profiles) and the galaxy group are later sections. Every section is a draft.
+profiles) and the galaxy group are later sections. The shield is how Milky Way keeps constraint C3: every value that crosses a border carries
+its class and its identification axis, and a token at every border that is not an administrator (these two sentences stood in constitution
+C3 until DMP 0.9.7). Every section is a draft.
 
 Security context: this chapter is defensive security engineering under the charter in [CHARTER.md](CHARTER.md). It describes the company's own
 entrance, tested on synthetic data in the sandbox.
