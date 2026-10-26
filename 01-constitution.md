@@ -788,7 +788,7 @@ intersection of the grants; `Recipe.pass_has_two_independent_witnesses`: whateve
 `Standing.loosening_needs_both`); argued for the grant as a readable record with a bound (no theorem models a grant's wording or scope).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, the grant unchanged, approved by the owner 2026-10-26 (stable since DMP 0.1.0, grant abstracted 0.9.5 before that).
+Amended: recast as a constraint, the grant unchanged, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0, grant abstracted 0.9.5 before that).
 Owner: CM coordinator
 Enforced by: DMP-009
 
@@ -944,7 +944,7 @@ Coverage: proven for the shape (`Ground.minted_no_single_control`, `Layer.one_pe
 both halves' words" (the register is construction, DMP-014).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0, "organisation" replaced 0.9.4 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0, "organisation" replaced 0.9.4 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
@@ -1034,7 +1034,7 @@ line; `Recipe.one_unproven_line_unproves`; `Cmb.sealed_needs_both`, `Cmb.sealed_
 is checked per engine (gravity finding F3: the exporter is one step both kernels share, T29).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.4.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.4.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
@@ -1111,6 +1111,6 @@ Coverage: proven for the thesis (`Gate.one_witness_never_acts`, `Gate.act_needs_
 acts, and nothing is performed, without both witnesses on live evidence); the meta-rule is not a theorem and has no coverage to claim.
 
 Status: stable since DMP 0.9.7
-Amended: named the root constraint and given its Coverage line, approved by the owner 2026-10-26 (stable since DMP 0.5.0 before that).
+Amended: named the root constraint and given its Coverage line, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.5.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002, DMP-017
