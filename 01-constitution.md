@@ -86,10 +86,10 @@ chapter 10 "Language and runtime", chapter 14 "Completion goals, never time plan
 
 ## The words
 
-Undefined, like point and line: a **part** (anything that can be trusted: a person, a body, an agent, a system, a node, a key, a chain, a
-rule, a deployment), an **act** (anything done in or to CMOS: a message, a read, a write, a grant, a merge, a promotion, a deployment, a
-decision, an answer an agent gives, a seat taken), a **witness** (a part that decides trust for others: Doppler, the operations master, a proof chain, a
-body of people), **evidence** (what a witness verifies) and **time**.
+Undefined, like point and line: a **part** (a Duality of Trust: two halves, one owning trust and one owning information; nothing further is
+said about what a part is made of), an **act** (anything done in or to CMOS: a message, a read, a write, a grant, a merge, a promotion, a
+deployment, a decision, an answer an agent gives, a seat taken), a **witness** (a part that decides trust for others), **evidence** (what a
+witness verifies) and **time**.
 
 - **Trust** is a relation between a witness, a part, an act and a time, written `T(w, p, a, t)`: the witness trusts the part for that act
   at that time. Nothing else; what grounds trust is the evidence axiom.
@@ -122,8 +122,8 @@ body of people), **evidence** (what a witness verifies) and **time**.
 
 Status: stable since DMP 0.9.3
 Amended: the definition of "contains" approved by the owner 2026-10-26 14:01Z; the definition of "DMP-complete" approved by the owner
-2026-10-26 15:04Z; the halves typed as trust half and information half approved by the owner 2026-10-26 23:02Z (stable since DMP 0.9.0
-before that).
+2026-10-26 15:04Z; the halves typed as trust half and information half approved by the owner 2026-10-26 23:02Z; a part defined as a Duality
+of Trust and nothing further, the owner 2026-10-26 23:28Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -218,14 +218,15 @@ Enforced by: DMP-009, DMP-018
 ## G0 · The ground
 
 The dual gate cannot witness its own first instance: somebody has to trust the first two witnesses. That is the **minting** (C17, the
-ceremony that forms LHC and makes the White Keys), done by people the owner already trusts, outside CMOS. It is stated, not derived.
+ceremony that forms LHC and makes the White Keys): at least five parts become the White Key Holders, and that minting draws the boundary of
+the instance. No further claim is made about those parts, so that any system can remint and redeploy. It is stated, not derived.
 
 - Until the first LHC is minted, the owner's own words stand for both halves and the record says `LHC pending`. Every gate in DMP that asks
   for the owner's words is G0, not a theorem.
 - The minting ratifies or revokes every act taken under `LHC pending`, by record class and hash range, never one by one; C∞ catches what
   the classes miss.
 - A **pressed** instance is G0 as a standing mode: a minting with owner-authorised stand-ins and an owner key whose fresh signed challenge
-  the instance requires. Both of its witnesses trace to one person, so it is marked as pressed in every artefact it issues, and nothing it
+  the instance requires. Both of its witnesses trace to one part, so it is marked as pressed in every artefact it issues, and nothing it
   does is fully trusted by a minted instance (T-P).
 - The loss of a whole half is recovered only by a new minting: whoever holds authority over CMOS re-grounds the Duality outside CMOS, as
   at the first minting, and ratifies or revokes what the surviving half held.
@@ -233,11 +234,16 @@ ceremony that forms LHC and makes the White Keys), done by people the owner alre
   inside the configuration's repository and verifies each one against its pin; without that no White Key is made, and the minting refuses to
   even start. The root repositories are never minted, so they need not hold their dependencies and stay lean.
 
+The owner (2026-10-26 23:28Z): "The boundary is not drawn by people, it is drawn by the minting of at least 5 constituent parts that become the
+WKHs. No further claim is made. Otherwise no system could remint and redeploy. The part is defined as a Duality of Trust, one owns trust, the
+other information. No further statements about its constituents."
+
 What else no chain reaches is listed, not hidden, in the assumption register (chapter 06): the DMP text itself, the mapping of code to acts,
 the door's code until its run-time check exists, the failure-class list, the time authorities, the provers' logic, the shared machines.
 
 Status: stable since DMP 0.9.4
-Amended: "organisation" replaced, approved by the owner 2026-10-26 15:19Z; mint prep approved by the owner 2026-10-26 15:04Z (stable since DMP 0.9.0 before that).
+Amended: "organisation" replaced, approved by the owner 2026-10-26 15:19Z; mint prep approved by the owner 2026-10-26 15:04Z; the minting
+of at least five parts draws the boundary, the owner 2026-10-26 23:28Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
