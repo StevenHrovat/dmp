@@ -115,6 +115,12 @@ and prove only that difference. The axiom systems to stand on rather than rebuil
 - **Information Theory:** Shannon's axioms and theorems (1948), the Khinchin axioms for entropy (1957), Landauer's principle (1961,
   information is physical), noninterference (Goguen and Meseguer 1982) and the information-flow lattice (Denning 1976). "No information is
   ever trusted; from trust only existence" is a flow statement in that lattice; prove the flow, not the lattice.
+- **Spanning Tree and its relatives (the owner, 23:15Z):** Perlman's spanning tree algorithm (1985) and its standards (IEEE 802.1D RSTP,
+  802.1Q MSTP: several trees under one signed root), the distributed minimum spanning tree (Gallager, Humblet and Spira 1983) and the
+  classical MST algorithms (Borůvka 1926, Kruskal 1956, Prim 1957), shortest-path routing (Bellman–Ford 1958, Dijkstra 1959, link-state
+  OSPF) and the hierarchical small-world routing of Kleinberg (2000). The layers of Axiom 3 are spanning trees under a signed root instead
+  of an elected one; prove the signed root and the two-witness recomputation, and take convergence, loop-freedom and the tree properties
+  as given.
 - **Related axiom systems:** Kolmogorov's probability axioms (1933) under every "representative composition of requests"; Lieb and
   Yngvason's axiomatic entropy (1999) if the floor is argued thermodynamically; Alpern and Schneider's safety/liveness decomposition (1985)
   for "the balance ranks below the bounds"; the axioms of a metric and of a tree median (Goldman 1971) for the layout.
@@ -222,8 +228,8 @@ The owner's reminder (2026-10-26 23:14Z, 23:15Z): the axioms stitch two very wel
 Information Theory, together in a new way, and both come with axiom systems of their own. Do not unnecessarily repeat work that has
 already withstood the test of time: where a sentence rests on a standard result or a standard axiom system (the Einstein equations, the
 singularity and no-hair theorems, Bekenstein–Hawking entropy; Shannon and Khinchin, Landauer, noninterference and the flow lattice;
-Kolmogorov, safety/liveness, k-median on trees, self-stabilization, potential games, Byzantine agreement; the list with sources is
-section 4 of the brief), cite it, say where DMP's object differs, and prove only that difference in Lean. New Lean is for the
+Kolmogorov, safety/liveness, k-median on trees, Spanning Tree and its relatives (Perlman, MSTP, distributed MST, shortest-path
+routing), self-stabilization, potential games, Byzantine agreement; the list with sources is section 4 of the brief), cite it, say where DMP's object differs, and prove only that difference in Lean. New Lean is for the
 stitching, never for the fabric.
 ```
 
