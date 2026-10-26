@@ -102,6 +102,27 @@ opening a pull request; Apache 2.0 content only, with credit for prior work as `
 - **Requirements traceability** in general (Gotel and Finkelstein, "An analysis of the requirements traceability problem", *ICRE 1994*): the
   mapping table from old rule to new home.
 
+**Two settled domains, stitched (the owner, 2026-10-26 23:14Z).** The three axioms of batch 0 join two very well researched fields in a new
+way; the research itself is not new. "Please remind Team Fable in the PR to not unnecessarily repeat work that has already withstood the test
+of time." So: do not re-derive what a standard result gives; cite it, state where DMP's object differs, and prove only that difference.
+Where each sentence of the axioms already stands on prior work:
+
+- **Trust is gravitational; gravity contains; only entropy leaves** (Axiom 2): the field is a potential over a graph (T32 is a potential
+  game, Monderer and Shapley 1996; restoration is gradient descent on it); containment is the horizon picture: the no-hair theorem (Israel
+  1967, Carter 1971) and Bekenstein–Hawking entropy (Bekenstein 1973, Hawking 1975) are the physics the owner cites with "as proven by GR";
+  the floor of T31 is Shannon's entropy (1948) of ciphertext, and the "counts only" readout is the one-way information-flow result of
+  Goguen and Meseguer (1982, noninterference). Do not reprove any of these; prove that the Lean's record and field have the shape they assume.
+- **Information is hierarchical; the layout is the median of the demand** (Axiom 3): minimising total hops is the **k-median** problem
+  (Hakimi 1964; on trees the 1-median is Goldman 1971, k-median Kariv and Hakimi 1979, polynomial by Tamir 1996); layers as trees rooted at
+  a signed root are Multiple Spanning Tree instances (IEEE 802.1Q); nearest-first routing with a hierarchy is Kleinberg's hierarchical
+  small-world routing (2000, 2001); "healing from any state" is Dijkstra's self-stabilization (1974). Prove only that both halves recompute
+  the median and that a one-sided move is refused; the optimality and convergence are theirs.
+- **The Duality** (Axiom 1): two independent witnesses with the stricter answer standing is Byzantine agreement with n = 2 and no majority
+  (Lamport, Shostak and Pease 1982) under failure classes (Malkhi and Reiter 1998, already in Layer.lean); the balance ranking below the
+  bounds is safety before liveness (Alpern and Schneider 1985).
+
+Everything taken in is Apache 2.0 or a cited paper; list what is used in gravity `docs/acknowledgements.md` as the earlier work did.
+
 ## 5. First read: likely undershoots and moves
 
 Found while taking the inventory; to be confirmed by the drafting session, not assumed.
@@ -182,6 +203,12 @@ proven). Put the findings in gravity docs/findings.md as a draft pull request (o
 draft pull requests on gravity; change no DMP text and merge nothing: the owner reads the findings and decides. Run tools/scrub-scan.sh
 before every push. Roles, not values; no company facts; no model names in commits or pull requests; credit prior art as
 gravity/docs/acknowledgements.md does, Apache 2.0 only.
+
+The owner's reminder (2026-10-26 23:14Z): the axioms stitch two very well researched domains (gravitation and the information sciences)
+together in a new way. Do not unnecessarily repeat work that has already withstood the test of time: where a sentence rests on a
+standard result (k-median on trees, self-stabilization, potential games, Byzantine agreement, Shannon entropy, noninterference, the
+no-hair theorem and black-hole entropy; the list with sources is section 4 of the brief), cite it, say where DMP's object differs, and
+prove only that difference in Lean. New Lean is for the stitching, never for the fabric.
 ```
 
 ## 8. The theorem pass: what the two-way check found (report, no change proposed yet)
