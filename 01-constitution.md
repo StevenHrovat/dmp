@@ -318,6 +318,25 @@ Approved: by the owner 2026-10-26 23:42Z (his words above; the section states th
 Owner: CM coordinator
 Enforced by: DMP-021
 
+## T40 · A minting originates only from G0 and a DMP-complete state
+
+A minting has exactly two sources and needs both: the ground, G0 (the owner's words until the first minting, and the at least five parts
+that become the White Key Holders), and a DMP-complete state of the configuration being minted (the words: every axiom and theorem holds
+for all of it and both chains prove it; mint prep stores and verifies every dependency first). Neither alone mints: G0 without a
+DMP-complete state has nothing proven to ground, and a DMP-complete state without G0 has no first two witnesses (Axiom 1 cannot witness its
+own first instance). A reminting after a loss (G0) and a redeployment of a sealed state are the same act with the same two sources, so any
+system can remint and redeploy, and none can mint from less.
+
+The owner (2026-10-26 23:46Z): "Minting can only originate from both G0 and a DMP-complete state."
+
+Derived from: the words (DMP-complete), G0 (the minting, mint prep), Axiom 1 (the first two witnesses are not derived), Axiom 2 (the proof
+of completeness is evidence verified at the minting, never a claim), T39.
+
+Status: stable since DMP 0.9.7
+Approved: by the owner 2026-10-26 23:46Z (his words above; the section states them).
+Owner: CM coordinator
+Enforced by: DMP-014, DMP-021
+
 ## T1 · Trust is bounded
 
 A part holds trust for named acts only, and never more than both witnesses granted: the acts it may do are the intersection of what each
