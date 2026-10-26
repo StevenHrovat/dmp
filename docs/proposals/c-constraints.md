@@ -216,7 +216,15 @@ and try to break it with a model where a signed payload moves a standing. (c) "F
 (`Record.lean` holds counts and verdicts only; prove the projection to any reader without a grant is the count). (d) The balance inside the
 Duality: T3d (safety before liveness) must still follow; build the model where restoration fires while a bound stops the step and show the
 gate refuses it. (e) The hierarchy: every layer a tree rooted at its Duality, sub-layers only tightening (`Recipe.extend_preserves_decisions`,
-`tr_*`); find the sentence of Axiom 3 that no theorem reaches.
+`tr_*`); find the sentence of Axiom 3 that no theorem reaches. (f) **T39, attack this first** (the owner, 23:42Z: "no trust without
+information and no information without trust. Logically only a DoT, that is both trusted AND has the right information, can be a part of a
+minted CMOS"): it is the first theorem of the stitch itself. State it in Lean as: a part is inside a minted instance iff it holds a standing
+from both halves and an admission for what it acts on; try a model where a part holds trust and no admission, or an admission and no
+standing, and still acts; the Gate and Floor theorems (`Floor.road_gate`, `Record.performed_only_with_both`) should refuse both. (g) The
+words after 23:28Z: a part is a Duality, a half is a part, so the structure is a Duality all the way down and grounds in G0's five
+(`Layer.lean`'s `DoT.minted` reads a person list today; it should read five parts). (h) G0 after 23:32Z: the owner may itself be a
+Duality; when it is, both halves approve a change to the base DMP; check that nothing in the preamble's "Who maintains it" or in DMP-009
+assumes one signer.
 
 **Coverage as claimed, to be verified:** 15 constraints open with *proven* (most of them proven for the shape and argued for the rest), 4
 with *argued* (C4, C10, C14, C21), 3 with *undershoot* (C3: a value's class travelling with it; C18 and C25: a route, T3's no-lockout
