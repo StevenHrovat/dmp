@@ -39,13 +39,17 @@ body of people), **evidence** (what a witness verifies) and **time**.
 - A part is **inside** at a time when a standing for it from both witnesses of its layer is valid then. A **door** is any point of use. A
   **surface** is a part whose standing includes receiving from parts that hold none. The **perimeter** is the set of what is inside.
 - **Admission** is a grant: a record that names a piece of information's class and provenance, so that parts trusted for that class may act
-  on it. Information is **inside** while its admission is valid. **Containment** is the absence of any admission: no part is trusted for any
-  act on that information.
+  on it. Information is **inside** while its admission is valid.
+- A boundary **contains** information when it bends trustspace around it so strongly that the information cannot cross it: no part beyond
+  the boundary is trusted for any act on that information, so no act carries it across. Nothing crosses a containing boundary; the dual
+  gate can only reshape the field so that the boundary moves (an export, T19, or an admission, T27, is that reshaping). The Event Horizon
+  contains everything inside it, and a singularity contains what it holds even from the rest of the inside (C12). **Containment** is
+  being contained.
 - **Live** means within the validity, at the start of each indivisible step of an act; an act's steps are acts of their own.
 - A **tightening** is a witness withdrawing or withholding its own trust in a part it gates; a **loosening** is anything that lets an act
   happen that would not have happened before. Both are said of whose trust changes, never of an act alone.
 
-Status: stable since DMP 0.9.0
+Status: stable since DMP 0.9.0; the definition of "contains" approved by the owner 2026-10-26 14:01Z
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -138,6 +142,22 @@ No evidence, no trust; no trust, no act.
 Derived from: Axiom 2, Axiom 1.
 
 Status: stable since DMP 0.9.0
+Owner: CM coordinator
+Enforced by: DMP-021
+
+## T37 · Collapse
+
+Information that no admission names is contained at the item itself. With no admission there is no trust in any part for any act on it
+(T0), so no act reaches it (Axiom 1): in the absence of any external trust, trustspace collapses in on the item, and the item's own
+boundary contains it. Nothing defines this boundary; it follows. Admission is the only act that lifts the collapse, and it is a loosening
+(T27).
+
+The owner (2026-10-26): "The containment with no boundary should not have to be defined, it should logically follow from the axioms. In
+the absence of any external trust, the trust space collapses in on itself which produces containment automatically."
+
+Derived from: the words (contains, admission), Axiom 1, T0.
+
+Status: approved by the owner 2026-10-26 14:01Z ("I like it, approved!"); stable from the next DMP version
 Owner: CM coordinator
 Enforced by: DMP-021
 
@@ -389,7 +409,7 @@ admitted, the information is held as opaque bytes: stored and recorded, never in
 cannot be made later than the receipt. Nothing at a surface drops an axiom; the owner's "two of three" (20:35Z) names which one cannot wait:
 the record.
 
-Derived from: the words (surface, admission, containment), Axiom 1, Axiom 2, Axiom 3, T1, T23.
+Derived from: the words (surface, admission, contains), Axiom 1, Axiom 2, Axiom 3, T1, T23, T37.
 
 Status: stable since DMP 0.9.0
 Owner: CM coordinator
@@ -420,7 +440,7 @@ item and nothing else; where an item cannot be re-wrapped under its own key (an 
 the date by a two-witness act scheduled at containment. Revoking a root does not destroy what it wraps. CMOS holds personal data only on
 a grant with a validity; when the grant lapses the data is contained and destroyed by the legal date.
 
-Derived from: the words (admission, containment), Axiom 1, Axiom 2, Axiom 3, T1, T24, T25, T26.
+Derived from: the words (admission, contains), Axiom 1, Axiom 2, Axiom 3, T1, T24, T25, T26, T37.
 
 Status: stable since DMP 0.9.0
 Owner: CM coordinator
@@ -439,7 +459,7 @@ it can learn of random bytes of the same length, and of the inside as a whole on
 horizon's evaporation time is the cipher's lifetime: whatever must never come out is destroyed before then, and the roots' cryptographic
 lifetime is longer than the longest legal retention of anything they wrap, or the retention plan destroys first.
 
-Derived from: the words (containment), Axiom 1, Axiom 3, T1, T26, T27; the floor is premise (physics, the cipher).
+Derived from: the words (contains), Axiom 1, Axiom 3, T1, T26, T27, T37; the floor is premise (physics, the cipher).
 
 Status: stable since DMP 0.9.0
 Owner: CM coordinator
@@ -713,20 +733,44 @@ Enforced by: DMP-002
 
 ## C12 · Information is tiered
 
-CMOS owns all the information it holds, and every piece of it is reached through one routing: tiers, routed by the Milky Way net (the
-MW net).
+CMOS contains all the information inside its Event Horizon, and every piece of it is reached through one routing: tiers, routed by the
+Milky Way net (the MW net). What CMOS makes is its own; personal data it holds only on a grant (T27).
 
 - **Tier 1** is the information in the MW net itself. It is always consulted first.
-- **Tier 2** is information the MW net routes the asker to: a source in the VIBE net, outward as the VIBE net dictates. Information
-  of one kind can have its own sub-VIBE net with its own configuration, each routed by a clustered MW net.
-- **Tier 3** is information outside the Event Horizon, reached only through an exit node (chapter 05).
+- **Tier 2** is information the MW net routes the asker to: a source in the VIBE net, outward in the order the VIBE field gives.
+- **Tier 3** is information outside the Event Horizon, reached only through an exit node (chapter 05), and only when no tier inside
+  answers.
 
-Credentials are information like any other and route the same way. **Privacy** is a singularity of VIBE space: information there
-cannot be pulled out, not even by the MW net. What an agent learns that no tier held goes back into Tier 1 through the MW net's
-intake.
+**Information layers.** Information of one kind forms a **layer**: its own sub-VIBE net with its own configuration, overlaid on the one
+VIBE field and routed by a clustered MW net. The knowledge warehouse is the knowledge layer; the relational warehouse and the files
+warehouse are layers in the same way. Each layer reorganises by Lensing on its own: the field's pull computes the layout from the signed
+state, and both witnesses recompute it and sign. **A layer places information, never grants trust**: who may act on a piece of information
+comes only from its admission and the dual gate, never from the layer, tier or position it sits in. The set of layers is open: a new kind
+of information is a new layer that declares its kind, its sub-VIBE configuration and its route, and inherits the dual gate, the record and
+Lensing; no other part of CMOS changes for it. A layer may place work as well as information (a network layout, load balancing, placement
+in a cloud): it decides where, never who may.
 
-Derived from: Axiom 3 (what an agent learned is a record both witnesses need); premise: a statement an agent makes is a write.
-Redrafted 2026-10-26 from the owner's words; the derivation of the tiers and of the privacy singularity is to be rechecked.
+**Privacy** is a singularity of VIBE space: information there is admitted only for the class its grant names, and no routing pulls it out,
+not even the MW net, which holds no admission for it. Routing behaves exactly as if the singularity were empty, so neither an answer nor
+its absence reveals what a singularity holds; its record shows counts, never content. A part trusted for that class acts on it at the
+singularity itself, under the dual gate. **Credentials** are information like any other and route the same way; each sits in a singularity
+of its own kind, so routing reaches the point of use, never the secret. Each singularity is a cluster of at least three nodes.
+Singularities of different layers may be the same cluster, as long as that is valid under DMP, and every singularity obeys DMP on its own.
+
+What an agent learns that no tier held goes back into Tier 1 through the MW net's intake.
+
+Derived from: the words (admission, contains, door), Axiom 1, Axiom 2 (a position in the network is never evidence, so a layer cannot
+grant), Axiom 3 (what an agent learned is a record both witnesses need; counts always, content by grant), T3 (no single part's loss stops a
+singularity: at least three nodes), T21, T27, T36 (every crossing of the horizon is an act, so it comes last and only when needed), C1
+(every route runs through the one door, so asking it first costs no extra crossing). The owner's words (2026-10-26): "Tier 1 information is
+the information in the MW net, which is always consulted first and then outward as the VIBE net dictates"; "Privacy could be seen as
+singularities of VIBE space where not even the MW-net can pull the information out"; the knowledge warehouse "would simply be the knowledge
+layer, that is overlayed dynamically on the VIBE field, same with the other stuff", which "also makes the system extensible for any other
+kind of information layer", for example "network layout while maintaining ultimate trust in the cloud, or other load balancing"; "CMOS
+contains all the information inside its Event Horizon"; "Each singularity should always be a cluster of at least 3 nodes. All singularities
+of the differnent layers may of course be the same, as long as it is DMP valid, but each singularity must still obey DMP." Evidence chain:
+`Dmp/R1Tier.lean` (Milky Way first, exit last, never singular, singularity invisible), `Dmp/R1Mass.lean` and `Dmp/R1Lens.lean` (a layer's
+reorganisation) in the gravity repository.
 
 Status: draft (redrafted 2026-10-26; was stable since DMP 0.1.0)
 Owner: CM coordinator
@@ -734,11 +778,11 @@ Enforced by: DMP-002
 
 ## C13 · The nearest tier is asked first
 
-Whenever an agent is unsure, it asks Tier 1 first and then outward, tier by tier, before it asks the owner. It cites the record it
-used, or records that the search came up empty, and only then asks the owner (chapter 14). C12 is the other direction of the same
-loop: what the agent learns goes back into Tier 1.
+Whenever an agent is unsure, it asks Tier 1 first and then outward, tier by tier, before it asks the owner; Tier 3 only through an exit
+node and only when no tier inside answered. It cites the record it used, or records that the search came up empty, and only then asks the
+owner (chapter 14). C12 is the other direction of the same loop: what the agent learns goes back into Tier 1.
 
-Derived from: Axiom 2, Axiom 3 (the record is read first), C12; "first" is construction.
+Derived from: Axiom 2, Axiom 3 (the record is read first), C12, T36; "first" is construction.
 
 Status: draft (redrafted 2026-10-26; was stable since DMP 0.2.0)
 Owner: CM coordinator
