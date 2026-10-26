@@ -1020,7 +1020,7 @@ from a carrier", for the co-signed right to speak, and for the halves being one 
 trust half and one information half" is a theorem still to add.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:30Z (stable since DMP 0.3.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-016
 
