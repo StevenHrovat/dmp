@@ -17,7 +17,8 @@ with the axioms and theorems. That lets us easily spot if we undershoot our goal
 with no named system, what the axiom system must achieve. Its `Derived from:` line names the axioms and theorems that achieve it, and what
 part is construction or configuration. Its `Coverage:` line says how far the proof chains reach it: **proven** (the Lean evidence chain in
 Gravity reaches the whole constraint; the theorem names follow), **argued** (the text derives it, no Lean yet) or **undershoot** (a part of
-the constraint that no theorem reaches, named, never hidden). The check runs both ways: a constraint without a theorem is an undershoot of the
+the constraint that no theorem reaches, named, never hidden). Most constraints are reached in part; the line then says which part each state
+applies to and opens with the weakest state. The check runs both ways: a constraint without a theorem is an undershoot of the
 axiom system; a theorem no constraint needs is a theorem looking for its purpose. A constraint keeps the number of the rule it came from and
 the constraints stand in clusters, not in number order. What a rule said about *how* (an agent's steps, a protocol's table) is not a
 constraint and lives in the chapter that explains it; the table "Where the old rules went" below maps every sentence. The shape is
@@ -43,6 +44,12 @@ serves an objective.
 | C17 | The first level belongs to The Administrator and LHC | C17 · The top layer is a Duality like every other; the two names stay as definitions | the level-1 approval record and the foundation bricks were already chapter 02 |
 | C22 | Prove forward and back: two chains, neither trusted alone | C22 · "Proven" is an act with two witnesses | which engine carries which chain and the lemma ledger were already chapter 06 |
 | C∞ | The stopgap | C∞ · The root constraint, unchanged in substance, with its Coverage line | nothing |
+| C4 | Contracts change at stable promotions only | C4 · A change to what a part speaks is a new part | the register and the promotion point were already chapter 02 and 05 |
+| C5 | Financial data freezes at production | merged into C4 (productive information changes only through a recorded act of both witnesses); the number C5 is retired | nothing |
+| C7 | One repository deploys every part | C7 · What runs is what the record says | the shapes and the folder layout were already chapter 02, DMP-004 |
+| C16 | Company data reaches general testing only with its proof | C16 · Widening who may use a feature on information is a loosening | the two stages, the register, the template and the owner's words: chapter 14 "The data gate" |
+| C24 | Stable company-wide needs a survived cold start | C24 · Restorable is shown, never claimed | the catalogue, the pass line, the assistant and the bundle were already chapter 11 |
+| C25 | Every deployment obeys DMP | C25 · A deployment is gated on the exact thing deployed, and removes no route | nothing; the history stays in the section |
 
 **What a derivation is here.** Each `Derived from:` line names what the theorem rests on and, where it applies, one status word:
 *construction* (a design choice the axioms allow and recommend but do not force), *configuration* (a number or a list set at the minting,
@@ -744,27 +751,24 @@ Amended: recast as a constraint, approved by the owner 2026-10-26 23:29Z (stable
 Owner: Milky Way coordinator
 Enforced by: none yet
 
-## C4 · Contracts change at stable promotions only
+## C4 · A change to what a part speaks is a new part
 
-The contracts of the suite are registered, and a contract changes only at a stable promotion, never mid-flight and never with
-a fourth spelling of a name.
+A contract, what a part promises on its surface, takes effect only through the dual gate at a point both witnesses named, never mid-act
+and never silently; a thing has one name. The same holds for the information a productive part holds: it changes only through a recorded
+act of both witnesses. Before a part is productive its information carries no trust and may be shaped freely.
 
-Derived from: T0 (a changed contract is a new part), Axiom 1 (its trust has two witnesses: the promotion's two chains), T1 (a name is part
-of what was granted); the promotion as the point is construction.
+Derived from: T0 (a changed contract is a new part, trusted by nothing by default; information before production has no standing), Axiom 1
+(its trust has two witnesses: the promotion's two chains, the reviewed release), Axiom 3 (the change and the data are auditable because they
+are records), T1 (a name is part of what was granted), T22 (a change to a law is an act in the same shape). The stable promotion as the point,
+the register of contracts and the production point are construction (chapter 02 "Foundation bricks are complete", chapter 05 "Settings").
 
-Status: stable since DMP 0.1.0
+Coverage: argued. The nearest theorems are the frame rule (`Recipe.extend_preserves_decisions`: what is added changes nothing that exists)
+and `Standing.loosening_needs_both`; nothing models a contract or its version.
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint and merged with C5 (financial data freezes at production), approved by the owner 2026-10-26 23:49Z (both stable since
+DMP 0.1.0 before that).
 Owner: CM coordinator
-Enforced by: none yet
-
-## C5 · Financial data freezes at production
-
-While a thing is in development, its data may be manipulated as needed. Once a component handling financial data is
-productive it freezes: it is auditable and changes only through a reviewed release.
-
-Derived from: T0, Axiom 1 (the reviewed release is the second witness), Axiom 3; the production point is construction.
-
-Status: stable since DMP 0.1.0
-Owner: Sagittarius coordinator
 Enforced by: none yet
 
 ## C6 · Who may act on what is a bounded grant in the record
@@ -792,14 +796,21 @@ Amended: recast as a constraint, the grant unchanged, approved by the owner 2026
 Owner: CM coordinator
 Enforced by: DMP-009
 
-## C7 · One repository deploys every part
+## C7 · What runs is what the record says
 
-Every part of the infrastructure deploys from this repository, in different shapes (hub, local, cluster). The folder layout is
-the composition tree ([02](02-names-and-hierarchy.md)) and a part is a folder in it.
+Every part that runs is deployed from one recorded, pinned description of the whole, the recipe, in whatever shape the place needs. The
+configuration that exists is the one both witnesses can read and the chains proved; nothing runs that the record does not describe.
 
-Derived from: Axiom 3 (the tree is the record of what exists); one repository is construction.
+Derived from: Axiom 3 (the recipe is the record of what exists), the words (a DMP-complete configuration includes the repository it is built
+from, every dependency pinned), G0 (mint prep verifies every pin), T33 (the same recipe spans the same field), T35 (compliance is assembled
+from a recipe, never claimed). One repository, the folder layout as the composition tree and the shapes are construction (chapter 02, DMP-004).
 
-Status: stable since DMP 0.1.0
+Coverage: proven for the recipe (`Recipe.file_determines`: the recipe read back gives the same verdict, digest and every decision;
+`Recipe.digest_congr`; `Cmb.redeploy_is_recipe_field`, `Cmb.bigBang_keeps_the_proof`; `Recipe.verdict_proven_iff`); argued that a running
+system is the one its recipe describes (that is the evidence chain per deployment, C25).
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-004
 
@@ -909,18 +920,21 @@ Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable
 Owner: CM coordinator
 Enforced by: DMP-012
 
-## C16 · Company data reaches general testing only with its proof
+## C16 · Widening who may use a feature on information is a loosening
 
-A feature that directly touches company data stays with IT and trusted advisors until two documents exist, both built from the current
-artifact template: an explanation of exactly how the data is handled and which protections keep it safe, and the GRB report that proves
-it. Only then does it move to general testing. In the owner's words (2026-10-25), this is good practice, compliant, the right thing to
-do, and it raises user trust and with it the chance and the speed of CMOS's adoption. How the pair is made and where it lives:
-chapter 14 "The data gate".
+A feature that acts on an organisation's information reaches a wider circle of users only through two independent witnesses: one that
+explains how the information is handled and which protections keep it safe, and one that attacked it and proved the protections, sharing
+nothing with the first. Both records are written so that both halves of the information's layer can read them.
 
-Derived from: Axiom 1 (two witnesses: the builder who explains and the session that attacks, sharing nothing), Axiom 3 (both pages from the
-template so both halves can read them), T24 (general testing is a loosening).
+Derived from: Axiom 1 (two witnesses: the builder who explains and the session that attacks), Axiom 3 (both pages from one template so both
+halves can read them), T24 (a wider circle is a loosening), T38 (the organisational and the factual half of the information's layer). The
+two stages, the register and the template are construction (chapter 14 "The data gate", DMP-013).
 
-Status: stable since DMP 0.3.0
+Coverage: proven for the shape (`Standing.loosening_needs_both`); argued for the independence of builder and attacker (a failure class the
+minting declares, T4).
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-013
 
@@ -1038,42 +1052,47 @@ Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable
 Owner: CM coordinator
 Enforced by: DMP-002
 
-## C24 · Stable company-wide needs a survived cold start
+## C24 · Restorable is shown, never claimed
 
-CMOS goes stable for the whole company only when the company can be restarted from nothing and this has been shown, not claimed. Every scenario of the signed cold-start catalogue has
-passed its pass line in the sandbox, the most critical ones have passed through a Milky Way simulator node, and at least one cold start has passed on the real infrastructure. The pass line is the
-same for every scenario: recovery within one week, no data loss beyond the last backup, and both trust chains intact afterwards. The people who restart the company have what they need to do it: an
-assistant through which every planned step can be done, and a White Key bundle with the repositories, a cross-checked guide and an offline coding agent. How the runs are counted, the tiers and the
-definitions are in [11](11-test-design.md).
-
-Derived from: Axiom 2 (shown, not claimed), Axiom 1 (both chains intact), Axiom 3 (the run record), T-P (company-wide stays minted); the pass
+A configuration is declared fit for the whole organisation it serves only when its restoration from nothing has been shown: every scenario
+of a signed catalogue passed its pass line in a sandbox, the most critical through a simulator, at least one on the real infrastructure,
+and both witnesses stood intact afterwards. The people who restore have what they need to do it without the system that failed. The pass
 line's numbers are configuration.
 
-Status: stable since DMP 0.7.0
+Derived from: Axiom 2 (shown, not claimed), Axiom 1 (both chains intact afterwards), Axiom 3 (the run record), T3 (continuity after a loss),
+T35 (compliance is re-shown, never carried over), T-P (a whole organisation runs on a minted instance, never a pressed one). The catalogue,
+the pass line, the assistant and the bundle are construction (chapter 11).
+
+Coverage: proven for the cold start from a sealed record (`Cmb.redeploy_iff`, `Cmb.bigBang_keeps_the_proof`, `Cmb.plan_refused_elsewhere`:
+the plan is chosen by the live field, never the proof, and refused under other pins); argued for the catalogue and the pass line (chapter 11;
+gravity finding F10 is open on the restoring environment's capability).
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.7.0 before that).
 Owner: Black Hole coordinator
 Enforced by: none yet
 
-## C25 · Every deployment obeys DMP
+## C25 · A deployment is gated on the exact thing deployed, and removes no route
 
-"When deploying any allowed configuration of CM to CMOS, DMP must always be obeyed" (the owner, 2026-10-25). The owner's first words
-for it were a trial rule, "DMP is to be enforced on all deployments", after a corner CM built itself: the stable channel served a client
-that could no longer change a setting the owner needed, and no other supported route was left. "We MUST learn from this, so when
-configuring an impossible situation, we must create rules that enforce it never happens again" (the owner, 2026-10-25).
+"When deploying any allowed configuration of CM to CMOS, DMP must always be obeyed" (the owner, 2026-10-25). A deployment, any promotion
+of a part to any channel, runs the gate on the exact commit it deploys, never on an earlier run, and does not deploy on red; one that skipped
+the gate is not fully trusted and is ejected. No deployment leaves an administrator action without a supported route on the channel it
+serves: the list of known gaps only shrinks, and a deployment that would remove the last route for any action is refused before it runs.
 
-**Every deployment passes the gate.** A deployment is any promotion of a part that CM runs or orchestrates to any channel (stable,
-nightly, dev). It runs the DMP gate on the exact commit it deploys and does not deploy on red. A deployment that skipped the gate is
-not fully trusted and is ejected (C∞).
+The rule has a history (the owner, 2026-10-25): the stable channel once served a client that could no longer change a setting the owner
+needed, with no other supported route left. "We MUST learn from this, so when configuring an impossible situation, we must create rules that
+enforce it never happens again."
 
-**No deployment locks us out.** No deployment may leave an administrator action without a supported route on the channel it serves:
-the command line or the console. Every action that changes a system and is named in the audit log is tied to a real command, and the
-list of known gaps may only shrink. Before a retire, a replace or a promotion, the plan says which client and which routes the
-channel will serve; a deployment that would remove the last route for any action, or would serve a client that lacks a route the
-channel has today, is refused before it runs.
+Derived from: Axiom 1 (a deployment is an act), Axiom 2 (checked on the exact commit, not an earlier run), T3 (its no-lockout clause: removing
+the last route cuts a half off), Axiom 4 (the gaps only shrink). Channels, the route register, its cap and the workflow register are
+construction (DMP-020).
 
-Derived from: Axiom 1 (a deployment is an act), Axiom 2 (checked on the exact commit, not an earlier run), T3, Axiom 4 (the gaps only
-shrink).
+Coverage: undershoot for no lockout: no theorem models a route, and T3's clause has none (shared with C18); the missing theorem is that
+after any single act every half keeps at least one route to every action. Proven for the exact-commit shape (`Gate.stale_never_passes`,
+`Recipe.verdict_proven_iff`, `Recipe.one_unproven_line_unproves`: one line the chains do not carry unproves the whole).
 
-Status: stable since DMP 0.8.0
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.8.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002, DMP-020
 Not yet checked in cm: the tie between the actions named in the audit log and `DMP/routes.txt`, and the plan's refusal of a
