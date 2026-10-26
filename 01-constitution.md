@@ -830,7 +830,7 @@ Coverage: proven for the trap (`Floor.road_gate`: a contained item is never read
 a publication being an export (no theorem models a public tree).
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-001, DMP-006
 
@@ -847,7 +847,7 @@ one-line context is construction (DMP-002).
 Coverage: argued. The gate shape (`Gate.one_witness_never_acts`) is the only theorem that bears; nothing models the estate's boundary.
 
 Status: stable since DMP 0.9.7
-Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
+Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-002
 
