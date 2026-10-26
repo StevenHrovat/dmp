@@ -8,9 +8,32 @@ halves of the Duality, G0).
 axiom just has to state how trust relates to the system ... if we can define trust, we can define all other theorems from it." So the
 chapter is an axiom system. It opens with **the words** (names only; a definition forbids nothing), then **three bounds** (the dual gate,
 evidence, the record) and **one direction** (restoration), then **the ground** G0 (the minting, stated, not derived). Everything after
-that is a **theorem**: the T sections are the theorems found while distilling the axioms, the C sections are the rules this constitution
-always had, kept under their old numbers. Every theorem carries a `Derived from:` line that names only axioms, G0, the words and
-sections above it, so the order of the chapter is the order of proof (rule DMP-021). C∞ stands last, as it always has (DMP-017).
+that is a **theorem**: the T sections are the theorems found while distilling the axioms, the C sections are the **constraints**. Every
+theorem carries a `Derived from:` line that names only axioms, G0, the words and sections above it, so the order of the chapter is the order
+of proof (rule DMP-021). C∞ stands last, as it always has (DMP-017).
+
+**What a constraint is (DMP 0.9.7).** The owner (2026-10-26 22:30Z): "Let's try to turn them into the derived constraints that we try to achieve
+with the axioms and theorems. That lets us easily spot if we undershoot our goal." A C section states, in one or two general sentences and
+with no named system, what the axiom system must achieve. Its `Derived from:` line names the axioms and theorems that achieve it, and what
+part is construction or configuration. Its `Coverage:` line says how far the proof chains reach it: **proven** (the Lean evidence chain in
+Gravity reaches the whole constraint; the theorem names follow), **argued** (the text derives it, no Lean yet) or **undershoot** (a part of
+the constraint that no theorem reaches, named, never hidden). The check runs both ways: a constraint without a theorem is an undershoot of the
+axiom system; a theorem no constraint needs is a theorem looking for its purpose. A constraint keeps the number of the rule it came from and
+the constraints stand in clusters, not in number order. What a rule said about *how* (an agent's steps, a protocol's table) is not a
+constraint and lives in the chapter that explains it; the table "Where the old rules went" below maps every sentence. The shape is
+prior work: Goal Structuring Notation (Kelly, *Arguing Safety*, 1998; the GSN Community Standard), where a goal with no solution is drawn as
+undeveloped, and the two-way rationale of Common Criteria (ISO/IEC 15408-1), where every objective meets a requirement and every requirement
+serves an objective.
+
+**Where the old rules went.** One row per rule recast; the rows grow with each approved cluster.
+
+| Rule | Was | The constraint now | Moved out |
+|---|---|---|---|
+| C1 | One door | C1 · No act bypasses the gate | the code rule (no constellation references another): chapter 02 "The tree", DMP-008 |
+| C2 | Every message verifies itself | C2 · Every message is its own evidence; the Law block is unchanged | "no public port opens before the verifier passed its class": chapter 06 "Where the class gates" |
+| C3 | Every value carries its class | C3 · A value reaches only parts trusted for its class | the token on every value and the identification axis: chapter 05 (the shield) |
+| C18 | IM stays backwards compatible once it is locked | C18 · A weakness is evidence against what it claims, never against the part | the lock, additions only, the corpus, the contained path: chapter 04 "Compatibility after the lock", DMP-015 |
+| C19 | A request is served only when it is secure and meant | C19 · Two witnesses on every served request, verified by the server itself | the two masters and how the signatures travel: chapter 04 "Serving at a warehouse", DMP-016 |
 
 **What a derivation is here.** Each `Derived from:` line names what the theorem rests on and, where it applies, one status word:
 *construction* (a design choice the axioms allow and recommend but do not force), *configuration* (a number or a list set at the minting,
@@ -639,23 +662,29 @@ Status: stable since DMP 0.9.0
 Owner: Black Hole coordinator
 Enforced by: DMP-021
 
-## C1 · One door
+## C1 · No act bypasses the gate
 
-Milky Way is the only way into CMOS, out of it and between its parts. Constellations do not call each other directly: they
-speak IM through Milky Way. In code this means that no constellation references another (project references run
-`cm.io` ← `cm.os` ← constellations only).
+Every act between parts of CMOS, into it and out of it passes a point of use that the dual gate decides and the record covers. No part
+reaches another by a path the gate does not see, and no part reaches the outside by one.
 
-Derived from: Axiom 1, Axiom 3, T28; one door is construction (it makes ejection total and the record one place; a second door would need
-the dual gate between the doors).
+Derived from: Axiom 1 (the gate has no other way through), Axiom 3 (every use leaves a record), T23 (inside, every point of use is a door),
+T28 (enforcement is itself an act both witnesses verify). That the door is **one** door (one universal I/O layer; parts never call each other
+directly) is construction: it makes ejection total and the record one place, and a second door would need the dual gate between the doors.
 
-Status: stable since DMP 0.1.0
+Coverage: proven for the gate and the stack (`Gate.one_witness_never_acts`, `Record.performed_only_with_both`: nothing is performed without
+both verdicts in the record; `Recipe.decide_pass_iff`: an act passes a line only when every layer on its chain passed it); argued for a running
+system: that no component reaches another beside its door is shown per component by the evidence chain (chapter 06), not by the theory.
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
 Owner: Milky Way coordinator
 Enforced by: DMP-008
 
-## C2 · Every message verifies itself
+## C2 · Every message is its own evidence
 
-Every IM message authenticates itself and the sender's right to send it, with a token signed by Doppler's authority, and the
-verifier checks every message. No public port opens before the verifier has passed its test level on the sandbox.
+A receiver trusts a message only on what the message carries and what the receiver verifies itself, live: the sender's standing, the
+sender's key on the message, the right for that kind of act, and the time. Every input gets exactly one answer and fails closed; the same
+message is never acted on twice; when the receiver cannot verify liveness, nothing verifies.
 
 Law:
 - C2.L1 Verified means authorised. A message is verified only if a token signed by a trusted token signer names an enrolled,
@@ -672,21 +701,37 @@ Law:
 
 Laws file: CM.BlackHole/gravity/C02/LAWS.bend sha256 a116add4e257c503f7b566ef0fb74a4b79a26786ffadf6c745ab5f690e4ad0c2
 
-Derived from: Axiom 2 per message (L1 with T1, L3: evidence is live for one point of use), Axiom 1 (L2: one answer, fail closed; L3b: when
-liveness cannot be verified, nothing verifies), T1 (L4).
+Derived from: Axiom 2 per message (L1 with T1; L3: evidence is live for one point of use), Axiom 1 (L2: one answer, fail closed; L3b:
+when liveness cannot be verified, nothing verifies), T1 (L4), T20 (the validity window is "now" as evidence). The laws above are the
+constraint stated for IM version 0 and lock its instance (one kind, one permission, one signer role); the general sentence is the constraint.
 
-Status: stable since DMP 0.1.0
+Coverage: proven for the laws, from the sentences (`r1l_L2_gives_L1`, `r1l_L1_gives_L4`, `r1l_L2_gives_L4`, `r1l_verify_table_order`, and
+the counterexamples `r1l_alwaysRefuse_L1` to `r1l_alwaysRefuse_L4`) and from the model of the code (`r1b_L1`, `r1b_L2_clean`, `r1b_L3`,
+`r1b_L3b`, `r1b_L4`), and at most once over any sequence of calls under the wave clock and under Lensing (`wv_verified_at_most_once`,
+`ln_verified_at_most_once`); argued for the general sentence beyond version 0. Known and recorded, not hidden: a clock that moves back
+lets the same frame verify twice (`r1bW_clock_rollback_replays`); L3 holds as worded and T20 forbids the clock.
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, the Law block unchanged, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
 Owner: Milky Way coordinator
 Enforced by: DMP-018
 
-## C3 · Every value carries its class
+## C3 · A value reaches only parts trusted for its class
 
-Every value that crosses a border carries its class and its identification axis, and carries a token at every border that is
-not an administrator. Reveal is a grant, never a default.
+Every piece of information inside carries the class and the provenance its admission named, wherever it goes. A part not trusted for that
+class never receives the value, only its count. Revealing a value to parts of a further class is a loosening, never a default.
 
-Derived from: T0, T1, T24 (a reveal is a loosening).
+Derived from: the words (admission names the class and the provenance), T0, T1 (a value a part is not trusted for never reaches it), T21
+(counts always, content by grant), T24 (a reveal is a loosening), T27. A token on every value at a border, and the identification axis a value
+carries, are construction of the shield (chapter 05).
 
-Status: stable since DMP 0.1.0
+Coverage: undershoot. The evidence chain models admission as one bit on an item (`Floor.road_gate`: a contained item is never read) and the
+gate per act; nothing models a value's class or provenance travelling with it from part to part, and `Standing.loosening_needs_both` speaks of
+a standing, not of a class of readers. The missing theorem: a value's class is never widened by one witness, and no path delivers a value to a
+part outside its class (Denning's lattice: a flow is allowed only where every class on the path allows it).
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.1.0 before that).
 Owner: Milky Way coordinator
 Enforced by: none yet
 
@@ -897,42 +942,46 @@ Amended: "organisation" replaced, approved by the owner 2026-10-26 15:19Z (stabl
 Owner: CM coordinator
 Enforced by: DMP-014
 
-## C18 · IM stays backwards compatible once it is locked
+## C18 · A weakness is evidence against what it claims, never against the part
 
-IM is version-locked on the day the first system that speaks it enters production (the owner's words name that day and that system).
-From then on IM is permanently backwards compatible: every later version accepts every message of a locked version with the same
-meaning. A later version only adds (new message kinds, new permissions, new parts a locked receiver never has to understand); nothing a
-locked version defines is removed, renamed or given a new meaning. Each locked version keeps a corpus of its messages in this
-repository that never changes, and every build replays it through the current verifier. Until the lock, IM may still change freely
-(version 0 is sandbox only).
+No change on the inside cuts a part off: whatever spoke to CMOS under a contract it was locked to keeps a route (T3b). When an algorithm or a
+format that contract rests on becomes unsafe, trust in what the weak part claims is withdrawn, a tightening; the part's own standing is not
+withdrawn without evidence against the part. Until a second, independent path vouches for the part's identity, its traffic is contained and
+carries no more rights than it had.
 
-A locked version is never broken, not even when one of its algorithms becomes unsafe. CMOS controls every system that speaks IM, so
-Milky Way contains the weakness instead (the owner, 2026-10-25): it keeps speaking the locked version, broken algorithm included, to
-every system locked to it, and carries that system's traffic only through a sandboxed path of its own. On that path a message is not
-trusted for what the weak algorithm claims. Where a second, independent path to the locked system's identity exists (the device's
-attestation, a transport credential), Milky Way vouches for it toward the rest of CMOS under a current version, with no more rights than the
-locked system had; where none exists, the locked system's traffic is contained (T27) until such a path is built.
+Derived from: T2 (a standing is withdrawn only on evidence against it; an unsafe algorithm is evidence against the algorithm), T3 (its
+no-lockout clause: removing the last route cuts a half off), T24 (the withdrawal is a tightening, one witness), Axiom 2 (a path the part sits on is a position in the
+network, never evidence by itself; the second path is evidence the receiver verifies), T1 (no more rights than before), T27 (contained until
+then). That a locked contract is never broken by its own side, that a later version only adds, and that a corpus of every locked version
+replays through every build, are construction (chapter 04 "Compatibility after the lock").
 
-Derived from: T2 (an unsafe algorithm is evidence against the algorithm, not against the system), Axiom 2 (a sandboxed path is a position in
-the network, never evidence by itself), T1, T27, Axiom 3 (the corpus).
+Coverage: undershoot. Containment is proven for an item (`Floor.road_gate`) and tightening on one witness for a standing
+(`Standing.one_witness_tightens`); nothing in the evidence chain models a route, a locked contract or the difference between evidence against
+an algorithm and evidence against a part, and T3b has no theorem at all. The missing theorem, shared with C25: after any single act every half
+keeps at least one route.
 
-Status: stable since DMP 0.3.0
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
 Owner: Milky Way coordinator
 Enforced by: DMP-015
 
-## C19 · A request is served only when it is secure and meant
+## C19 · Two witnesses on every served request, verified by the server itself
 
-An information warehouse (Sagittarius, Crater, the knowledge warehouse) serves an IM request only when the request carries two signatures and the
-warehouse checks both itself (the owner, 2026-10-25). One is under the security chain, which Doppler holds: the request is secure. The
-other is under the operational chain, which the operations master holds: the request is meant to be served. Each comes from a cluster of that master or
-from an authority that master granted the right to sign on its behalf. A grant counts only when the other master has signed the same
-authority too: Doppler cannot give anyone the right to sign IM requests unless the operations master has signed that authority, and the operations master cannot unless
-Doppler has. That a carrier (Milky Way, the operations master) already checked the request does not count; the warehouse checks it again. A request
-that lacks either signature, or whose authority only one master signed, is refused.
+A part serves a request only when the request carries the trust of both witnesses of its layer: the one that answers for security (the
+request is secure) and the one that answers for operation (the request is meant). The serving part verifies each itself at the point of use;
+that a carrier already checked the request does not count. A right to speak for one witness counts only when the other witness has signed
+that right too.
 
-Derived from: Axiom 1 (two masters), Axiom 2 (a carrier's check is not the warehouse's evidence), T24b (a grant to sign is a lockstep act).
+Derived from: Axiom 1 (two witnesses, each with full reach, gated only by the other), Axiom 2 (a carrier's check is not the server's
+evidence), T24b (a grant to sign for a witness is a lockstep act), T38 (the two halves of the layer that serves information). Which two
+parts hold the halves, and how their signatures travel in a message, are construction (chapter 04 "Serving at a warehouse").
 
-Status: stable since DMP 0.3.0
+Coverage: proven for the shape (`Gate.gate_pass_iff`, `Gate.act_needs_both_with_evidence`, `Layer.DoT.gate_pass_needs_both`,
+`Recipe.pass_has_two_live_witnesses`: a pass at any line means two independent halves both passed on live evidence); argued for "never taken
+from a carrier" (Axiom 2 per component, the evidence chain's job) and for the co-signed right to speak (no theorem models a grant to sign).
+
+Status: stable since DMP 0.9.7
+Amended: recast as a constraint, approved by the owner 2026-10-26 (stable since DMP 0.3.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-016
 
