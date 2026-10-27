@@ -429,6 +429,8 @@ bound to its grantor, its holder and its evidence, Axiom 2) and are not created 
 are not excitations of the field but edges of the graph the field is defined over, the fifth sentence's spin-network reading holds instead,
 and this item is dropped with that one line.
 
+An unreviewed note from the owner (03:26Z), verbatim, filed without commentary for the verifying session: "Simple: The possibility spaces stretches between the vectors that bound it. Also true for a black hole, where gravity is the vector, or CMOS, where trust is the vector. That's why it was essential that I included the refresh rate, otherwise it would have been a scalar field."
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
