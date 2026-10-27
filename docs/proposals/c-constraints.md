@@ -333,6 +333,22 @@ instance as the Schwarzschild case (most capacity for its size) and some maximal
 nothing left to heat)? If the Lean's `Floor` and `Record` projections carry a quantity that decreases with every exposed field, state it as a
 theorem candidate (b); if exposure and capacity are independent in DMP, say so and the spin analogy stops there.
 
+The owner's IT instance of the spin trade-off (02:21Z), verbatim: "If you think of it in IT systems, I can already prove it. If the Milky
+Way cluster has to serve a ton of IO to the company, it can actively maintain less clients with the same number of nodes." This is the
+empirical anchor of the whole section and the one testable statement in it. Part 0 states it as a **capacity budget**: per node, interior
+work (the clients it actively maintains: their standings verified live, Axiom 2; their layout kept at the median, Axiom 3) plus boundary I/O
+(what the node serves across the instance's boundary) is at most the node's capacity; for N nodes the sustained client count is therefore a
+decreasing function of the boundary I/O, and the counts-only instance (T31, nothing served outward but counts) is the one with the most
+clients for its size, the Schwarzschild case of the tenth sentence. Name the DMP quantities: the boundary I/O is the standings and
+admissions that cross the minting boundary per unit time (the min-cut flow of the ninth sentence), the interior work is the balance steps
+of Axiom 1 per client per unit time, and the capacity is the node's budget of Duality checks. Then sketch the **benchmark** that measures
+the curve, for Z code on the laptop runners (the sandbox pair, `tools/sandbox-pair` in cm; no real system, synthetic clients): fix N nodes,
+step the outward I/O from zero up in equal steps, and at each step record the largest client count the cluster still keeps live (every
+standing refreshed before its lapse, T4's staleness timer never fires); plot clients against outward I/O; the hypothesis is a monotone
+decreasing curve, and its shape (linear budget, or a knee) is the datum the physics section lacks. The benchmark needs no change to DMP
+and runs only on synthetic data (the charter); its design goes in gravity docs/physics.md as a numbered procedure, its run is a later card
+on the bridge.
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
