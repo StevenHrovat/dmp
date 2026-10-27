@@ -193,6 +193,19 @@ touches, all of which has to be cited and none re-derived:
   "shielding the singularity until it decays into Hawking radiation" is the paradox's own question; cite it, do not reopen it.
 - **Mass–energy–information equivalence** (Vopson 2019, contested; Landauer 1961 is the uncontested floor): name it as a conjecture.
 
+Two follow-ups from the owner (01:01Z, 01:02Z), verbatim: "Information should, theoretically, also be the one thing not explicitly banned
+from moving inside a black hole, right?" and "If the math in physics works out, the interesting thing is, what is pushing back?" What is
+settled on the first: inside the horizon nothing special happens locally (the equivalence principle), so information moves between
+infalling parts as it does anywhere; what the horizon forbids is the outward direction, for information as for everything else (inside, r is
+timelike; the no-hair theorem is the statement that the outside keeps only mass, charge and spin); whether Hawking radiation carries it
+back out is the paradox above. What is settled on the second: below the Chandrasekhar (1931) and Tolman–Oppenheimer–Volkoff (1939) limits
+it is Pauli exclusion, electron then neutron degeneracy pressure, that pushes back; above them classical GR has nothing that does (the
+Penrose singularity theorem, 1965: a trapped surface plus an energy condition makes the singularity unavoidable), and the candidates for a
+quantum push-back are the loop-quantum-gravity bounce and Planck stars (Rovelli and Vidotto 2014), fuzzballs (Mathur 2005) and gravastars
+(Mazur and Mottola 2004), none established. The DMP side of "what pushes back" is Axiom 1's balance: the information half, which by T27 can
+only loosen (admission), is what keeps trustspace from collapsing onto the item (T37); the verifying session maps that half against the
+physics candidates and says which, if any, has the same shape.
+
 The ask to the verifying session, as a side item after part 1 and before part 2, at most one page: does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
