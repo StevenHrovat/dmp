@@ -247,8 +247,10 @@ Paste-ready prompt for the verifying session:
 
 ```
 You work on StevenHrovat/dmp and StevenHrovat/gravity. Read dmp docs/proposals/c-constraints.md (sections 2, 3, 4, 6, 8 and 9) and then
-01-constitution.md on main at 8d998bb (DMP 0.9.7: three axioms, T39 and T40, all six batches merged 2026-10-26 23:49Z-23:52Z on the
-owner's "Approved for merge in prep for Team Fable"). Every C section is a constraint with a Derived from: line (the axioms and theorems
+01-constitution.md on main at 45d3822 (DMP 0.9.8: three axioms, T39 and T40, all six batches merged 2026-10-26 23:49Z-23:52Z on the
+owner's "Approved for merge in prep for Team Fable", and G0 amended 2026-10-27 00:21Z "Approved as worded": the mission, a part recognized
+as true AGI is a constituent of G0, who recognizes it; G0's new sentences are stated, not derived, and belong to part 1 like the other
+batch 0 claims: type the AGI clause and the recognizer seat where Lean can, and report what stays an assumption). Every C section is a constraint with a Derived from: line (the axioms and theorems
 claimed to achieve it) and a Coverage: line (the Lean theorems claimed to reach it, or the part none reaches).
 
 The session has three parts, in this order (the owner, 23:54Z: "since the axioms changed and then the theorems will change, while what we
@@ -316,7 +318,8 @@ All six batches are on dmp main: #15 (902437b), #16 (e8e13ce), #17 (33f5f0b), #1
 DMP is 0.9.7 with three axioms, T39 and T40, and every C section a constraint. Gravity's vendor/dmp re-pin is a draft pull request on
 gravity; CM's re-pin follows once Gravity's lands (the root chain). The verifying session runs in the order the owner set at 23:54Z: the
 theorem pass first, the verification of the constraints second, and last the re-derivation of the constraints from the new theorems,
-stated more simply while saying the same (the prompt in section 6).
+stated more simply while saying the same (the prompt in section 6). G0 was amended once more on 2026-10-27 (dmp#23, DMP 0.9.8, main
+45d3822): the owner's mission statement, the true-AGI clause and who recognizes it; the prompt reads that commit.
 
 ## 8. The theorem pass: what the two-way check found (report, no change proposed yet)
 
