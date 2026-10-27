@@ -259,7 +259,7 @@ check, verified live by both halves, Axiom 2), does the fewest-total-hops layout
 practice? The verifying session states the DMP cost model (per hop, per link, per check), cites radix economy for the optimisation, and
 proves only the DMP-specific cost model, in Lean only if the field theorems already carry the cost terms.
 
-The ask to the verifying session, as a side item after part 1 and before part 2, at most one page: does the DMP analogue (T37 collapse
+The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
 DMP text.
@@ -346,10 +346,26 @@ as true AGI is a constituent of G0, who recognizes it; G0's new sentences are st
 batch 0 claims: type the AGI clause and the recognizer seat where Lean can, and report what stays an assumption). Every C section is a constraint with a Derived from: line (the axioms and theorems
 claimed to achieve it) and a Coverage: line (the Lean theorems claimed to reach it, or the part none reaches).
 
-The session has three parts, in this order (the owner, 23:54Z: "since the axioms changed and then the theorems will change, while what we
-want and achieve stays the same, ... any C made now, would just be using the wrong tools. Rederiving the generalized constraints to be
-stated simpler while stating the same, should be the last planned part of the session"). Do not start a part before the one before it is
-on a draft pull request.
+The session has four parts, in this order. Part 0 is first on the owner's word (2026-10-27 01:29Z: "Again, try the physics and and
+information theory stuff first. As always, think off new stuff, push the bounds with it and distill the interesting stuff that falls out
+into something actually useful and coherent ;)"); the rest keep the order of 23:54Z ("since the axioms changed and then the theorems will
+change, while what we want and achieve stays the same, ... any C made now, would just be using the wrong tools. Rederiving the generalized
+constraints to be stated simpler while stating the same, should be the last planned part of the session"). Do not start a part before the
+one before it is on a draft pull request.
+
+PART 0. Physics and information theory first, open-ended. Read brief section 4 (the prior-art map) and section 4.1 (the owner's
+hypotheses of 2026-10-27 00:58Z to 01:28Z, his words verbatim, with the established results each one touches and the corrections the
+physics forces). Start from the established results and cite them: cosmic censorship, Bekenstein–Hawking and the holographic area scaling,
+the information paradox and the island formula, fast scrambling, spin networks and ER=EPR, radix economy, k-median and demand-aware
+self-adjusting networks. Then push the bounds: think of new connections between those results and DMP's three axioms, T37, T32, G0 and the
+minting boundary, and follow each as far as it goes, including the ones the owner did not name. Then distill: whatever falls out that is
+useful and coherent for DMP becomes one of three things, (a) a cost model for Axiom 3's layout (per hop, per link, per Duality check) with
+its optimal fan-out, (b) a theorem candidate in DMP's own objects (for example: the standings that cross the minting boundary are the
+quantity that scales like the horizon area, and the interior may rearrange under Axiom 3 without changing it), stated precisely, with the
+Lean it would need, or (c) a precise question worth a physicist's time, stated so that a physicist can say yes or no. Drop what does not
+distill; say what you dropped and why in one line each. Output: gravity docs/physics.md as a draft pull request (the owner's reading
+queue), at most four pages, every claim with its source; no DMP text changes, no Lean beyond what (b) needs and the field theorems
+already carry.
 
 PART 1. The theorem pass (the owner, 23:47Z and 23:49Z: "Since the axioms changed, the theorems would need to all be rederived as well, so
 I am already renumbering them in my head"; "The theorem pass will be done by TF"). A draft pull request on dmp that the owner approves in
@@ -367,7 +383,8 @@ clusters:
   (d) Keep DMP-021 green (every Derived from: cites only sections above it; the Counts line keeps its parsed shape) and C∞ last
       (DMP-017). Lean needs no renaming: it names theorems by content.
 
-PART 2. Verify the constraints as they stand, against the renumbered theorems of part 1. For every constraint, in the order of the chapter:
+PART 2. Verify the constraints as they stand, against the renumbered theorems of part 1 (and against what part 0 distilled, where a
+cost model or theorem candidate bears on a Coverage line). For every constraint, in the order of the chapter:
   1. The derivation. Does the set named in Derived from: actually imply the constraint's sentence? Write the step that is missing, or
      say it holds. Treat "construction" and "configuration" as what they are: design choices, not derivations.
   2. The Lean claim. Open every theorem the Coverage line names (gravity evidence/Dmp/*.lean). Does its statement say what the line
@@ -392,12 +409,6 @@ missing theorem, the constraint cites it once it exists, not before. A draft pul
 order of batches 1 to 5, each merging only on the owner's "approved" for it. Do not widen or narrow any constraint in this part; a
 constraint you believe is wrong is a finding for the owner, not an edit.
 
-Side item, between part 1 and part 2, at most one page: the owner's hypothesis of 2026-10-27 00:58Z on what DMP might say back to GR
-(brief section 4.1, his words verbatim there). Say whether the DMP analogue (T37 collapse without the two halves pressing on each other,
-Axiom 1's balance) yields one precise statement in DMP's own objects worth posing to physicists, or reduces to cosmic censorship in new
-words. Cite Penrose, Bekenstein–Hawking and the holographic area scaling, the information paradox and its island formula, Vopson as a
-contested conjecture; derive none of it. A finding, not a DMP change.
-
 Throughout: run tools/scrub-scan.sh before every push; merge nothing; roles, not values; no company facts; no model names in commits or
 pull requests; credit prior art as gravity/docs/acknowledgements.md does, Apache 2.0 only.
 
@@ -417,7 +428,8 @@ All six batches are on dmp main: #15 (902437b), #16 (e8e13ce), #17 (33f5f0b), #1
 DMP is 0.9.7 with three axioms, T39 and T40, and every C section a constraint. Gravity's vendor/dmp re-pin is a draft pull request on
 gravity; CM's re-pin follows once Gravity's lands (the root chain). The verifying session runs in the order the owner set at 23:54Z: the
 theorem pass first, the verification of the constraints second, and last the re-derivation of the constraints from the new theorems,
-stated more simply while saying the same (the prompt in section 6). G0 was amended once more on 2026-10-27 (dmp#23, DMP 0.9.8, main
+stated more simply while saying the same (the prompt in section 6); since 01:29Z a part 0 comes first, the physics and information theory
+of section 4.1, open-ended, distilled into a cost model, a theorem candidate or a question for physicists. G0 was amended once more on 2026-10-27 (dmp#23, DMP 0.9.8, main
 45d3822): the owner's mission statement, the true-AGI clause and who recognizes it; the prompt reads that commit.
 
 ## 8. The theorem pass: what the two-way check found (report, no change proposed yet)
