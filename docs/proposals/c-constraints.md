@@ -395,6 +395,28 @@ and `Record` theorems fix it, it is "THE factual number to optimize against" and
 instance with zero leakage in which every item is still reachable (then the bound is attained and the claim is wrong), or no quantity in
 DMP's objects that separates "contained and reachable" from "collapsed" (then there is no number to optimise against and the claim is empty).
 
+Two more from the owner, speculative, filed with their refuters. (02:54Z, verbatim): "Since DMP describes how parts interact, it maps
+1:1 onto Dark Matter. IM may need to be renamed. If we actually do it, we'll rebuild IM in DEP, just because we HAVE to at his point."
+(02:57Z, verbatim): "Also gives Dark Energy a surface to map onto. The fields that carry information about interaction, are themselves
+present in the info hierarchical structure." The rename of IM to "DEP" (the owner's abbreviation; he has not expanded it, and it is not
+expanded here) is parked as his naming decision, not a part 0 question; nothing in this brief or in DMP changes a name.
+
+What the dark-matter sentence stands on: dark matter is the mass that is felt only through gravity and never seen through any other
+interaction (Zwicky 1933; Rubin and Ford 1970; the cold-dark-matter model and its halo profile, Navarro, Frenk and White 1996), about
+five parts to one of ordinary matter, collisionless. The DMP shape it would match is Axiom 2's trust: a field that contains (gravitational)
+and from which nothing but existence can be derived (no information ever trusted, no information from trust but existence), so trust is
+felt by every part and seen by none. That is a real structural match and nothing more yet. Refuter: dark matter has measured properties
+(the five-to-one ratio, the halo profile, collisionlessness, its role in structure formation); if no DMP quantity plays any of them, the
+mapping is a name, not a result, and is dropped. The dark-energy sentence joins the holographic-dark-energy item above (Li 2004: the
+dark-energy density is set by the information bound of a horizon, so dark energy "lives on a surface"); in DMP the surface is the minting
+boundary of G0 and the standings that cross it (the min-cut item). The second sentence of 02:57Z is the sharper one and is already DMP's:
+Axiom 3 makes the fields that carry interaction (standings, admissions, verdicts) themselves recorded information inside the hierarchy
+(the record holds both verdicts of every act, `Record.lean`), so the field is not outside the structure it orders; the physics cousin is
+that the gravitational field carries energy and so gravitates (the nonlinearity of the Einstein equations). Refuter for the second
+sentence: if the Lean record holds only counts and verdicts but not the standings themselves, then the field is only partly inside the
+hierarchy and the sentence holds for verdicts only; say which. Refuter for the dark-energy mapping: no DMP quantity that scales with the
+boundary and drives the layout outward (Axiom 3's expansion of a layer); if none, it is dropped with the dark-matter one.
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
