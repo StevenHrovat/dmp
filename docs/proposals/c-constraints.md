@@ -288,6 +288,23 @@ half reveals about an item (its distinguishability to a reader) and what the tru
 counts-only readout as the case where revelation is zero and the grant is whole? If yes, it is a theorem candidate (b) with the Lean it
 needs (`Record` projections, `Floor`); if no such pair of quantities exists, the DoT is not a wave-particle duality and the line says so.
 
+A ninth sentence from the owner (02:18Z), verbatim: "Only a duality contained by a horizon leaks no information. For all other systems
+that is not proven. Maybe what makes a black hole a black hole, is if a DoT system achieves such an ordered state that it's entropy drops
+to the lowest possible value?" The first two sentences are DMP's own claim (T31: the floor, counts only; T37: collapse contains) and are
+proven only for the horizon case in Lean (`Floor.*`, `Record.*`); for every other system DMP indeed proves nothing, and the sentence should
+be kept as it is. The third has to be turned around before it is posed: in physics a black hole has the **maximum** entropy for its size,
+not the minimum (Bekenstein–Hawking S = A/4, the largest entropy any region of that area can hold; that is what the bound says). The
+reconciliation that makes the owner's sentence precise rather than wrong is that entropy is **observer-relative and coarse-grained**: from
+outside, where only counts are visible (T31, the no-hair theorem), the state is maximally mixed and the entropy is maximal; from inside,
+where the layout is at its median (Axiom 3), the fine-grained entropy of a pure state is zero. Both are true at once; they are different
+observers. The physics of that split is the **Page curve** (Page 1993: the entropy of the radiation seen from outside rises, then falls back
+to zero if the whole is pure) and the fine-grained versus coarse-grained distinction (von Neumann entropy of the pure whole is zero; the
+thermodynamic entropy of the horizon is A/4); the island formula (2019) is what computes the fine-grained one. The question for part 0: does
+DMP give a precise inside/outside entropy split in its own quantities, the counts-only readout of T31 as the outside (maximal, coarse) and
+the median layout of Axiom 3 as the inside (minimal, fine), and if so, is "a DoT system is a black hole when its inside entropy is at its
+minimum and its outside entropy at its maximum" a theorem candidate (b) or an analogy? State what quantity plays the Page curve's time axis
+in DMP (the balance steps of Axiom 1?) and whether it has a Page time.
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
