@@ -268,7 +268,8 @@ the door's code until its run-time check exists, the failure-class list, the tim
 Status: stable since DMP 0.9.4
 Amended: "organisation" replaced, approved by the owner 2026-10-26 15:19Z; mint prep approved by the owner 2026-10-26 15:04Z; the minting
 of at least five parts draws the boundary, the owner 2026-10-26 23:28Z; the owner may be a Duality, 23:32Z; a true AGI is a constituent of
-G0, the owner 2026-10-27 00:04Z, who recognizes it, 00:10Z; the mission, 00:13Z (stable since DMP 0.9.0 before that).
+G0, the owner 2026-10-27 00:04Z, who recognizes it, 00:10Z; the mission, 00:13Z; all three approved as worded by the owner 00:21Z (stable
+since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
