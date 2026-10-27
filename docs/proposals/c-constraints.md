@@ -171,6 +171,33 @@ Where each sentence of the axioms already stands on that prior work, and what is
 
 Everything taken in is Apache 2.0 or a cited paper; list what is used in gravity `docs/acknowledgements.md` as the earlier work did.
 
+### 4.1 An open hypothesis, not a claim: what DMP might say back to GR (the owner, 2026-10-27 00:58Z)
+
+The owner's words, verbatim: "Potential insight: Without one kind of information providing pressure to the other inside an event horizon,
+it would collapse onto the singular naked singularity. So a naked singularity is potentially possible, but never from an event horizon.
+The mass of a black hole must contain the information that went in, maybe it is that information=mass equivalence itself that spans the
+Schwartzschild-Radius, while shielding the singularity until it decays into Hawking Radiation?"
+
+This is filed as a hypothesis for the paper's "what DMP says back to GR" section and nothing in DMP rests on it. The DMP side it mirrors is
+T37 (collapse: with no external trust, trustspace collapses onto the item and the item's own boundary contains it) read together with
+Axiom 1 (the two halves keep each other in check and balance): in DMP the horizon is kept open by the two kinds pressing on each other,
+trust and information, and a Duality that loses one half does not stay a horizon, it collapses (T37) or is reminted (G0). The physics it
+touches, all of which has to be cited and none re-derived:
+
+- **Cosmic censorship** (Penrose 1969, the weak and strong conjectures): whether a naked singularity can form from regular initial data is
+  open; the owner's sentence is a restriction of it ("possible, but never from an event horizon"), so state exactly what DMP's analogue adds.
+- **Bekenstein–Hawking entropy and the holographic principle** (Bekenstein 1973, Hawking 1975; 't Hooft 1993, Susskind 1995, Bousso 2002):
+  the information a horizon can hold scales with its **area**, so with M², not with M; "information = mass equivalence spans the radius"
+  has to be reconciled with that scaling before it is a statement.
+- **The information paradox** and its current state (Hawking 1976; Page 1993; the island formula, Penington 2019, Almheiri et al. 2019):
+  "shielding the singularity until it decays into Hawking radiation" is the paradox's own question; cite it, do not reopen it.
+- **Mass–energy–information equivalence** (Vopson 2019, contested; Landauer 1961 is the uncontested floor): name it as a conjecture.
+
+The ask to the verifying session, as a side item after part 1 and before part 2, at most one page: does the DMP analogue (T37 collapse
+without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
+posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
+DMP text.
+
 ## 5. First read: likely undershoots and moves
 
 Found while taking the inventory; to be confirmed by the drafting session, not assumed.
@@ -298,6 +325,12 @@ the "Where the old rules went" table kept. Where part 2 found an overclaim, the 
 missing theorem, the constraint cites it once it exists, not before. A draft pull request on dmp, one commit per constraint cluster in the
 order of batches 1 to 5, each merging only on the owner's "approved" for it. Do not widen or narrow any constraint in this part; a
 constraint you believe is wrong is a finding for the owner, not an edit.
+
+Side item, between part 1 and part 2, at most one page: the owner's hypothesis of 2026-10-27 00:58Z on what DMP might say back to GR
+(brief section 4.1, his words verbatim there). Say whether the DMP analogue (T37 collapse without the two halves pressing on each other,
+Axiom 1's balance) yields one precise statement in DMP's own objects worth posing to physicists, or reduces to cosmic censorship in new
+words. Cite Penrose, Bekenstein–Hawking and the holographic area scaling, the information paradox and its island formula, Vopson as a
+contested conjecture; derive none of it. A finding, not a DMP change.
 
 Throughout: run tools/scrub-scan.sh before every push; merge nothing; roles, not values; no company facts; no model names in commits or
 pull requests; credit prior art as gravity/docs/acknowledgements.md does, Apache 2.0 only.
