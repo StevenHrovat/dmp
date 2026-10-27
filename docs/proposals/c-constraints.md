@@ -219,6 +219,20 @@ precise question for the verifying session: is DMP's "fewest total hops for the 
 Bekenstein-saturating layout, or a different one, and does the self-adjusting layout in DMP have a scrambling time (how many balance
 steps until a new item has no distinct place)? Pose it; do not answer it in Lean unless it falls out of the existing field theorems.
 
+A fourth sentence from the owner (01:22Z), verbatim: "Since a part of the internal network of the inside could theoretically be defined to
+be the smallest possible energy according to Planck's constant, which also occupies a known volume, it would fit, since the inside of the
+event horizon has infinite gravity, but only mass at the center, and information always moves around, while never leaking." Two corrections
+the physics forces before this is posed, and one match. The smallest cell of a black hole's information sits on the horizon **area**, not in
+a volume: Bekenstein–Hawking is S = A / 4 in Planck units, about one bit per four Planck areas, and counting Planck volumes inside would
+overcount by the ratio of volume to area (that overcount is exactly what the holographic bound forbids; 't Hooft 1993, Susskind 1995). And
+gravity inside the horizon is not infinite: curvature is finite everywhere but at the singularity, and the tidal force at the horizon of a
+large black hole is small (it falls as 1/M²); what is unavoidable inside is the direction, not the strength. The match: "only mass at the
+center, and information always moves around, while never leaking" is the classical picture (the singularity carries the mass, the no-hair
+theorem keeps the outside blind, fast scrambling keeps the inside placeless) and is the sentence the paradox is about. The DMP mirror is the
+smallest part: the words make a part a Duality and say nothing further about its constituents, so DMP's minimal cell is one Duality, and its
+count is the count of parts, which in DMP lives at the boundary (the minting draws it, G0) rather than in the interior. The verifying session
+says whether "the cell count is a boundary quantity" is a theorem of DMP's objects (G0, T37, Axiom 3) or only an analogy.
+
 The ask to the verifying session, as a side item after part 1 and before part 2, at most one page: does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
