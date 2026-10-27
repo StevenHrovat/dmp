@@ -1042,19 +1042,17 @@ Enforced by: none yet
 
 ## C4 · A change to what a part speaks is a new part
 
-A contract, what a part promises on its surface, takes effect only through the dual gate at a point both witnesses named, never mid-act
-and never silently; a thing has one name. The same holds for the information a productive part holds: it changes only through a recorded
-act of both witnesses. Before a part is productive its information carries no trust and may be shaped freely.
+A contract, what a part promises on its surface, changes only through the dual gate at a point both witnesses named, never mid-act and never silently, and a thing has one name. The information a productive part holds changes the same way; before production it carries no trust and is shaped freely.
 
 Derived from: T3 (a changed contract is a new part, trusted by nothing by default; information before production has no standing), Axiom 1
 (its trust has two witnesses: the promotion's two chains, the reviewed release), Axiom 3 (the change and the data are auditable because they
 are records), T6 (a name is part of what was granted), T15 (a change to a law is an act in the same shape). The stable promotion as the point,
 the register of contracts and the production point are construction (chapter 02 "Foundation bricks are complete", chapter 05 "Settings").
 
-Coverage: argued. The nearest theorems are the frame rule (`Recipe.extend_preserves_decisions`: what is added changes nothing that exists)
-and `Standing.loosening_needs_both`; nothing models a contract or its version.
+Coverage: argued. The nearest theorems are the frame rule (`Recipe.extend_preserves_decisions`: what is added changes nothing that exists), `Standing.loosening_needs_both`, and at the wire `R1Model.r1m_envelope_unknown_version` and `r1m_oversize_refused` (a frame of another version or size is refused: one name); nothing models a contract or its version.
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint and merged with C5 (financial data freezes at production), approved by the owner 2026-10-26 23:49Z (both stable since
 DMP 0.1.0 before that).
 Owner: CM coordinator
@@ -1087,8 +1085,7 @@ Enforced by: DMP-009
 
 ## C7 · What runs is what the record says
 
-Every part that runs is deployed from one recorded, pinned description of the whole, the recipe, in whatever shape the place needs. The
-configuration that exists is the one both witnesses can read and the chains proved; nothing runs that the record does not describe.
+Every running part is deployed from the recipe, one recorded, pinned description of the whole, in the shape its place needs. What exists is what both witnesses can read and the chains proved, and nothing else runs.
 
 Derived from: Axiom 3 (the recipe is the record of what exists), the words (a DMP-complete configuration includes the repository it is built
 from, every dependency pinned), G0 (mint prep verifies every pin), T27 (the same recipe spans the same field), T28 (compliance is assembled
@@ -1099,6 +1096,7 @@ Coverage: proven for the recipe (`Recipe.file_determines`: the recipe read back 
 system is the one its recipe describes (that is the evidence chain per deployment, C25).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-004
@@ -1211,9 +1209,7 @@ Enforced by: DMP-012
 
 ## C16 · Widening who may use a feature on information is a loosening
 
-A feature that acts on an organisation's information reaches a wider circle of users only through two independent witnesses: one that
-explains how the information is handled and which protections keep it safe, and one that attacked it and proved the protections, sharing
-nothing with the first. Both records are written so that both halves of the information's layer can read them.
+A feature on an organisation's information reaches a wider circle of users only through two independent witnesses: one that explains how the information is handled and protected, and one that attacked it and proved the protections, sharing nothing with the first. Both records are readable by both halves of the information's layer.
 
 Derived from: Axiom 1 (two witnesses: the builder who explains and the session that attacks), Axiom 3 (both pages from one template so both
 halves can read them), T16 (a wider circle is a loosening), T5 (the organisational and the factual half of the information's layer). The
@@ -1223,6 +1219,7 @@ Coverage: proven for the shape (`Standing.loosening_needs_both`); argued for the
 minting declares, T9).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-013
@@ -1324,10 +1321,7 @@ Enforced by: DMP-002
 
 ## C24 · Restorable is shown, never claimed
 
-A configuration is declared fit for the whole organisation it serves only when its restoration from nothing has been shown: every scenario
-of a signed catalogue passed its pass line in a sandbox, the most critical through a simulator, at least one on the real infrastructure,
-and both witnesses stood intact afterwards. The people who restore have what they need to do it without the system that failed. The pass
-line's numbers are configuration.
+A configuration serves a whole organisation only once its restoration from nothing has been shown, never claimed: every scenario of a signed catalogue passed its pass line in a sandbox, the most critical through a simulator, at least one on the real infrastructure, and both witnesses stood intact afterwards. The people who restore have what they need without the system that failed. The pass line's numbers are configuration.
 
 Derived from: Axiom 2 (shown, not claimed), Axiom 1 (both chains intact afterwards), Axiom 3 (the run record), T8 (continuity after a loss),
 T28 (compliance is re-shown, never carried over), T-P (a whole organisation runs on a minted instance, never a pressed one). The catalogue,
@@ -1338,16 +1332,14 @@ the plan is chosen by the live field, never the proof, and refused under other p
 gravity finding F10 is open on the restoring environment's capability).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.7.0 before that).
 Owner: Black Hole coordinator
 Enforced by: none yet
 
 ## C25 · A deployment is gated on the exact thing deployed, and removes no route
 
-"When deploying any allowed configuration of CM to CMOS, DMP must always be obeyed" (the owner, 2026-10-25). A deployment, any promotion
-of a part to any channel, runs the gate on the exact commit it deploys, never on an earlier run, and does not deploy on red; one that skipped
-the gate is not fully trusted and is ejected. No deployment leaves an administrator action without a supported route on the channel it
-serves: the list of known gaps only shrinks, and a deployment that would remove the last route for any action is refused before it runs.
+"When deploying any allowed configuration of CM to CMOS, DMP must always be obeyed" (the owner, 2026-10-25). A deployment, any promotion of a part to any channel, runs the gate on the exact commit it deploys, never on an earlier run, and never deploys on red; one that skipped the gate is not fully trusted and is ejected. No deployment leaves an administrator action without a supported route on the channel it serves: the known gaps only shrink, and a deployment that would remove the last route for an action is refused before it runs.
 
 The rule has a history (the owner, 2026-10-25): the stable channel once served a client that could no longer change a setting the owner
 needed, with no other supported route left. "We MUST learn from this, so when configuring an impossible situation, we must create rules that
@@ -1357,11 +1349,10 @@ Derived from: Axiom 1 (a deployment is an act; the balance: the gaps only shrink
 T8 (its no-lockout clause: removing the last route cuts a half off). Channels, the route register, its cap and the workflow register are
 construction (DMP-020).
 
-Coverage: undershoot for no lockout: no theorem models a route, and T8's clause has none (shared with C18); the missing theorem is that
-after any single act every half keeps at least one route to every action. Proven for the exact-commit shape (`Gate.stale_never_passes`,
-`Recipe.verdict_proven_iff`, `Recipe.one_unproven_line_unproves`: one line the chains do not carry unproves the whole).
+Coverage: proven for no lockout in a model with a route (gravity#17 `Routes.lean`: `last_route_removal_refused`: the act that would remove the last route is refused before it runs; `after_single_act_route_remains`; `gaps_only_shrink`), and the break without one is `BreakC25.lean`; proven for the verdict on the exact thing (`Recipe.verdict_proven_iff`, `Recipe.one_unproven_line_unproves`: one line the chains do not carry unproves the whole); argued for "on the exact commit, never an earlier run" (`Gate.stale_never_passes` is the shape, evidence read at another step never passes; nothing models a commit).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.8.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002, DMP-020
