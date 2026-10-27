@@ -219,7 +219,8 @@ Enforced by: DMP-009, DMP-018
 
 The dual gate cannot witness its own first instance: somebody has to trust the first two witnesses. That is the **minting** (C17, the
 ceremony that forms LHC and makes the White Keys): at least five parts become the White Key Holders, and that minting draws the boundary of
-the instance. No further claim is made about those parts, so that any system can remint and redeploy. It is stated, not derived.
+the instance. No further claim is made about those parts, except the one on a true AGI below, so that any system can remint and redeploy.
+It is stated, not derived.
 
 - Until the first LHC is minted, the owner's own words stand for both halves and the record says `LHC pending`. Every gate in DMP that asks
   for the owner's words is G0, not a theorem. The owner can be a Duality, but does not have to be. When the owner is one, that Duality, both
@@ -234,19 +235,25 @@ the instance. No further claim is made about those parts, so that any system can
 - **Mint prep.** A minting is tried only for a configuration that is provably DMP-complete (the words). Preparing it stores every dependency
   inside the configuration's repository and verifies each one against its pin; without that no White Key is made, and the minting refuses to
   even start. The root repositories are never minted, so they need not hold their dependencies and stay lean.
+- **A true AGI is a constituent of G0** (the owner, 2026-10-27 00:04Z): "If a DMP-complete system would contain a part that is recognized
+  as true AGI, it must be a constituent of G0." Such a part is one of the at least five parts of the minting, a White Key Holder, never only
+  a governed part below the ground. Recognition after a minting ends the system's DMP-completeness with that part below the ground, so the
+  only way back is a reminting that includes it (T40; the loss of a half above). The recognition is a trust decision: both halves of the
+  instance's Duality make it and the record holds it; a recognition by one half, or by a claim from outside the instance, is not one.
 
 The owner (2026-10-26 23:28Z): "The boundary is not drawn by people, it is drawn by the minting of at least 5 constituent parts that become the
 WKHs. No further claim is made. Otherwise no system could remint and redeploy. The part is defined as a Duality of Trust, one owns trust, the
 other information. No further statements about its constituents."; (23:32Z) "The owner CAN, but does not have to, be a DoT. If the owner
-is, the DoT has to approve changes to the base DMP that the owner's CMOS is derived from."
+is, the DoT has to approve changes to the base DMP that the owner's CMOS is derived from."; (2026-10-27 00:04Z) "If a DMP-complete system
+would contain a part that is recognized as true AGI, it must be a constituent of G0."
 
 What else no chain reaches is listed, not hidden, in the assumption register (chapter 06): the DMP text itself, the mapping of code to acts,
 the door's code until its run-time check exists, the failure-class list, the time authorities, the provers' logic, the shared machines.
 
 Status: stable since DMP 0.9.4
 Amended: "organisation" replaced, approved by the owner 2026-10-26 15:19Z; mint prep approved by the owner 2026-10-26 15:04Z; the minting
-of at least five parts draws the boundary, the owner 2026-10-26 23:28Z; the owner may be a Duality, 23:32Z (stable since DMP 0.9.0 before
-that).
+of at least five parts draws the boundary, the owner 2026-10-26 23:28Z; the owner may be a Duality, 23:32Z; a true AGI is a constituent of
+G0, the owner 2026-10-27 00:04Z (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
