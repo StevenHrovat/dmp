@@ -233,6 +233,19 @@ smallest part: the words make a part a Duality and say nothing further about its
 count is the count of parts, which in DMP lives at the boundary (the minting draws it, G0) rather than in the interior. The verifying session
 says whether "the cell count is a boundary quantity" is a theorem of DMP's objects (G0, T37, Axiom 3) or only an analogy.
 
+A fifth sentence from the owner (01:23Z), verbatim: "Maybe the linking also occupies space? with one part and three attachments." This is
+the picture loop quantum gravity already draws: in a spin network (Rovelli and Smolin 1995) the **links** carry the quanta of area (the
+spectrum goes as the square root of j(j+1) in Planck units) and the **nodes** carry the quanta of volume, with trivalent and four-valent
+nodes as the elementary grains; and in ER=EPR (Maldacena and Susskind 2013, after Van Raamsdonk 2010) the entanglement links are what
+builds the spacetime between the parts. So "the linking occupies space" is the established reading, with the roles assigned: area lives on
+the links, volume on the nodes, and a boundary's area is the sum over the links that cross it. The DMP mirror is exact in shape: a part is a
+node, its trust standings and admissions are the edges (T32's field is a potential over that graph), the minting boundary of G0 is cut by
+the edges that cross it, and its "area" is their count; "one part and three attachments" is a trivalent node, which the verifying session
+should compare with the Duality's own valence (two halves, each with its grant chain back to the pair, T32). The question to pose: is DMP's
+boundary count (the standings that cross the minting boundary) the quantity that scales like the horizon area, with the parts inside free to
+rearrange (Axiom 3) without changing it? If so, that is the holographic statement in DMP's objects and the one sentence worth a physicist's
+time; if not, say what differs.
+
 The ask to the verifying session, as a side item after part 1 and before part 2, at most one page: does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
