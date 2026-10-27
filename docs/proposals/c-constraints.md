@@ -206,6 +206,19 @@ quantum push-back are the loop-quantum-gravity bounce and Planck stars (Rovelli 
 only loosen (admission), is what keeps trustspace from collapsing onto the item (T37); the verifying session maps that half against the
 physics candidates and says which, if any, has the same shape.
 
+A third sentence from the owner (01:04Z), verbatim: "So the inside of a real black hole could be the most dense and efficient possible layout
+of all information contained inside it, but without any distinct place, as it's network is constantly reorganizing itself to maintain
+balance with gravity as the black hole accretes mass." Each clause already has a name in physics, so the verifying session cites rather than
+derives: "most dense possible" is the Bekenstein bound (1981), which black holes saturate; "without any distinct place" is fast scrambling
+(Sekino and Susskind 2008: a black hole spreads a bit over all its degrees of freedom in a time logarithmic in its entropy, the fastest
+allowed) and the holographic statement that the information lives on the area, not at a point inside; "constantly reorganizing itself" is
+where tensor-network holography enters (Swingle 2012; the HaPPY code of Pastawski, Yoshida, Harlow and Preskill 2015, in which the bulk is
+a quantum error-correcting code of the boundary). The DMP mirror is Axiom 3's layout, the median of the demand recomputed by both halves as
+the instance grows (section 4, k-median and demand-aware self-adjusting networks), under Axiom 1's balance against the trust field. The
+precise question for the verifying session: is DMP's "fewest total hops for the representative composition" the same optimum as the
+Bekenstein-saturating layout, or a different one, and does the self-adjusting layout in DMP have a scrambling time (how many balance
+steps until a new item has no distinct place)? Pose it; do not answer it in Lean unless it falls out of the existing field theorems.
+
 The ask to the verifying session, as a side item after part 1 and before part 2, at most one page: does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
