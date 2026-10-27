@@ -274,6 +274,20 @@ the information bound is saturated, and an exterior below the bound keeps expand
 DMP has a mirror at all (a Duality at the floor of T31, with no room to tighten, pushing admission outward; Axiom 3's layout at its median
 with nothing left to minimise), or whether this one does not distill and is dropped with its one line.
 
+An eighth sentence from the owner (02:16Z), a question, verbatim: "Does this DoT maybe represent the wave particle duality?" Two
+dualities in physics have that name, and they have opposite shapes. **Bohr's complementarity** (1928) says the wave and particle aspects
+cannot both be observed in one experiment: one or the other. The Duality of Trust is the opposite: both halves at once, always, and neither
+alone may act (Axiom 1), so complementarity is not the match. The sharper candidate is the **duality relation** of Englert, Greenberger
+and Yasin (Greenberger and Yasin 1988; Englert 1996): D² + V² ≤ 1, where D is the which-path information (how well the particle's path
+can be told) and V the interference visibility (how much wave the pattern shows); the more one is extracted, the less of the other remains,
+with the bound saturated by pure states. That is a trade-off between **what is revealed and what remains coherent**, and DMP has a rule of
+that shape: T31's floor, under which a reader without a grant learns of the inside only counts (size, staleness, rotation interval) and of
+the content nothing; and Axiom 2 against Axiom 3, where trust grants on evidence and the record reveals existence only. The question for
+part 0, stated so it can be answered: is there a DMP trade-off, as an inequality in DMP's own quantities, between what the information
+half reveals about an item (its distinguishability to a reader) and what the trust half can still grant on it (its standing), with T31's
+counts-only readout as the case where revelation is zero and the grant is whole? If yes, it is a theorem candidate (b) with the Lean it
+needs (`Record` projections, `Floor`); if no such pair of quantities exists, the DoT is not a wave-particle duality and the line says so.
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
