@@ -1062,10 +1062,7 @@ Enforced by: none yet
 
 ## C6 · Who may act on what is a bounded grant in the record
 
-No part acts beyond its grant, and a grant is a record both witnesses can read, with a bound. An act on a system or on information outside
-CMOS's own estate needs both halves of the layer it belongs to; a widening of what a part may do on its own is a loosening; anything
-irreversible outside that estate needs the halves' words per act. The standing grant to agents is the record below, word for word, and
-rule DMP-009 refuses a change to it.
+No part acts beyond its grant, a bounded record both witnesses can read. Outside CMOS's own estate an act needs both halves of its layer, anything irreversible their words per act, and widening what a part may do alone is a loosening. The standing grant to agents is the record below, word for word; rule DMP-009 refuses a change to it.
 
 <!-- authority-grant:begin -->
 > Agents may build, change and deploy CMOS's own estate on their own authority, using credentials held in the operations master, under plan, audit and four eyes where a second administrator exists. An act on a system or on information outside CMOS's own estate needs both halves of the layer it belongs to (T38), its organisational and its factual responsibility. Each half may declare advanced testing reached for its layer; until both have, every act there needs their words per act, and anything irreversible outside CMOS's own estate always does. Until the minting the owner's own words stand for both halves (G0).
@@ -1083,6 +1080,7 @@ intersection of the grants; `Recipe.pass_has_two_independent_witnesses`: whateve
 `Standing.loosening_needs_both`); argued for the grant as a readable record with a bound (no theorem models a grant's wording or scope).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, the grant unchanged, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0, grant abstracted 0.9.5 before that).
 Owner: CM coordinator
 Enforced by: DMP-009
@@ -1231,10 +1229,7 @@ Enforced by: DMP-013
 
 ## C17 · The top layer is a Duality like every other
 
-CMOS has no single owner. Whoever administers it does so as one half, checked by the other half, the body of people the minting binds;
-neither half acts on the composition of CMOS alone. A new part at the top of the composition needs the words of both halves, recorded;
-until the first minting the owner's words stand for both (G0). Every system keeps every other system in check while keeping it running in
-the best shape it can.
+CMOS has no single owner: whoever administers it is one half, checked by the other half, the body of people the minting binds, and neither acts on the composition of CMOS alone; a new part at the top needs both halves' words, recorded (until the first minting, the owner's, G0). Every system keeps every other system in check while keeping it running in the best shape it can.
 
 The two halves at the top have names (2026-10-25). **The Administrator**, always written with a capital The, is a mythical entity, not a
 person: everyone who is allowed to fully administer CMOS, allowed both by whoever holds authority over CMOS and by CMOS itself. **LHC**,
@@ -1249,6 +1244,7 @@ Coverage: proven for the shape (`Ground.minted_no_single_control`, `Layer.one_pe
 both halves' words" (the register is construction, DMP-014).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0, "organisation" replaced 0.9.4 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
@@ -1309,13 +1305,7 @@ Enforced by: DMP-002
 
 ## C22 · "Proven" is an act with two witnesses
 
-"The entire point of CMOS is to never trust any one interconnected system" (the owner, 2026-10-25). That a part is proven is therefore
-decided by two independent chains: one from the intent down to the code, one from the code up to the intent. They share nothing they could
-fail together beyond the roots they declare, each starts from its own source, and neither takes a result from the other. A part counts as
-proven only where both agree; a mismatch leaves it unproven, the gate turns red, the stricter answer stands at run time, and nothing that
-depends on it moves until both agree again. The chains prove that text, code and run agree; the text itself is verified only by a reader
-who did not write it. "This approach applies universally throughout CM, it has to be implemented wherever it is technically possible"
-(the owner, 2026-10-25).
+"The entire point of CMOS is to never trust any one interconnected system" (the owner, 2026-10-25). That a part is proven is decided by two independent chains, one from the intent down to the code and one from the code up to the intent, sharing nothing beyond their declared roots and taking no result from each other. Proven is where both agree; a mismatch leaves the part unproven, turns the gate red and lets the stricter answer stand at run time until both agree again. The chains show that text, code and run agree; the text itself is verified only by a reader who did not write it. "This approach applies universally throughout CM, it has to be implemented wherever it is technically possible" (the owner, 2026-10-25).
 
 Derived from: Axiom 1 (two independent witnesses for the act "this part is proven"), Axiom 2 (each reads its own source), T15 (a change
 to a law is an act with a cold read), T18 (a shared cause turns the proof layer into one witness), T19 (where the second chain cannot be
@@ -1327,6 +1317,7 @@ line; `Recipe.one_unproven_line_unproves`; `Cmb.sealed_needs_both`, `Cmb.sealed_
 is checked per engine (gravity finding F3: the exporter is one step both kernels share, T18).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.4.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
