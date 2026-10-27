@@ -973,8 +973,7 @@ Enforced by: DMP-021
 
 ## C1 · No act bypasses the gate
 
-Every act between parts of CMOS, into it and out of it passes a point of use that the dual gate decides and the record covers. No part
-reaches another by a path the gate does not see, and no part reaches the outside by one.
+Every act, inside CMOS, into it or out of it, passes a door the dual gate decides and the record covers; there is no path the gate does not see, between parts or to the outside.
 
 Derived from: Axiom 1 (the gate has no other way through), Axiom 3 (every use leaves a record), T20 (inside, every point of use is a door),
 T17 (enforcement is itself an act both witnesses verify). That the door is **one** door (one universal I/O layer; parts never call each other
@@ -985,15 +984,14 @@ both verdicts in the record; `Recipe.decide_pass_iff`: an act passes a line only
 system: that no component reaches another beside its door is shown per component by the evidence chain (chapter 06), not by the theory.
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:29Z (stable since DMP 0.1.0 before that).
 Owner: Milky Way coordinator
 Enforced by: DMP-008
 
 ## C2 · Every message is its own evidence
 
-A receiver trusts a message only on what the message carries and what the receiver verifies itself, live: the sender's standing, the
-sender's key on the message, the right for that kind of act, and the time. Every input gets exactly one answer and fails closed; the same
-message is never acted on twice; when the receiver cannot verify liveness, nothing verifies.
+A receiver trusts a message on nothing but what it carries and what the receiver verifies itself, live: who sends it, that their key signed it, that they may send that kind, and when. One answer per input, failing closed; no message acts twice; where liveness cannot be verified, nothing verifies.
 
 Law:
 - C2.L1 Verified means authorised. A message is verified only if a token signed by a trusted token signer names an enrolled,
@@ -1021,25 +1019,23 @@ the counterexamples `r1l_alwaysRefuse_L1` to `r1l_alwaysRefuse_L4`) and from the
 lets the same frame verify twice (`r1bW_clock_rollback_replays`); L3 holds as worded and T13 forbids the clock.
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, the Law block unchanged, approved by the owner 2026-10-26 23:29Z (stable since DMP 0.1.0 before that).
 Owner: Milky Way coordinator
 Enforced by: DMP-018
 
 ## C3 · A value reaches only parts trusted for its class
 
-Every piece of information inside carries the class and the provenance its admission named, wherever it goes. A part not trusted for that
-class never receives the value, only its count. Revealing a value to parts of a further class is a loosening, never a default.
+A value carries its class and its provenance wherever it goes. A part not trusted for the class receives only the count, never the value, and revealing a value to a further class is a loosening, never a default.
 
 Derived from: the words (admission names the class and the provenance), T3, T6 (a value a part is not trusted for never reaches it), T14
 (counts always, content by grant), T16 (a reveal is a loosening), T23. A token on every value at a border, and the identification axis a value
-carries, are construction of the shield (chapter 05).
+carries, are construction of the shield (chapter 05). T1 (content reaches only a part trusted for its class; nothing is inside without both trust and admission).
 
-Coverage: undershoot. The evidence chain models admission as one bit on an item (`Floor.road_gate`: a contained item is never read) and the
-gate per act; nothing models a value's class or provenance travelling with it from part to part, and `Standing.loosening_needs_both` speaks of
-a standing, not of a class of readers. The missing theorem: a value's class is never widened by one witness, and no path delivers a value to a
-part outside its class (Denning's lattice: a flow is allowed only where every class on the path allows it).
+Coverage: proven for the shape in a model with a class (gravity#17 `Flow.lean`: `value_reaches_only_trusted`, `untrusted_gets_count`, `no_delivery_outside_class`: no path delivers a value to a part outside its class; `widening_needs_both`: a reveal to a further class needs both witnesses; `Floor.road_gate` for a contained item); argued for the token on every value and the identification axis (construction, chapter 05). Why the gate alone could not carry it: `BreakC3.lean` (gravity#17), a delivery outside the class passes a gate that has no class.
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:29Z (stable since DMP 0.1.0 before that).
 Owner: Milky Way coordinator
 Enforced by: none yet
@@ -1270,10 +1266,7 @@ Enforced by: DMP-014
 
 ## C18 · A weakness is evidence against what it claims, never against the part
 
-No change on the inside cuts a part off: whatever spoke to CMOS under a contract it was locked to keeps a route (T8b). When an algorithm or a
-format that contract rests on becomes unsafe, trust in what the weak part claims is withdrawn, a tightening; the part's own standing is not
-withdrawn without evidence against the part. Until a second, independent path vouches for the part's identity, its traffic is contained and
-carries no more rights than it had.
+Nothing inside cuts a part off: a part locked to a contract keeps its route. When the contract's algorithm or format turns unsafe, what the part claims through it is no longer trusted (a tightening), but the part keeps its standing until evidence stands against the part itself; until an independent path vouches for its identity, its traffic is contained with no more rights than before.
 
 Derived from: T7 (a standing is withdrawn only on evidence against it; an unsafe algorithm is evidence against the algorithm), T8 (its
 no-lockout clause: removing the last route cuts a half off), T16 (the withdrawal is a tightening, one witness), Axiom 2 (a path the part sits on is a position in the
@@ -1281,23 +1274,17 @@ network, never evidence by itself; the second path is evidence the receiver veri
 then). That a locked contract is never broken by its own side, that a later version only adds, and that a corpus of every locked version
 replays through every build, are construction (chapter 04 "Compatibility after the lock").
 
-Coverage: undershoot. Containment is proven for an item (`Floor.road_gate`) and tightening on one witness for a standing
-(`Standing.one_witness_tightens`); nothing in the evidence chain models a route, a locked contract or the difference between evidence against
-an algorithm and evidence against a part, and T8b has no theorem at all. The missing theorem, shared with C25: after any single act every half
-keeps at least one route.
+Coverage: proven for the route (gravity#17 `Routes.lean`: `after_single_act_route_remains`, `last_route_removal_refused`), for containment (`Floor.road_gate`) and for the tightening on one witness (`Standing.one_witness_tightens`); argued for the difference between evidence against an algorithm and evidence against the part (no model of a contract). The break without a route: `BreakC25.lean` (gravity#17).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 22:56Z (stable since DMP 0.3.0 before that).
 Owner: Milky Way coordinator
 Enforced by: DMP-015
 
 ## C19 · Two halves on every served request: trust and information, each verified by the server itself
 
-A part serves a request only when the request carries both halves of its layer's Duality: the half that owns trust (the request may be
-served: who asks, under what standing) and the half that owns information (the request is meant: what is asked, and whether it is right to
-serve it). Neither half overrules the other; they keep each other constantly in check, and the serving part verifies both itself at the
-point of use; that a carrier already checked the request does not count. A right to speak for one half counts only when the other half has
-signed that right too.
+A part serves a request only with both halves of its layer on it, the trust half (who asks, under what standing) and the information half (what is asked, and that it is right to serve), each verified by the serving part itself at the point of use and never taken from a carrier. Neither half overrules the other, and a right to sign for one half counts only when the other half has signed it too.
 
 The owner (2026-10-26): "One authority owns Trust, the other owns Information. To exist inside of DMP, they are required to keep each other
 constantly in check and balance so that no element can overrule the other."
@@ -1305,14 +1292,12 @@ constantly in check and balance so that no element can overrule the other."
 Derived from: Axiom 1 (two witnesses, each with full reach, gated only by the other, the stricter stands; the halves keep each other in
 balance), Axiom 2 (a carrier's check is not the server's evidence), T16b (a grant to sign for a half is a lockstep act), T16c (a half
 that contradicts the state both certified has incriminated itself), T5 (the two responsibilities of an information layer). Which parts hold
-the two halves, and how their signatures travel in a message, are construction (chapter 04 "Serving at a warehouse").
+the two halves, and how their signatures travel in a message, are construction (chapter 04 "Serving at a warehouse"). T1 (the trust half and the information half gate each other on every act).
 
-Coverage: proven for the shape (`Gate.gate_pass_iff`, `Gate.act_needs_both_with_evidence`, `Layer.DoT.gate_pass_needs_both`,
-`Recipe.pass_has_two_live_witnesses`: a pass at any line means two independent halves both passed on live evidence); argued for "never taken
-from a carrier", for the co-signed right to speak, and for the halves being one of each kind: the model types no half, so "a Duality holds one
-trust half and one information half" is a theorem still to add.
+Coverage: proven for the shape (`Gate.gate_pass_iff`, `Gate.act_needs_both_with_evidence`, `Layer.DoT.gate_pass_needs_both`, `Recipe.pass_has_two_live_witnesses`: a pass at any line means two independent halves both passed on live evidence) and for the halves being one of each kind (gravity#17 `Stitch.typed_gate_needs_each_kind`: a pass needs a verdict of the trust kind and one of the information kind); argued for "never taken from a carrier" (no model has a carrier; the nearest is `Stitch.content_never_suffices`) and for the co-signed right to sign.
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:30Z (stable since DMP 0.3.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-016
