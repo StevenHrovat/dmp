@@ -259,6 +259,21 @@ check, verified live by both halves, Axiom 2), does the fewest-total-hops layout
 practice? The verifying session states the DMP cost model (per hop, per link, per check), cites radix economy for the optimisation, and
 proves only the DMP-specific cost model, in Lean only if the field theorems already carry the cost terms.
 
+A seventh sentence from the owner (02:06Z), verbatim, filed as the most speculative of the set: "If the singularity inside the black hole is
+only able to compress spacetime until the ratio has hit 3 and is then stopped by it's outward push, and the universe outside of it has a
+lower ratio, that would also explain why spacetime keeps inflating. The gravity is not enough to contain the information inside of it into a
+stable state." What has no support: the "3" (radix economy's integer optimum is a fan-out of a hierarchy under a cost model, not a ratio of
+spacetime compression, and nothing in GR or cosmology produces 3 as a stopping ratio); and a cosmic ratio one could put beside it, dark
+energy to matter, is about 2.2 today (about 2.6 against dark matter alone) and changes over cosmic time, so it is not a constant to be hit.
+What the sentence is a cousin of, and has to be cited rather than re-invented: **holographic dark energy** (Li 2004; Cohen, Kaplan and
+Nelson 1999), in which the dark-energy density is set by the information bound of the horizon, so "gravity is not enough to contain the
+information" has a published form; **black-hole cosmology** and the torsion bounce (Popławski 2010 onwards), in which our universe is the
+interior of a black hole and the singularity is replaced by a bounce that pushes outward; and **cosmological natural selection** (Smolin
+1992), in which black holes seed universes. Part 0 tests what survives once the 3 is dropped: whether "the interior stops compressing when
+the information bound is saturated, and an exterior below the bound keeps expanding" is a precise statement with a known name, and whether
+DMP has a mirror at all (a Duality at the floor of T31, with no room to tighten, pushing admission outward; Axiom 3's layout at its median
+with nothing left to minimise), or whether this one does not distill and is dropped with its one line.
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
