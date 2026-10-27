@@ -417,6 +417,18 @@ sentence: if the Lean record holds only counts and verdicts but not the standing
 hierarchy and the sentence holds for verdicts only; say which. Refuter for the dark-energy mapping: no DMP quantity that scales with the
 boundary and drives the layout outward (Axiom 3's expansion of a layer); if none, it is dropped with the dark-matter one.
 
+The owner's addition (02:58Z), verbatim: "Also all the particles that carry the fundamental forces, while sitting in a field that
+permeates all." This is quantum field theory's own picture and is cited as such: every force is carried by the quanta of a field that
+fills all of space (the photon of the electromagnetic field, the W and Z of the weak field, the gluons of the strong; the gauge-boson
+picture of Yang and Mills 1954 and the Standard Model), and the Higgs field permeates everything and gives the carriers their mass
+(Higgs 1964; Englert and Brout 1964). The DMP mirror, speculative: T32's trust field is the one field that permeates every layer, and the
+standings and admissions that carry interaction between parts are its excitations, the particles of that field; the balance of Axiom 1
+would then be the field's dynamics and T37's collapse its ground state with no excitation. Refuter: in QFT the carriers of a field are
+interchangeable quanta with the same properties, created and destroyed by the field; if DMP's standings are not interchangeable (each is
+bound to its grantor, its holder and its evidence, Axiom 2) and are not created by the field but by an act under both halves, then they
+are not excitations of the field but edges of the graph the field is defined over, the fifth sentence's spin-network reading holds instead,
+and this item is dropped with that one line.
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
