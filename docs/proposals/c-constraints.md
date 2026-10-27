@@ -259,6 +259,18 @@ check, verified live by both halves, Axiom 2), does the fewest-total-hops layout
 practice? The verifying session states the DMP cost model (per hop, per link, per check), cites radix economy for the optimisation, and
 proves only the DMP-specific cost model, in Lean only if the field theorems already carry the cost terms.
 
+The owner's refinement (02:35Z), verbatim: "No, the fan out would stop at 2, because one connection is taken up by a parts root." So the
+prediction is: valence 3 per part (the trivalent grain of the fifth sentence), one link to the part's root, **branching 2** downward. This
+is the concrete, refutable prediction of the section and is recorded as such: the refuter is any DMP cost model under which the optimal
+branching is not 2, or a measured layout (the benchmark above, extended to record fan-out) that settles elsewhere. One caution for the
+derivation, so that the session does not reach 2 by the wrong road: counting the parent link inside the radix cost, (b + 1) · log_b N,
+does **not** give 2; its optimum is at ln b = 1 + 1/b, so b ≈ 3.59, and the best integer is 4 with children only (valence 5), or 3 if the
+parent is excluded. A binary layout therefore has to come from a different cost term than depth times fan-out: a per-link cost of the
+Duality checks (each child link is verified live by both halves, Axiom 2, so a link costs two checks per refresh), the pair structure
+itself (a part is two halves, and each half may carry one child so that the two halves stay in balance, Axiom 1), or a hop cost that
+grows with valence. The session derives which DMP cost model, stated in DMP's quantities, yields branching 2 at the optimum, or reports
+that none does and the prediction falls; either is a finding.
+
 A seventh sentence from the owner (02:06Z), verbatim, filed as the most speculative of the set: "If the singularity inside the black hole is
 only able to compress spacetime until the ratio has hit 3 and is then stopped by it's outward push, and the universe outside of it has a
 lower ratio, that would also explain why spacetime keeps inflating. The gravity is not enough to contain the information inside of it into a
