@@ -376,6 +376,25 @@ decreasing curve, and its shape (linear budget, or a knee) is the datum the phys
 and runs only on synthetic data (the charter); its design goes in gravity docs/physics.md as a numbered procedure, its run is a later card
 on the bridge.
 
+The owner's refinement of what the whole section is for (02:50Z), verbatim: "That is correct, but we CAN provide THE factual number to
+optimize against on how to get as close as possible, without achieving a state where information loses all meaning because it's possibility
+is bounded forever." So the claim is not an algorithm that reaches the optimum; it is a **bound**: the closest approach to full containment
+short of the state in which information loses its meaning because nothing can ever reach it again. That is the shape of the best-known
+bounds in physics and information theory, each approachable and never attained, and each is to be cited as the pattern: **Carnot**
+efficiency (1824: no engine between two temperatures beats 1 − T_c/T_h, and reaching it takes infinite time), **Shannon capacity** (1948:
+no code sends more than C bits per use, and codes approach C only as their length grows), the **Bekenstein bound** (1981: no region holds
+more entropy than its energy and radius allow, saturated only by a black hole), and **Landauer's limit** (1961: no erasure costs less than
+kT ln 2, reached only reversibly). In DMP the attained end is already a theorem: T37's collapse, where with no admission trustspace falls
+onto the item and its own boundary contains it, so the information still exists (Axiom 3: existence is the one thing trust yields) but has
+lost all meaning, since no act will ever reach it. The bound the owner asks for is therefore the least leakage an arrangement of N Dualities
+can have while **at least one admission still stands** on every item, so that every item stays reachable by some act under both halves. The
+question for part 0, separate from the min-cut item above but tied to it: define that bound in DMP's quantities (leakage as the cut flow
+across the minting boundary, capacity as the budget of Duality checks, balance as Axiom 1's steps), show whether it is approachable and
+never attained (the min-cut arrangement approaches it as N grows; T37 is the forbidden limit), and name the number: if the Lean's `Floor`
+and `Record` theorems fix it, it is "THE factual number to optimize against" and a theorem candidate (b). The refuter: a DMP-complete
+instance with zero leakage in which every item is still reachable (then the bound is attained and the claim is wrong), or no quantity in
+DMP's objects that separates "contained and reachable" from "collapsed" (then there is no number to optimise against and the claim is empty).
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
