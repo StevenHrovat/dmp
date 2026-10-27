@@ -472,7 +472,11 @@ useful and coherent for DMP becomes one of three things, (a) a cost model for Ax
 its optimal fan-out, (b) a theorem candidate in DMP's own objects (for example: the standings that cross the minting boundary are the
 quantity that scales like the horizon area, and the interior may rearrange under Axiom 3 without changing it), stated precisely, with the
 Lean it would need, or (c) a precise question worth a physicist's time, stated so that a physicist can say yes or no. Drop what does not
-distill; say what you dropped and why in one line each. Last in this part, at most half a page, the separate item of section 4.2 (the
+distill; say what you dropped and why in one line each. For every hypothesis you keep, state one concrete result that would refute it
+(a non-monotone benchmark curve; the min-cut arrangement and Axiom 3's median turning out to be different optima; an exposed field that
+costs no capacity): a kept item without its refuter is not kept. The owner's method rule (02:33Z): "every challenged definition so far
+has always lead to a more clear more general answer, that made the entire AS better", so challenge each definition you touch and report
+the clearer, more general form it took, or that it held as it was. Last in this part, at most half a page, the separate item of section 4.2 (the
 owner's AI hypothesis, speculative, outside the physics): state the DoT-shaped learning system in DMP's objects and whether the Lean's
 one-witness-never-acts applies to a learner. Output: gravity docs/physics.md as a draft pull request (the owner's reading
 queue), at most four pages, every claim with its source; no DMP text changes, no Lean beyond what (b) needs and the field theorems
