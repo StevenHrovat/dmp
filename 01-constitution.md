@@ -1103,9 +1103,7 @@ Enforced by: DMP-004
 
 ## C9 · What is published holds nothing that is inside
 
-Nothing inside leaves except by an export. What CMOS publishes (its code, its text, its public tree) holds no secret, no fact about the
-organisation that runs it and no person beyond a role; real values stay inside and are passed as parameters. The public tree holds no
-trust for anything inside.
+Nothing inside leaves except by an export. What CMOS publishes, its code, its text, its public tree, holds no secret, no fact about the organisation that runs it and no person beyond a role; real values stay inside and are passed as parameters; the public tree holds no trust for anything inside.
 
 Derived from: T12 ("leave CMOS" is an act with no trust by default), T23 (contained to outside is an export and needs both halves), T24
 (contained information reaches no part outside by any act), T3, T6. The scan of the tree, the settings store and the licence are
@@ -1115,15 +1113,14 @@ Coverage: proven for the trap (`Floor.road_gate`: a contained item is never read
 a publication being an export (no theorem models a public tree).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-001, DMP-006
 
 ## C10 · CMOS is trusted only for acts on its own estate
 
-CMOS acts only on the systems and the information that whoever holds authority over it holds authority over. No act aims at a third
-party's systems, no act harvests or evades on anyone else's, and no test touches a productive system without a record naming the
-signatory, the targets and the window. A request that would break this is refused. The wording is the charter, [CHARTER.md](CHARTER.md).
+CMOS acts only on what whoever holds authority over it holds authority over: never on a third party's systems, never harvesting or evading on anyone else's, and never testing a productive system without a record naming the signatory, the targets and the window. A request that would break this is refused. The wording is the charter, [CHARTER.md](CHARTER.md).
 
 Derived from: T6 (trust is bounded to named acts on named parts), T3 (an act outside the estate has no trust), G0 (authority comes from
 whoever holds authority over CMOS, outside CMOS), Axiom 3 (the scope file is the record). That every security-shaped brief carries its
@@ -1132,6 +1129,7 @@ one-line context is construction (DMP-002).
 Coverage: argued. The gate shape (`Gate.one_witness_never_acts`) is the only theorem that bears; nothing models the estate's boundary.
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0 before that).
 Owner: Black Hole coordinator
 Enforced by: DMP-002
