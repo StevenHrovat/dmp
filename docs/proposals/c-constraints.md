@@ -305,6 +305,21 @@ the median layout of Axiom 3 as the inside (minimal, fine), and if so, is "a DoT
 minimum and its outside entropy at its maximum" a theorem candidate (b) or an analogy? State what quantity plays the Page curve's time axis
 in DMP (the balance steps of Axiom 1?) and whether it has a Page time.
 
+The owner's correction of the ninth sentence (02:19Z), verbatim, which replaces "its entropy drops to the lowest possible value" and
+stands as his wording: "The lowest total leakage of all information across that number of dualities arranged in any possible order." With
+that it is no longer an entropy claim but an **optimisation**: among all arrangements of N Dualities, the one with the least total leakage.
+That has three established forms, each to be cited and matched rather than re-derived: the **isoperimetric problem** (for a given volume
+the sphere has the least boundary, and a black hole's horizon is the sphere), **Ryu–Takayanagi** (2006: the entanglement entropy of a
+region equals the area of the minimal surface that bounds it, so "least leakage" and "minimal surface" are the same statement in
+holography), and **min-cut / max-flow** on graphs (Ford and Fulkerson 1956: the leakage of an arrangement is the capacity of the cut that
+separates it from the outside, and the least-leaking arrangement is the minimum cut; this is the spin-network item again, leakage counted
+as the edges the boundary crosses). The question for part 0, now precise enough to answer: in DMP's own objects, is the black hole the
+**min-cut arrangement** of N Dualities (the standings and admissions that cross the minting boundary minimised over every arrangement), and
+is that arrangement the **same** as Axiom 3's median layout (fewest total hops for the representative composition), or are the two optima
+different and the black hole the case where they coincide? If they coincide, that is one theorem candidate (b) tying Axiom 3, T37 and G0's
+boundary together, with the Lean it needs; if they differ, state the two optima side by side and what trades one against the other. The
+entropy split above (outside maximal, inside minimal) then follows as a corollary rather than a premise.
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
