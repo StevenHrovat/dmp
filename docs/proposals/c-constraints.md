@@ -354,6 +354,25 @@ without the two halves pressing on each other, plus Axiom 1's balance) yield one
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
 DMP text.
 
+### 4.2 A separate, speculative item outside the physics: the AI hypothesis (the owner, 2026-10-27 02:29Z)
+
+The owner's words, verbatim: "Might also explain why AI, while still getting smarter and more capable, somehow does not seem to get more
+AGI, it is missing it's other half in the neural network, the way it is built is also wrong. The perfect system is created in a different
+way, as we may be able to prove." Filed as speculation, outside part 0's physics and with no claim on DMP text. What exists that pairs two
+halves, and has to be cited before any of it is restated: **dual-process theory** (Kahneman 2011, System 1 and System 2, and its critics);
+**neurosymbolic AI**, a neural generator paired with a symbolic verifier (AlphaProof with Lean, 2024; the general pattern in Garcez and
+Lamb 2020); **actor–critic** methods (Barto, Sutton and Anderson 1983); **generative adversarial networks** (Goodfellow et al. 2014, a
+generator and a discriminator training against each other); and **predictive coding** (Rao and Ballard 1999; Friston's free-energy
+principle), where prediction and error signals run in opposite directions. In none of these does one half own trust and the other own
+information in DMP's sense, with each gating the other's every act and neither able to act alone (Axiom 1, T39): a critic scores, a
+discriminator judges, a verifier checks a proof, but the generator still acts on its own output and nothing records both verdicts (Axiom 3)
+or refuses when they disagree. That difference is the exact thing to state. The question for the verifying session, last in part 0 and
+at most half a page: what would a **DoT-shaped learning system** be, in DMP's objects (a part that is a Duality; its trust half holding
+standings on live evidence, Axiom 2; its information half holding the record and the layout, Axiom 3; every act gated by both, with the
+stricter verdict standing), and is "such a system cannot act on an output that only one half has passed" a theorem of the existing Lean
+(`Gate.one_witness_never_acts`) applied to a learner, or only an analogy? Whether such a system is "more AGI" is not a question DMP's
+objects can state, so it is not posed; the recognition of true AGI is G0's and stays there.
+
 ## 5. First read: likely undershoots and moves
 
 Found while taking the inventory; to be confirmed by the drafting session, not assumed.
@@ -453,7 +472,9 @@ useful and coherent for DMP becomes one of three things, (a) a cost model for Ax
 its optimal fan-out, (b) a theorem candidate in DMP's own objects (for example: the standings that cross the minting boundary are the
 quantity that scales like the horizon area, and the interior may rearrange under Axiom 3 without changing it), stated precisely, with the
 Lean it would need, or (c) a precise question worth a physicist's time, stated so that a physicist can say yes or no. Drop what does not
-distill; say what you dropped and why in one line each. Output: gravity docs/physics.md as a draft pull request (the owner's reading
+distill; say what you dropped and why in one line each. Last in this part, at most half a page, the separate item of section 4.2 (the
+owner's AI hypothesis, speculative, outside the physics): state the DoT-shaped learning system in DMP's objects and whether the Lean's
+one-witness-never-acts applies to a learner. Output: gravity docs/physics.md as a draft pull request (the owner's reading
 queue), at most four pages, every claim with its source; no DMP text changes, no Lean beyond what (b) needs and the field theorems
 already carry.
 
