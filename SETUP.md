@@ -8,7 +8,7 @@ that needs something this file does not list fails.
 The owner, 2026-10-26: "every layer of DMP (so DMP/IM/CM/Gravity) should share a universal setup file that everyone (agent and human) can
 just read and know exactly what is needed to run everything required. This needs to be tracked anyway according to the axiom system."
 Why the axiom system asks for it: the words (DMP-complete: every dependency needed to build, check, prove, deploy and restore is inside
-the configuration's repository, pinned by hash), G0 (mint prep stores and verifies every dependency), T3 (the configuration heals itself
+the configuration's repository, pinned by hash), G0 (mint prep stores and verifies every dependency), T8 (the configuration heals itself
 with no connection across its Event Horizon). The root repositories stay lean (DMP 00): they name their toolchains here, with version,
 source and hash, instead of carrying them; a configuration about to be minted carries them (mint prep).
 
