@@ -1142,36 +1142,26 @@ Enforced by: DMP-002
 
 ## C12 · Position never grants, and routing reaches everything inside
 
-Every piece of information inside the Event Horizon is reachable by one routing that asks the nearest place first and crosses the horizon
-last, only when nothing inside answers. Where a piece of information sits, and how a layer places information or work, never decides who
-may act on it: that comes only from its admission and the dual gate. A new kind of information is a new layer that inherits the gate, the
-record and the placement and changes nothing else. A private place is one routing cannot see into: neither an answer nor its absence reveals
-what it holds, its record shows counts and never content, and no single loss removes it.
+One routing reaches everything inside the Event Horizon: the nearest place first, across the horizon last and only when nothing inside answers. Where information sits, and how a layer places information or work, never decides who may act on it; only its admission and the dual gate do. A new kind of information is a new layer that inherits the gate, the record and the placement and changes nothing else. A private place is invisible to routing: neither an answer nor its absence reveals what it holds, its record shows counts and never content, and no single loss removes it.
 
 Derived from: the words (admission, contains, layer, door), Axiom 1, Axiom 2 (a position in the network is never evidence, so a place cannot
 grant), Axiom 3 (counts always, content by grant), T8 (no single part's loss stops a place that holds information), T14, T23, T29 (every
 crossing of the horizon is an act, so it comes last and only when needed), T4 (what no admission names is contained where it lies), T5
 (every information layer has its own Duality), C1 (every route runs through the one door). The tiers, the net that routes, the layers in use,
 the reorganisation by the field, and the floor of three nodes per private place are construction and configuration (chapter 05 "The
-information tiers and the layers", chapter 14 "Ask the nearest tier first").
+information tiers and the layers", chapter 14 "Ask the nearest tier first"). T1 (who may act comes from the admission and the gate, which gate each other).
 
-Coverage: proven for position never grants (`Config.relayout_never_votes`, by reflexivity: placement is not an argument of the gate;
-`Field.n1b_schedule_never_votes`), for the routing order and the invisible private place (`tr_milky_way_first`, `tr_exit_last`,
-`tr_never_singular`, `tr_singularity_invisible`, `tr_first_scrub`), for a new layer changing nothing existing (`Recipe.extend_preserves_decisions`,
-`Recipe.extend_wf`) and for a layer reorganising only on both witnesses' own recomputation and healing from any state (`ms_accepted_agrees`,
-`ms_wrong_layout_refused`, `ln_signed_moves`, `st_self_stabilizing`, `st_no_root_takeover`); argued for "no single loss removes it" (the node
-floor is T8's premise and has no theorem).
+Coverage: proven for position never grants (`Config.relayout_never_votes`, by reflexivity: placement is not an argument of the gate; `Field.n1b_schedule_never_votes`), for the routing order and the invisible private place (`tr_milky_way_first`, `tr_exit_last`, `tr_never_singular`, `tr_singularity_invisible`, `tr_first_scrub`), for a new layer changing nothing existing (`Recipe.extend_preserves_decisions`, `Recipe.extend_wf`) and for a layer reorganising only on both witnesses' own recomputation and healing from any state (`ms_accepted_agrees`, `ms_wrong_layout_refused`, `ln_signed_moves`, `st_self_stabilizing`, `st_no_root_takeover`); argued for "reaches everything inside" (the routing theorems prove the order and what is never returned, not that every item is reached: gravity finding F21) and for "no single loss removes it" (the node floor is T8's premise and has no theorem).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.1.0, redrafted 0.9.3 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
 ## C13 · The record inside is read before anyone outside is asked
 
-Before a question crosses the horizon or reaches a person, every record inside that could answer it has been read, and the answer names the
-record it rests on or says that none held it. What was learned outside is written back inside as a record, so that the next asker finds it
-inside.
+No question crosses the horizon or reaches a person before every record inside that could answer it has been read; the answer names the record it rests on or says that none held it; what was learned outside is written back inside, so the next asker finds it there.
 
 Derived from: Axiom 2 (evidence the asker verified itself: the record first, never a memory), Axiom 3 (the record is there to be read), Axiom 1
 (the balance: what the boundary lacks is built by evidence: the write-back), T29 (a crossing is an act and comes last), C12 (one routing, nearest first).
@@ -1182,14 +1172,14 @@ Coverage: proven for the order (`tr_milky_way_first`, `tr_exit_last`); argued fo
 models an asker or an intake).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.2.0, redrafted 0.9.3 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
 ## C14 · An answer rests on every piece of evidence its author can verify
 
-When one source does not give the full picture, the answer rests on every read path its author can verify itself, joined, and says what is
-still unknown. A write path is read through its trail or its dry run, never by writing to find something out.
+An answer rests on every read path its author can verify itself, joined, and names what is still unknown; a write path is read through its trail or its dry run, never by writing to find something out.
 
 Derived from: Axiom 2 (only evidence the author verified itself), Axiom 1 (the balance asks for the complete answer, the bounds only forbid
 the unsourced one; and a write to find something out is an act with no trust behind it, T3), Axiom 3 (the trail of past writes is
@@ -1198,16 +1188,14 @@ the record). Which paths exist and the lines an agent writes are construction (c
 Coverage: argued. No theorem models an author joining sources; the bound (no unsourced answer) is C21's, the completeness is the balance's.
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
 
 ## C15 · A write lands only on a state its writer verified live
 
-In the owner's words (2026-10-25): "a write first reads the live state it will change and asserts what it expects: absent for a create, a
-named value for an overwrite." The read is live from the target at the point of use, never a value read earlier; when the expected state is
-not found, nothing is written; every write is read back and must show the wanted state. The target of a write (the system, the tenant, the
-host, the account) is part of what was granted.
+In the owner's words (2026-10-25): "a write first reads the live state it will change and asserts what it expects: absent for a create, a named value for an overwrite." The read is live at the point of use, never an earlier value; when the expected state is not found, nothing is written; every write is read back and must show the wanted state; the write's target (the system, the tenant, the host, the account) is part of the grant.
 
 Derived from: Axiom 2 (live state at the point of use; an earlier read is never evidence; the absence of the expected state is the absence of
 evidence, and nothing moves), Axiom 3 (the read-back is the record of the act), T6 (the target is part of the grant). Retries, hard and soft
@@ -1218,6 +1206,7 @@ Coverage: proven for the shape (`Gate.stale_never_passes`: evidence past its val
 the read-back (no theorem models a write's expected state).
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.3.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-012
@@ -1304,9 +1293,7 @@ Enforced by: DMP-016
 
 ## C21 · A statement is a write
 
-What a part states to a person or to the record is an act. It rests on a source the part read itself and names; an unsourced statement does
-not land. Where more than one record fits, every one is named and none is picked. C14 covers the question the author knows it cannot
-answer; this constraint covers the answer it only thinks it knows.
+A statement to a person or to the record is an act: it rests on a source the part read itself and names, or it does not land; where several records fit, every one is named and none is picked. C14 covers the question the author knows it cannot answer; this constraint covers the answer it only thinks it knows.
 
 Derived from: the words (an answer an agent gives is an act), Axiom 1 (an act needs trust), Axiom 2 (trust needs evidence the part verified
 itself; a memory is not evidence), Axiom 3 (the source named is the record), T3. The lines an agent writes (`Looked up:`) are construction
@@ -1315,6 +1302,7 @@ itself; a memory is not evidence), Axiom 3 (the source named is the record), T3.
 Coverage: argued. No theorem models a statement as an act; until DMP 0.9.7 this rested on a premise, now the words carry it.
 
 Status: stable since DMP 0.9.7
+Proposed in this pull request (not yet approved): restated more simply, saying the same (part 3 of the verifying session); Derived from and Coverage relinked to the renumbered theorems and to the Lean of gravity#17.
 Amended: recast as a constraint, approved by the owner 2026-10-26 23:49Z (stable since DMP 0.6.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-002
