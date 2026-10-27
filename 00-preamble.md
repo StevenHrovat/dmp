@@ -52,14 +52,14 @@ base DMP its CMOS is derived from (G0, the owner 2026-10-26 23:32Z). Every chang
 of authority, is an act of the owner, and its record is the merged pull request the owner approved.
 
 - **Grants.** The owner may grant part of this authority to other parts (an agent, a coordinator, a person) for named acts. A grant is a
-  record (Axiom 3) with a bound (T1); the owner alone may withdraw it, as a tightening (T24); it is never passed on unless it says so. Rule
+  record (Axiom 3) with a bound (T6); the owner alone may withdraw it, as a tightening (T16); it is never passed on unless it says so. Rule
   DMP-009 refuses a change to the wording of a grant the owner did not approve.
 - **The standing grants here.** The CM coordinator keeps DMP and its marks (status, owner, enforcing rule) and merges what the owner
   approved; a constellation coordinator proposes changes to its own chapter; a change to the constitution needs the owner's approval.
 - **Clone, press, mint.** Any part may copy the root repositories onto its own systems. Whoever holds that copy is its owner,
   with the same standing as above, and nothing in the copy depends on the copy it came from. The owner presses an instance (G0, T-P), and
   once a pressing of the same configuration has passed, the owner mints it (C17). The minting is a trust rotation: every key rotates,
-  the owner role ends, and ultimate authority rests with the White Key holders under a majority of trust (T5). The minted instance is
+  the owner role ends, and ultimate authority rests with the White Key holders under a majority of trust (T10). The minted instance is
   contained on its own: trust never crosses instances, so it shares none with any other CMOS, the root repositories included; a newer
   DMP reaches it only as information through an entry path its own two witnesses opened (T-P).
 - **Dwarf galaxies.** A part may instead mint under the roots of another: its instance is then a **dwarf galaxy** of that **main
@@ -68,7 +68,7 @@ of authority, is an act of the owner, and its record is the merged pull request 
   galaxy of the same main galaxy (the words, "contains"; C12). A provider that runs CMOS for others is a main galaxy, and each of its
   tenants is a dwarf galaxy: the tenants trust the provider, never each other.
 
-Derived from: the words (part, contains), G0, T-P, Axiom 1, Axiom 3, T1, T5, T24, C12, C17. The owner (2026-10-26): "As the root DMP/IM/CM repos, they are in a permanent
+Derived from: the words (part, contains), G0, T-P, Axiom 1, Axiom 3, T6, T10, T16, C12, C17. The owner (2026-10-26): "As the root DMP/IM/CM repos, they are in a permanent
 non-minted state, so the ultimate authority goes to the owner (which is already defined and can from there be passed down/extended to
 agents/people etc.), until a minting takes place, at which point ultimate authority rests with the WKHs"; "So theoretically any company
 can git clone the repos to their own server, become the owner, then mint and have their own, fully contained, CMOS."
@@ -98,9 +98,9 @@ To hold a repository is to carry a byte-for-byte copy of it in a folder of its o
 version, and a sha256 over its files in ordinal path order. A copy that no longer matches its pin is refused by the gate. Nothing ever
 points back up the chain, so a clone of any root repository is whole without the network, and nothing a later repository does can change
 an earlier one. The chain is the Event Horizon guarantee for the root repositories: everything each one needs is inside its own boundary,
-and no trust crosses that boundary (the words, "contains"; Axiom 1; T37).
+and no trust crosses that boundary (the words, "contains"; Axiom 1; T4).
 
-Derived from: the words (contains, DMP-complete), Axiom 1 (the gate and the balance), G0 (mint prep), T37, C12, and "Who maintains it". The owner (2026-10-26): "DMP is the ultimate
+Derived from: the words (contains, DMP-complete), Axiom 1 (the gate and the balance), G0 (mint prep), T4, C12, and "Who maintains it". The owner (2026-10-26): "DMP is the ultimate
 abstraction layer between information layers and how they interact, as well as how their interaction shapes the VIBE field through
 interconnected layers of separate information types. If something can be broken down to a layer or a sublayer of other information, it
 should be done that way. Everything should be complete in itself. DMP stands singular. Gravity has the DMP version it is based on in its
