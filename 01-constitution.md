@@ -277,8 +277,8 @@ Status: stable since DMP 0.9.4
 Amended: "organisation" replaced, approved by the owner 2026-10-26 15:19Z; mint prep approved by the owner 2026-10-26 15:04Z; the minting
 of at least five parts draws the boundary, the owner 2026-10-26 23:28Z; the owner may be a Duality, 23:32Z; a true AGI is a constituent of
 G0, the owner 2026-10-27 00:04Z, who recognizes it, 00:10Z; the mission, 00:13Z; all three approved as worded by the owner 00:21Z; the
-publication version as provisional G0, the owner 2026-10-27 18:26Z and 18:27Z (proposed, awaiting the owner's "approved" on this
-wording) (stable since DMP 0.9.0 before that).
+publication version as provisional G0, the owner 2026-10-27 18:26Z and 18:27Z, approved as worded by the owner 18:34Z ("Both
+approved.") (stable since DMP 0.9.0 before that).
 Owner: CM coordinator
 Enforced by: DMP-014
 
