@@ -271,6 +271,21 @@ itself (a part is two halves, and each half may carry one child so that the two 
 grows with valence. The session derives which DMP cost model, stated in DMP's quantities, yields branching 2 at the optimum, or reports
 that none does and the prediction falls; either is a finding.
 
+The owner's reading of the two numbers (02:37Z), verbatim: "So radix economy gives us a value that gravity want to contract to without
+the push of information against it." That turns the question into an **equilibrium of two cost terms**, which is Axiom 1's balance in
+numbers: the trust term (the field of T32, contracting, the gravity of Axiom 2) pulls the fan-out toward the radix optimum, e without the
+root link and about 3.59 with it; the information term (Axiom 3, the record and the live checks each link costs) pushes back; and the
+balance settles where the two are equal, which the owner predicts at 2. Pose it exactly so: write the total cost per part as the trust term
+plus the information term, each in DMP's quantities, take the optimum, and show whether it lands at 2. The refuter is sharp: if DMP's
+objects hold no information cost term with the right sign and the right size to move the optimum from about 3.6 down to 2, the
+equilibrium reading fails and the branching-2 prediction with it; if such a term exists, it is the first place in DMP where the balance of
+Axiom 1 has a number, and that number is testable by the benchmark.
+
+A note for the paper, to be checked by the session rather than assumed: this is the same shape as every equilibrium in physics where an
+attractive term meets a repulsive one (degeneracy pressure against gravity in a white dwarf, the Chandrasekhar reasoning of the second
+follow-up above); if the DMP terms have that shape, the Chandrasekhar-style derivation is the one to cite, with the trust field as the
+attraction and the information checks as the pressure.
+
 A seventh sentence from the owner (02:06Z), verbatim, filed as the most speculative of the set: "If the singularity inside the black hole is
 only able to compress spacetime until the ratio has hit 3 and is then stopped by it's outward push, and the universe outside of it has a
 lower ratio, that would also explain why spacetime keeps inflating. The gravity is not enough to contain the information inside of it into a
