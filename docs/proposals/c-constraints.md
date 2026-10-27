@@ -246,6 +246,19 @@ boundary count (the standings that cross the minting boundary) the quantity that
 rearrange (Axiom 3) without changing it? If so, that is the holographic statement in DMP's objects and the one sentence worth a physicist's
 time; if not, say what differs.
 
+A sixth sentence from the owner (01:28Z), verbatim: "A black hole is the optimal organisation, maybe natural hierarchichal systems are
+influenced towards eulers number, with whatever is influencing pulling them even further down?" The standard result this touches is
+**radix economy**: when the cost of a hierarchy is fan-out times depth, b · log_b N, the optimum over real b is at b = e, and the best
+integer is 3 (ternary); binary and quaternary tie just above it. That is also why "one part and three attachments" (the fifth sentence) is
+the natural grain: a trivalent node is the integer optimum of that cost. It is a hypothesis, not a claim, that natural hierarchies are
+pulled toward e; where it is argued (Hamming's and Knuth's treatments of radix economy; B-tree and heap fan-out under memory cost; the
+branching of trees and vessels under Murray's law, which is a different optimum) it is cost-model dependent, and the "pulled further down"
+clause would need the cost that does the pulling named. The DMP question is cost-model exact and therefore answerable: under Axiom 3's
+objective (fewest total hops for the representative composition) plus the per-link cost that Axiom 1 imposes (every edge is a Duality
+check, verified live by both halves, Axiom 2), does the fewest-total-hops layout have an optimal fan-out, and does it come out at e, so 3 in
+practice? The verifying session states the DMP cost model (per hop, per link, per check), cites radix economy for the optimisation, and
+proves only the DMP-specific cost model, in Lean only if the field theorems already carry the cost terms.
+
 The ask to the verifying session, as a side item after part 1 and before part 2, at most one page: does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
