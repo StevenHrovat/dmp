@@ -320,6 +320,19 @@ different and the black hole the case where they coincide? If they coincide, tha
 boundary together, with the Lean it needs; if they differ, state the two optima side by side and what trades one against the other. The
 entropy split above (outside maximal, inside minimal) then follows as a corollary rather than a premise.
 
+A tenth sentence from the owner (02:20Z), verbatim: "Also may explaining spinning black holes attributes, since they leak one more
+information." The facts it stands on, all established: the no-hair theorem lets a black hole show exactly mass, angular momentum and charge
+outside (Schwarzschild shows one, Kerr two, Kerr–Newman three); for the same mass a Kerr black hole has a **smaller** horizon area, so a lower
+Bekenstein–Hawking entropy than Schwarzschild, and the extremal Kerr black hole (spin at its maximum) has zero Hawking temperature; the
+ergosphere lets energy be extracted from the spin (the Penrose process, 1969). So the owner's reading is in the right direction: one more
+quantity readable from outside goes with less capacity hidden inside, which is the min-leakage framing with one more term on the boundary.
+The question for part 0, in DMP's quantities: T31's readout is counts (size, staleness, rotation interval) and nothing else; does each
+**additional** boundary readout a Duality exposes beyond the counts (an admission's class, a standing's holder, a layer's shape) cost interior
+capacity, as a monotone trade-off, so that an instance which exposes more at its boundary can contain less behind it, with the counts-only
+instance as the Schwarzschild case (most capacity for its size) and some maximal exposure as the extremal case (nothing left to extract,
+nothing left to heat)? If the Lean's `Floor` and `Record` projections carry a quantity that decreases with every exposed field, state it as a
+theorem candidate (b); if exposure and capacity are independent in DMP, say so and the spin analogy stops there.
+
 The ask to the verifying session (since 01:29Z this is part 0 of the prompt, first and open-ended, not a side item): does the DMP analogue (T37 collapse
 without the two halves pressing on each other, plus Axiom 1's balance) yield one precise statement, in DMP's own objects, that is worth
 posing to physicists, or does it reduce to a restatement of cosmic censorship with new words? Either answer is a finding; neither changes
